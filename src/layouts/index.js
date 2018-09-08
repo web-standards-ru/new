@@ -12,8 +12,8 @@ const Layout = ({children, data}) => {
       <Helmet
         title={data.site.siteMetadata.title}
         meta={[
-          {name: 'description', content: 'Sample'},
-          {name: 'keywords', content: 'sample, something'}
+          {name: 'description', content: data.site.siteMetadata.description},
+          {name: 'keywords', content: data.site.siteMetadata.keywords}
         ]}
       />
       <Header siteTitle={data.site.siteMetadata.title} />
@@ -29,7 +29,9 @@ Layout.propTypes = {
   data: PropTypes.shape({
     site: PropTypes.shape({
       siteMetadata: PropTypes.shape({
-        title: PropTypes.string
+        title: PropTypes.string,
+        description: PropTypes.string,
+        keywords: PropTypes.string
       }).isRequired
     }).isRequired
   }).isRequired
@@ -41,7 +43,9 @@ export const query = graphql`
   query SiteTitleQuery {
     site {
       siteMetadata {
-        title
+        title,
+        description,
+        keywords
       }
     }
   }
