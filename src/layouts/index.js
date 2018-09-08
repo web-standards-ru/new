@@ -25,7 +25,14 @@ const Layout = ({children, data}) => {
 }
 
 Layout.propTypes = {
-  children: PropTypes.func
+  children: PropTypes.func,
+  data: PropTypes.shape({
+    site: PropTypes.shape({
+      siteMetadata: PropTypes.shape({
+        title: PropTypes.string
+      }).isRequired
+    }).isRequired
+  }).isRequired
 }
 
 export default Layout
