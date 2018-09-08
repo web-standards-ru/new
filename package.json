@@ -1,0 +1,46 @@
+{
+  "name": "@web-standards-ru/new",
+  "private": true,
+  "version": "1.0.0",
+  "description": "web-standards.ru web site",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/web-standards-ru/new.git"
+  },
+  "keywords": [
+    "веб-стандарты",
+    "вст",
+    "wst",
+    "web",
+    "standards",
+    "wsd",
+    "wstdays",
+    "web",
+    "standards",
+    "days",
+    "wsg",
+    "web",
+    "standards",
+    "group",
+    "wsg",
+    "russia",
+    "xhtml",
+    "html",
+    "html5",
+    "css",
+    "css3",
+    "svg",
+    "canvas",
+    "микроформаты",
+    "microformats"
+  ],
+  "author": "wst@web-standards.ru",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/web-standards-ru/new/issues"
+  },
+  "homepage": "https://github.com/web-standards-ru/new#readme"
+}
