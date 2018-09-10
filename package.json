@@ -1,0 +1,27 @@
+{
+  "name": "@web-standards-ru/new",
+  "private": true,
+  "version": "1.0.0",
+  "description": "web-standards.ru web site",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/web-standards-ru/new.git"
+  },
+  "author": "wst@web-standards.ru",
+  "license": "CC BY-SA 4.0",
+  "bugs": {
+    "url": "https://github.com/web-standards-ru/new/issues"
+  },
+  "homepage": "https://github.com/web-standards-ru/new#readme",
+  "dependencies": {
+    "gatsby": "^1.9.277",
+    "gatsby-link": "^1.6.46",
+    "gatsby-plugin-react-helmet": "^2.0.11",
+    "react-helmet": "^5.2.0"
+  }
+}
