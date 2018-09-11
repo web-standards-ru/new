@@ -7,7 +7,7 @@ import './index.css';
 
 const Layout = ({children, data}) => {
     return (
-        <div className="layout">
+        <div>
             <Helmet
                 title={data.site.siteMetadata.title}
                 meta={[
@@ -36,7 +36,7 @@ Layout.propTypes = {
     }).isRequired
 };
 
-export default Layout
+export default Layout;
 
 export const query = graphql`
     query SiteTitleQuery {

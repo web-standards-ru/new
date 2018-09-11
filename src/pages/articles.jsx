@@ -1,13 +1,13 @@
 import React from 'react';
 import Link from 'gatsby-link';
 
-const NotFound = () => (
+const Articles = () => (
     <div>
-        <h2>Страница не найдена</h2>
+        <h2>Статьи</h2>
         <p>
             <Link to="/">Вернуться на главную</Link>
         </p>
     </div>
 );
 
-export default NotFound;
+export default Articles;
