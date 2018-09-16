@@ -1,13 +1,17 @@
 import React from 'react';
 import Link from 'gatsby-link';
 
+import {
+    Layout
+} from '../components';
+
 const NotFound = () => (
-    <div>
+    <Layout>
         <h2>Страница не найдена</h2>
         <p>
             <Link to="/">Вернуться на главную</Link>
         </p>
-    </div>
+    </Layout>
 );
 
 export default NotFound;
