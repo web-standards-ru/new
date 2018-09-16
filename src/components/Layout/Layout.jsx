@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import {
     StaticQuery,
-    graphql,
+    graphql
 } from 'gatsby';
 
-import Header from '../Header';
+import {Header} from '../../components';
 import './Layout.css';
 
 const Layout = ({children}) => (
@@ -29,12 +29,12 @@ const Layout = ({children}) => (
                     meta={[
                         {
                             name: 'description',
-                            content: data.site.siteMetadata.description,
+                            content: data.site.siteMetadata.description
                         },
                         {
                             name: 'keywords',
-                            content: data.site.siteMetadata.keywords,
-                        },
+                            content: data.site.siteMetadata.keywords
+                        }
                     ]}
                 >
                     <html lang="en"/>
@@ -49,7 +49,7 @@ const Layout = ({children}) => (
 );
 
 Layout.propTypes = {
-    children: PropTypes.node.isRequired,
+    children: PropTypes.node.isRequired
 };
 
 export default Layout;
