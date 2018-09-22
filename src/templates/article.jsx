@@ -4,11 +4,15 @@ import {graphql} from 'gatsby';
 export default (props) => {
     console.log('props: ', props); // eslint-disable-line
 
-    const frontmatter = {
-        title: 'title',
-        date: 'date',
-        html: 'html'
-    };
+    const {
+        data: {
+            markdownRemark: {
+                excerpt,
+                frontmatter,
+                html
+            }
+        }
+    } = props;
 
     return (
         <div className="article">
@@ -16,7 +20,7 @@ export default (props) => {
             <div className="article__date">{frontmatter.date}</div>
             <div
                 className="article__content"
-                dangerouslySetInnerHTML={{__html: frontmatter.html}}
+                dangerouslySetInnerHTML={{__html: html}}
             />
         </div>
     );
@@ -30,6 +34,8 @@ export const pageQuery = graphql`
             }
         }
         markdownRemark(fields: { slug: { eq: $slug } }) {
+            id
+            excerpt
             html
             frontmatter {
                 title

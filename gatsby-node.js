@@ -7,18 +7,16 @@ exports.createPages = ({actions, graphql}) => {
 
     return graphql(`{
         allMarkdownRemark(
-          limit: 1000
+          limit: 1000,
+          sort: { fields: [frontmatter___date], order: DESC }
         ) {
           edges {
             node {
-              html
               fields {
-                  slug
+                slug
               }
               frontmatter {
-                  date
-                  path
-                  title
+                title
               }
             }
           }
@@ -30,24 +28,26 @@ exports.createPages = ({actions, graphql}) => {
 
         // Create pages for each markdown file.
         result.data.allMarkdownRemark.edges.forEach(({node}) => {
+
             createPage({
-                slug: node.fields.slug,
-                path: `/articles/${node.frontmatter.path}/`,
-                component: articleTemplate
+                path: node.fields.slug,
+                component: articleTemplate,
+                context: {
+                    slug: node.fields.slug
+                }
             });
         });
-    });
+    }).catch((error) => Promise.reject(error));
 };
 
 exports.onCreateNode = ({node, actions, getNode}) => {
     const {createNodeField} = actions;
 
     if (node.internal.type === `MarkdownRemark`) {
-        const value = createFilePath({node, getNode});
         createNodeField({
             name: `slug`,
             node,
-            value,
-        })
+            value: `/articles${createFilePath({node, getNode})}`
+        });
     }
 };
