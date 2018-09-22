@@ -1,3 +1,9 @@
+---
+path: "TODO"
+date: "TODO"
+title: "TODO"
+---
+
 # Размеры блоков, или Назад в будущее
 
 [Дэвид Стори](http://generatedcontent.org/) 23 января 2013

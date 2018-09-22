@@ -1,3 +1,9 @@
+---
+path: "TODO"
+date: "TODO"
+title: "TODO"
+---
+
 # Элементы i, b, em и strong
 
 [Оли Стадхольм](http://oli.jp/) 13 июля 2010

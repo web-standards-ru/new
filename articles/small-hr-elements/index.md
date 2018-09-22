@@ -1,3 +1,9 @@
+---
+path: "TODO"
+date: "TODO"
+title: "TODO"
+---
+
 # Элементы small и hr
 
 [Оли Стадхольм](http://oli.jp/) 30 мая 2011

@@ -1,3 +1,9 @@
+---
+path: "TODO"
+date: "TODO"
+title: "TODO"
+---
+
 # Элементы details и summary
 
 [Том Лидбеттер](http://tomleadbetter.co.uk/) 29 августа 2011

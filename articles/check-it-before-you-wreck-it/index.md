@@ -1,3 +1,9 @@
+---
+path: "TODO"
+date: "TODO"
+title: "TODO"
+---
+
 # Не проверив HTML5-кода, не суйся в воду — с Майком™ Смитом
 
 [Стив Фолкнер](https://twitter.com/stevefaulkner) 26 декабря 2014

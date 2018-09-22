@@ -1,3 +1,9 @@
+---
+path: "TODO"
+date: "TODO"
+title: "TODO"
+---
+
 # Невыполненные обещания веб-компонентов
 
 Перевод «[The broken promise of Web Components](https://dmitriid.com/blog/2017/03/the-broken-promise-of-web-components/)» Дмитрия Диманта.

@@ -1,3 +1,9 @@
+---
+path: "TODO"
+date: "TODO"
+title: "TODO"
+---
+
 # Преимущества многострочного CSS
 
 [Вячеслав Олиянчук](http://miripiruni.org/) 13 декабря 2010

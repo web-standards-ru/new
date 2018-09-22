@@ -1,3 +1,9 @@
+---
+path: "TODO"
+date: "TODO"
+title: "TODO"
+---
+
 # Хватит разрушать веб
 
 [Николас Беваква](http://ponyfoo.com) 23 марта 2015

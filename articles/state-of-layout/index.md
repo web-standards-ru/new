@@ -1,3 +1,9 @@
+---
+path: "TODO"
+date: "TODO"
+title: "TODO"
+---
+
 # Какой расклад?
 
 [Вячеслав Олиянчук](http://miripiruni.org) 30 августа 2010

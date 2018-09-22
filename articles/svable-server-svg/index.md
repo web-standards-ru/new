@@ -1,3 +1,9 @@
+---
+path: "TODO"
+date: "TODO"
+title: "TODO"
+---
+
 # Svable — простая генерация SVG на сервере
 
 [Илья Заяц](http://svable.com/) 13 декабря 2013

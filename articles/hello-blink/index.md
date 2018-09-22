@@ -1,3 +1,9 @@
+---
+path: "TODO"
+date: "TODO"
+title: "TODO"
+---
+
 # Здравствуй, Blink
 
 [Брюс Лоусон](http://www.brucelawson.co.uk) 6 апреля 2013

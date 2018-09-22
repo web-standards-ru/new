@@ -1,3 +1,9 @@
+---
+path: "TODO"
+date: "TODO"
+title: "TODO"
+---
+
 # Как воспитать дизайнера
 
 [Ольга Алексашенко](http://engelside.net) 22 июня 2010

@@ -1,3 +1,8 @@
+---
+path: "TODO"
+date: "TODO"
+title: "TODO"
+---
 
 # Промисы на примерах из жизни
 

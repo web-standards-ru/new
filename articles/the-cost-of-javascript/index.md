@@ -1,3 +1,9 @@
+---
+path: "TODO"
+date: "TODO"
+title: "TODO"
+---
+
 # Сколько стоит JavaScript?
 
 Перевод «[The Cost Of JavaScript](https://medium.com/dev-channel/the-cost-of-javascript-84009f51e99e)» Эдди Османи.

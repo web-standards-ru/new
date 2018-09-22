@@ -1,3 +1,8 @@
+---
+path: "TODO"
+date: "TODO"
+title: "TODO"
+---
 
 # Роутинг, бандлинг и ленивая загрузка на Webpack
 

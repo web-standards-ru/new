@@ -1,3 +1,9 @@
+---
+path: "TODO"
+date: "TODO"
+title: "TODO"
+---
+
 # Разбираемся с vertical-align
 
 [Луис Лазарис](http://www.impressivewebs.com/) 9 марта 2012

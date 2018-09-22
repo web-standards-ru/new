@@ -1,3 +1,9 @@
+---
+path: "TODO"
+date: "TODO"
+title: "TODO"
+---
+
 # В HTML5 добавлен новый атрибут translate
 
 [Ричард Ишида](http://people.w3.org/rishida/) 30 июля 2012

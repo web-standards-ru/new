@@ -1,3 +1,9 @@
+---
+path: "TODO"
+date: "TODO"
+title: "TODO"
+---
+
 # Я знаю jQuery. И что?
 
 [Реми Шарп](http://remysharp.com) 16 декабря 2013

@@ -1,3 +1,9 @@
+---
+path: "TODO"
+date: "TODO"
+title: "TODO"
+---
+
 # Префикс или постхак
 
 [Эрик Мейер](http://meyerweb.com/) 19 августа 2010

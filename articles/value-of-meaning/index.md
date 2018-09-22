@@ -1,3 +1,9 @@
+---
+path: "TODO"
+date: "TODO"
+title: "TODO"
+---
+
 # Ценность осмысленности
 
 [Кайл Вимс](http://cssquirrel.com) 9 августа 2012

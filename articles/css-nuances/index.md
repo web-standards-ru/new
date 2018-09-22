@@ -1,3 +1,9 @@
+---
+path: "TODO"
+date: "TODO"
+title: "TODO"
+---
+
 # Нюансы CSS
 
 [Лев Солнцев](http://my.opera.com/GreLI/blog/) 21 апреля 2011

@@ -1,3 +1,9 @@
+---
+path: "TODO"
+date: "TODO"
+title: "TODO"
+---
+
 # Как создать адаптивную сетку
 
 Перевод «[How to build a responsive grid system](https://zellwk.com/blog/responsive-grid-system/)» Зела Лью.

@@ -1,3 +1,9 @@
+---
+path: "TODO"
+date: "TODO"
+title: "TODO"
+---
+
 # Основные способы вёрстки. Часть первая: таблица
 
 [Лев Солнцев](http://my.opera.com/GreLI/blog/) 27 июня 2013

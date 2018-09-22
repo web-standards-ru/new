@@ -1,3 +1,9 @@
+---
+path: "TODO"
+date: "TODO"
+title: "TODO"
+---
+
 # Исследуем большие экраны
 
 [Майк Пик](http://alistapart.com/author/mikepick) 24 ноября 2014

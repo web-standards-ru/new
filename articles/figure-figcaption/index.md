@@ -1,3 +1,9 @@
+---
+path: "TODO"
+date: "TODO"
+title: "TODO"
+---
+
 # Элементы figure и figcaption
 
 [Ричард Кларк](http://richclarkdesign.com/) 12 марта 2012

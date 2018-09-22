@@ -1,3 +1,9 @@
+---
+path: "TODO"
+date: "TODO"
+title: "TODO"
+---
+
 # Как работает nth-child
 
 [Крис Койер](http://css-tricks.com/) 21 ноября 2011

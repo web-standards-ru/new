@@ -1,3 +1,9 @@
+---
+path: "TODO"
+date: "TODO"
+title: "TODO"
+---
+
 # Ещё одна CSS-техника замены текста изображением
 
 [Николас Галлахер](http://nicolasgallagher.com/) 10 сентября 2012

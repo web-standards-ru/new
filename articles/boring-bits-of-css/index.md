@@ -1,3 +1,9 @@
+---
+path: "TODO"
+date: "TODO"
+title: "TODO"
+---
+
 # Как я научился любить скучные мелочи CSS
 
 [Питер Гастон](http://www.broken-links.com) 21 августа 2012

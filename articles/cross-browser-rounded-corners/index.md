@@ -1,3 +1,9 @@
+---
+path: "TODO"
+date: "TODO"
+title: "TODO"
+---
+
 # Кроссбраузерные закруглённые уголки
 
 [Лев Солнцев](http://my.opera.com/GreLI/blog/) 28 июня 2010

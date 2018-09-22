@@ -1,3 +1,9 @@
+---
+path: "TODO"
+date: "TODO"
+title: "TODO"
+---
+
 # Путь наставника
 
 [Максим Усачёв](https://twitter.com/psyw) 30 июня 2016

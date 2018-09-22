@@ -1,3 +1,9 @@
+---
+path: "TODO"
+date: "TODO"
+title: "TODO"
+---
+
 # Паттерны загрузки веб-шрифтов
 
 [Брэм Штайн](https://www.bramstein.com/) 14 июня 2016

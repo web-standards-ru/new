@@ -1,3 +1,9 @@
+---
+path: "TODO"
+date: "TODO"
+title: "TODO"
+---
+
 # Атрибут contenteditable
 
 [Джек Осборн](http://jackosborne.co.uk/) 9 марта 2012

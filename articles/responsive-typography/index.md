@@ -1,3 +1,9 @@
+---
+path: "TODO"
+date: "TODO"
+title: "TODO"
+---
+
 # Основы адаптивной типографики
 
 [Оливер Райхенштейн](http://informationarchitects.net) 10 сентября 2012

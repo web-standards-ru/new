@@ -1,3 +1,10 @@
+---
+path: "TODO"
+date: "TODO"
+title: "TODO"
+---
+
+
 # Сite и blockquote: перезагрузка
 
 [Стив Фолкнер](http://blog.paciellogroup.com/author/admin/) 11 ноября 2013

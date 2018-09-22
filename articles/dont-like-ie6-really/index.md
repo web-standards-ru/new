@@ -1,3 +1,9 @@
+---
+path: "TODO"
+date: "TODO"
+title: "TODO"
+---
+
 # Вам не нравится IE6? Что, правда?
 
 [Реми Шарп](http://remy.tumblr.com/) 2 августа 2011
