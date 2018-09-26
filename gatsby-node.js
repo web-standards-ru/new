@@ -26,6 +26,12 @@ exports.createPages = ({actions, graphql}) => {
             return Promise.reject(result.errors);
         }
 
+        createArticleListPage({
+                createPage,
+                nodes: result.data.allMarkdownRemark.edges.map(({node}) => node)
+            }
+        );
+
         // Create pages for each markdown file.
         result.data.allMarkdownRemark.edges.forEach(
             ({node}) => createArticlePage({node, createPage})
@@ -46,9 +52,9 @@ exports.onCreateNode = ({node, actions, getNode}) => {
 };
 
 /**
- *
- * @param {Function} createPage
- * @param {Object} node
+ * @param {Object} data
+ * @param {Function} data.createPage
+ * @param {Object} data.node
  */
 function createArticlePage({createPage, node}) {
     createPage({
@@ -56,6 +62,21 @@ function createArticlePage({createPage, node}) {
         component: path.resolve('./src/templates/article.jsx'),
         context: {
             slug: node.fields.slug
+        }
+    });
+}
+
+/**
+ * @param {Object} data
+ * @param {Function} data.createPage
+ * @param {Array} data.nodes
+ */
+function createArticleListPage({createPage, nodes}) {
+    createPage({
+        path: '/articles',
+        component: path.resolve('./src/templates/articleList.jsx'),
+        context: {
+            nodes
         }
     });
 }
