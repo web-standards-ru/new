@@ -2,12 +2,9 @@ import React from 'react';
 import {graphql} from 'gatsby';
 
 export default (props) => {
-    console.log('props: ', props); // eslint-disable-line
-
     const {
         data: {
             markdownRemark: {
-                excerpt,
                 frontmatter,
                 html
             }
