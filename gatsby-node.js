@@ -27,16 +27,9 @@ exports.createPages = ({actions, graphql}) => {
         }
 
         // Create pages for each markdown file.
-        result.data.allMarkdownRemark.edges.forEach(({node}) => {
-
-            createPage({
-                path: node.fields.slug,
-                component: articleTemplate,
-                context: {
-                    slug: node.fields.slug
-                }
-            });
-        });
+        result.data.allMarkdownRemark.edges.forEach(
+            ({node}) => createArticlePage({node, createPage})
+        );
     }).catch((error) => Promise.reject(error));
 };
 
@@ -51,3 +44,18 @@ exports.onCreateNode = ({node, actions, getNode}) => {
         });
     }
 };
+
+/**
+ *
+ * @param {Function} createPage
+ * @param {Object} node
+ */
+function createArticlePage({createPage, node}) {
+    createPage({
+        path: node.fields.slug,
+        component: path.resolve('./src/templates/article.jsx'),
+        context: {
+            slug: node.fields.slug
+        }
+    });
+}
