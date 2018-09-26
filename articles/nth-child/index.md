@@ -1,7 +1,6 @@
 ---
-path: "TODO"
-date: "TODO"
-title: "TODO"
+date: "21 ноября 2011"
+title: "Как работает nth-child"
 ---
 
 # Как работает nth-child

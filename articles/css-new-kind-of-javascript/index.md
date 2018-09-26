@@ -1,7 +1,6 @@
 ---
-path: "TODO"
 date: "TODO"
-title: "TODO"
+title: "CSS: новый вид JavaScript"
 ---
 
 # CSS: новый вид JavaScript

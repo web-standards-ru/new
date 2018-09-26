@@ -1,7 +1,6 @@
 ---
-path: "TODO"
 date: "TODO"
-title: "TODO"
+title: "Критический CSS + прогрессивный CSS = ?"
 ---
 
 # Критический CSS + прогрессивный CSS = ?

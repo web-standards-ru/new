@@ -1,7 +1,6 @@
 ---
-path: "TODO"
-date: "TODO"
-title: "TODO"
+date: "19 февраля 2014"
+title: "Культ карго CSS"
 ---
 
 # Культ карго CSS

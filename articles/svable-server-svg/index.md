@@ -1,7 +1,6 @@
 ---
-path: "TODO"
-date: "TODO"
-title: "TODO"
+date: "13 декабря 2013"
+title: "Svable — простая генерация SVG на сервере"
 ---
 
 # Svable — простая генерация SVG на сервере

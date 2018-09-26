@@ -1,7 +1,6 @@
 ---
-path: "TODO"
-date: "TODO"
-title: "TODO"
+date: "9 февраля 2017"
+title: "Генерация HTTP-запросов"
 ---
 
 # Генерация HTTP-запросов

@@ -1,7 +1,6 @@
 ---
-path: "TODO"
-date: "TODO"
-title: "TODO"
+date: "16 декабря 2013"
+title: "Я знаю jQuery. И что?"
 ---
 
 # Я знаю jQuery. И что?

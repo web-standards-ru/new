@@ -1,7 +1,6 @@
 ---
-path: "TODO"
-date: "TODO"
-title: "TODO"
+date: "20 февраля 2014"
+title: "Архитектура CSS"
 ---
 
 # Архитектура CSS

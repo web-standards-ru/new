@@ -1,7 +1,6 @@
 ---
-path: "TODO"
-date: "TODO"
-title: "TODO"
+date: "11 ноября 2013"
+title: "Сite и blockquote: перезагрузка"
 ---
 
 

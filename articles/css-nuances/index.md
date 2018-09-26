@@ -1,7 +1,6 @@
 ---
-path: "TODO"
-date: "TODO"
-title: "TODO"
+date: "21 апреля 2011"
+title: "Нюансы CSS"
 ---
 
 # Нюансы CSS

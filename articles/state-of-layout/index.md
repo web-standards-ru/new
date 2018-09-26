@@ -1,7 +1,6 @@
 ---
-path: "TODO"
-date: "TODO"
-title: "TODO"
+date: "30 августа 2010"
+title: "Какой расклад?"
 ---
 
 # Какой расклад?

@@ -1,7 +1,6 @@
 ---
-path: "TODO"
-date: "TODO"
-title: "TODO"
+date: "6 апреля 2013"
+title: "Здравствуй, Blink"
 ---
 
 # Здравствуй, Blink

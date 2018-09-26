@@ -1,7 +1,6 @@
 ---
-path: "TODO"
-date: "TODO"
-title: "TODO"
+date: "30 июня 2016"
+title: "Путь наставника"
 ---
 
 # Путь наставника

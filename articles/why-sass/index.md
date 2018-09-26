@@ -1,7 +1,6 @@
 ---
-path: "TODO"
-date: "TODO"
-title: "TODO"
+date: "10 декабря 2013"
+title: "Почему Sass?"
 ---
 
 # Почему Sass?

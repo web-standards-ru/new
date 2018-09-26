@@ -1,7 +1,6 @@
 ---
-path: "TODO"
-date: "TODO"
-title: "TODO"
+date: "15 ноября 2017"
+title: "Сколько стоит JavaScript?"
 ---
 
 # Сколько стоит JavaScript?

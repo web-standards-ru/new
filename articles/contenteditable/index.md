@@ -1,7 +1,6 @@
 ---
-path: "TODO"
-date: "TODO"
-title: "TODO"
+date: "9 марта 2012"
+title: "Атрибут contenteditable"
 ---
 
 # Атрибут contenteditable

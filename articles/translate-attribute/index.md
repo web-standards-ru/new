@@ -1,7 +1,6 @@
 ---
-path: "TODO"
-date: "TODO"
-title: "TODO"
+date: "30 июля 2012"
+title: "В HTML5 добавлен новый атрибут translate"
 ---
 
 # В HTML5 добавлен новый атрибут translate

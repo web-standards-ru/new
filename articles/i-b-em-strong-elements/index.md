@@ -1,7 +1,6 @@
 ---
-path: "TODO"
-date: "TODO"
-title: "TODO"
+date: "13 июля 2010"
+title: "Элементы i, b, em и strong"
 ---
 
 # Элементы i, b, em и strong
