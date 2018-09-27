@@ -1,3 +1,8 @@
+---
+date: "6 апреля 2013"
+title: "Здравствуй, Blink"
+---
+
 # Здравствуй, Blink
 
 [Брюс Лоусон](http://www.brucelawson.co.uk) 6 апреля 2013

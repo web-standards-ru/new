@@ -1,3 +1,8 @@
+---
+date: "9 марта 2012"
+title: "Разбираемся с vertical-align"
+---
+
 # Разбираемся с vertical-align
 
 [Луис Лазарис](http://www.impressivewebs.com/) 9 марта 2012

@@ -1,3 +1,8 @@
+---
+date: "29 августа 2011"
+title: "Элементы details и summary"
+---
+
 # Элементы details и summary
 
 [Том Лидбеттер](http://tomleadbetter.co.uk/) 29 августа 2011

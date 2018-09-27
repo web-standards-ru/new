@@ -1,3 +1,8 @@
+---
+date: "15 ноября 2017"
+title: "Сколько стоит JavaScript?"
+---
+
 # Сколько стоит JavaScript?
 
 Перевод «[The Cost Of JavaScript](https://medium.com/dev-channel/the-cost-of-javascript-84009f51e99e)» Эдди Османи.

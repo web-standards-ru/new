@@ -1,3 +1,8 @@
+---
+date: "12 марта 2012"
+title: "Элементы figure и figcaption"
+---
+
 # Элементы figure и figcaption
 
 [Ричард Кларк](http://richclarkdesign.com/) 12 марта 2012

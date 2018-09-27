@@ -1,3 +1,7 @@
+---
+date: "TODO"
+title: "CSS: новый вид JavaScript"
+---
 
 # CSS: новый вид JavaScript
 

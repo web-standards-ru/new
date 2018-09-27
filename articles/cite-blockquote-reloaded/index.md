@@ -1,3 +1,9 @@
+---
+date: "11 ноября 2013"
+title: "Сite и blockquote: перезагрузка"
+---
+
+
 # Сite и blockquote: перезагрузка
 
 [Стив Фолкнер](http://blog.paciellogroup.com/author/admin/) 11 ноября 2013
