@@ -47,7 +47,7 @@ exports.onCreateNode = ({node, actions, getNode}) => {
         createNodeField({
             name: `slug`,
             node,
-            value: `/articles${createFilePath({node, getNode})}`
+            value: `articles${createFilePath({node, getNode})}`
         });
     }
 };
@@ -74,7 +74,7 @@ function createArticlePage({createPage, node}) {
  */
 function createArticleListPage({createPage, nodes}) {
     createPage({
-        path: '/articles',
+        path: 'articles',
         component: path.resolve('./src/templates/articleList.jsx'),
         context: {
             nodes
