@@ -15,7 +15,7 @@ const ArticlesTemplate = ({data}) => {
 
     return (
         <Layout>
-            <h2>Статьи</h2>
+            <h2>Статьи сайта</h2>
             <p>
                 <Link to="/">Вернуться на главную</Link>
             </p>
