@@ -9,7 +9,7 @@ const Index = () => (
     <Layout>
         <h2>О прооекте</h2>
         <p>
-            <Link to="articles/">Статьи</Link>
+            <Link to="/articles/">Статьи</Link>
         </p>
     </Layout>
 );
