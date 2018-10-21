@@ -3,7 +3,6 @@ const {createFilePath} = require('gatsby-source-filesystem');
 
 exports.createPages = ({actions, graphql}) => {
     const {createPage} = actions;
-    const articleTemplate = path.resolve('./src/templates/article.jsx');
 
     return graphql(`{
         allMarkdownRemark(
