@@ -5,7 +5,7 @@ script: npm run build
 deploy:
     provider: pages
     skip-cleanup: true
-    keep-history: true
+    keep-history: false
     github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
     local-dir: public
     target-branch: gh-pages
