@@ -1,5 +1,4 @@
 module.exports = {
-    pathPrefix: '/',
     siteMetadata: {
         title: 'Веб-стандарты',
         description: 'Сообщество разработчиков «Веб-стандарты»',
