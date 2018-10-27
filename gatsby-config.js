@@ -5,6 +5,13 @@ module.exports = {
         keywords: 'web standards'
     },
     plugins: [
+        {
+            resolve: 'gatsby-source-ical',
+            options: {
+                url: "https://web-standards.ru/calendar.ics",
+                name: "events"
+            }
+        },
         'gatsby-plugin-react-helmet',
         'gatsby-plugin-sharp',
         {
