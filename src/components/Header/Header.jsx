@@ -13,4 +13,6 @@ Header.propTypes = {
     siteTitle: PropTypes.string.isRequired
 };
 
-export default Header;
+export {
+    Header as default
+};

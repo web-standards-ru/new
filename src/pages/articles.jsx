@@ -9,10 +9,7 @@ import {
     Layout
 } from '../components';
 
-const ArticlesTemplate = ({data}) => {
-
-    console.log('data: ', data); // eslint-disable-line
-
+const ArticlesTemplate = () => {
     return (
         <Layout>
             <h2>Статьи сайта</h2>
@@ -52,4 +49,6 @@ const Articles = () => {
     );
 };
 
-export default Articles;
+export {
+    Articles as default
+};

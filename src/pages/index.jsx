@@ -8,10 +8,13 @@ import {
 const Index = () => (
     <Layout>
         <h2>О прооекте</h2>
-        <p>
-            <Link to="/articles/">Статьи</Link>
-        </p>
+        <ul>
+            <li><Link to="/events/">События</Link></li>
+            <li><Link to="/articles/">Статьи</Link></li>
+        </ul>
     </Layout>
 );
 
-export default Index;
+export {
+    Index as default
+};

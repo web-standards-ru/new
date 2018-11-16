@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export default (props) => {
+const ArticleList = (props) => {
     const {pageContext: {nodes}} = props;
 
     return (
@@ -12,8 +13,26 @@ export default (props) => {
                             {node.frontmatter.date}
                         </li>
                     );
-                }
-            )}
+                })
+            }
         </ul>
     );
 };
+
+ArticleList.propTypes = {
+    pageContext: PropTypes.shape({
+        nodes: PropTypes.arrayOf(PropTypes.shape({
+            fields: PropTypes.shape({
+                slug: PropTypes.string
+            }),
+            frontmatter: PropTypes.shape({
+                title: PropTypes.string,
+                date: PropTypes.string
+            })
+        }))
+    })
+};
+
+export {
+    ArticleList as default
+}

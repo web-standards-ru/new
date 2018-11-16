@@ -6,7 +6,7 @@ import {
 import {Layout} from "../components/Layout";
 
 
-export default () => {
+const Events = () => {
     const currentDate = new Date();
 
     return (
@@ -46,7 +46,7 @@ export default () => {
                                 ]
                             }, [])
                             .map(event => (
-                                <li>
+                                <li key={`${event.summary} Date: ${event.start.toLocaleString()}`}>
                                     <b>{event.summary}</b><br/>
                                     <p>
                                         Описание: {event.description}<br/>
@@ -63,3 +63,7 @@ export default () => {
         </Layout>
     );
 };
+
+export {
+    Events as default
+}

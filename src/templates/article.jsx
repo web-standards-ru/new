@@ -1,7 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {graphql} from 'gatsby';
 
-export default (props) => {
+const Article = (props) => {
     const {
         data: {
             markdownRemark: {
@@ -22,7 +23,18 @@ export default (props) => {
         </div>
     );
 };
+Article.propTypes = {
+    data: PropTypes.shape({
+        markdownRemark: PropTypes.shape({
+            frontmatter: PropTypes.shape({
+                title: PropTypes.string,
+                date: PropTypes.string
+            })
+        })
+    })
+};
 
+// Needs own personal export
 export const pageQuery = graphql`
     query ArticleBySlug($slug: String!) {
         site {
@@ -41,3 +53,7 @@ export const pageQuery = graphql`
         }
     }
 `;
+
+export {
+    Article as default
+}

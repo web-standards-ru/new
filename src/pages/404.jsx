@@ -14,4 +14,6 @@ const NotFound = () => (
     </Layout>
 );
 
-export default NotFound;
+export {
+    NotFound as default
+};
