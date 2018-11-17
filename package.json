@@ -42,6 +42,8 @@
   "devDependencies": {
     "babel-eslint": "^8.2.6",
     "eslint": "^5.9.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-prettier": "^3.0.0",
     "eslint-plugin-react": "^7.11.1",
     "gh-pages": "^2.0.1",
     "prettier": "1.15.2",

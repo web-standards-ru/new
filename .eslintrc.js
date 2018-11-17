@@ -1,6 +1,11 @@
 module.exports = {
-    extends: ['eslint:recommended', 'plugin:react/recommended'],
-    plugins: ['react'],
+    extends: [
+        'eslint:recommended',
+        'plugin:react/recommended',
+        'plugin:prettier/recommended',
+        'prettier/react',
+    ],
+    plugins: ['react', 'prettier'],
     parser: 'babel-eslint',
     parserOptions: {
         sourceType: 'module',
@@ -17,5 +22,8 @@ module.exports = {
         node: true,
         es6: true,
         jest: true,
+    },
+    rules: {
+        'prettier/prettier': 'error',
     },
 };
