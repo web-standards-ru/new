@@ -1,10 +1,6 @@
 import React from 'react';
-import {
-    StaticQuery,
-    graphql
-} from 'gatsby';
-import {Layout} from "../components/Layout";
-
+import { StaticQuery, graphql } from 'gatsby';
+import { Layout } from '../components/Layout';
 
 const Events = () => {
     const currentDate = new Date();
@@ -13,21 +9,24 @@ const Events = () => {
         <Layout>
             <StaticQuery
                 query={graphql`
-                query EventsQuery {
-                    allIcal(filter: {sourceInstanceName: {eq: "events"}} sort: {order: ASC fields: [start]}) {
-                        edges {
-                            node {
-                                start
-                                end
-                                summary
-                                description
-                                location
+                    query EventsQuery {
+                        allIcal(
+                            filter: { sourceInstanceName: { eq: "events" } }
+                            sort: { order: ASC, fields: [start] }
+                        ) {
+                            edges {
+                                node {
+                                    start
+                                    end
+                                    summary
+                                    description
+                                    location
+                                }
                             }
                         }
                     }
-                }
-            `}
-                render={({allIcal: {edges: events}}) =>
+                `}
+                render={({ allIcal: { edges: events } }) => (
                     <ul>
                         {events
                             .reduce((events, event) => {
@@ -37,33 +36,36 @@ const Events = () => {
                                 event.end = new Date(event.end);
 
                                 if (event.end < currentDate) {
-                                    return events
+                                    return events;
                                 }
 
-                                return [
-                                    ...events,
-                                    event
-                                ]
+                                return [...events, event];
                             }, [])
                             .map(event => (
-                                <li key={`${event.summary} Date: ${event.start.toLocaleString()}`}>
-                                    <b>{event.summary}</b><br/>
+                                <li
+                                    key={`${
+                                        event.summary
+                                    } Date: ${event.start.toLocaleString()}`}
+                                >
+                                    <b>{event.summary}</b>
+                                    <br />
                                     <p>
-                                        Описание: {event.description}<br/>
-                                        Место: {event.location}<br/>
-                                        Начало: {event.start.toLocaleString()}<br/>
-                                        Конец: {event.end.toLocaleString()}<br/>
+                                        Описание: {event.description}
+                                        <br />
+                                        Место: {event.location}
+                                        <br />
+                                        Начало: {event.start.toLocaleString()}
+                                        <br />
+                                        Конец: {event.end.toLocaleString()}
+                                        <br />
                                     </p>
                                 </li>
-                            ))
-                        }
+                            ))}
                     </ul>
-                }
+                )}
             />
         </Layout>
     );
 };
 
-export {
-    Events as default
-}
+export { Events as default };

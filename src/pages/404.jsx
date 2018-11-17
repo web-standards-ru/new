@@ -1,9 +1,7 @@
 import React from 'react';
 import Link from 'gatsby-link';
 
-import {
-    Layout
-} from '../components';
+import { Layout } from '../components';
 
 const NotFound = () => (
     <Layout>
@@ -14,6 +12,4 @@ const NotFound = () => (
     </Layout>
 );
 
-export {
-    NotFound as default
-};
+export { NotFound as default };

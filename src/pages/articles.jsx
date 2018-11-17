@@ -1,13 +1,8 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import {
-    StaticQuery,
-    graphql
-} from 'gatsby';
+import { StaticQuery, graphql } from 'gatsby';
 
-import {
-    Layout
-} from '../components';
+import { Layout } from '../components';
 
 const ArticlesTemplate = () => {
     return (
@@ -21,7 +16,6 @@ const ArticlesTemplate = () => {
 };
 
 const Articles = () => {
-
     return (
         <StaticQuery
             query={graphql`
@@ -43,12 +37,8 @@ const Articles = () => {
                 }
             `}
             render={ArticlesTemplate}
-        >
-
-        </StaticQuery>
+        />
     );
 };
 
-export {
-    Articles as default
-};
+export { Articles as default };

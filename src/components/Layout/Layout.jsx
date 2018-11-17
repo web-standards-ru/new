@@ -1,26 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import {
-    StaticQuery,
-    graphql
-} from 'gatsby';
+import { StaticQuery, graphql } from 'gatsby';
 
-import {Header} from '../../components';
+import { Header } from '../../components';
 import './Layout.css';
 
-const Layout = ({children}) => (
+const Layout = ({ children }) => (
     <StaticQuery
         query={graphql`
             query SiteTitleQuery {
                 site {
-                  siteMetadata {
-                        title,
-                        description,
+                    siteMetadata {
+                        title
+                        description
                         keywords
                     }
                 }
-          }
+            }
         `}
         render={data => (
             <>
@@ -29,29 +26,25 @@ const Layout = ({children}) => (
                     meta={[
                         {
                             name: 'description',
-                            content: data.site.siteMetadata.description
+                            content: data.site.siteMetadata.description,
                         },
                         {
                             name: 'keywords',
-                            content: data.site.siteMetadata.keywords
-                        }
+                            content: data.site.siteMetadata.keywords,
+                        },
                     ]}
                 >
-                    <html lang="en"/>
+                    <html lang="en" />
                 </Helmet>
-                <Header siteTitle={data.site.siteMetadata.title}/>
-                <main>
-                    {children}
-                </main>
+                <Header siteTitle={data.site.siteMetadata.title} />
+                <main>{children}</main>
             </>
         )}
     />
 );
 
 Layout.propTypes = {
-    children: PropTypes.node.isRequired
+    children: PropTypes.node.isRequired,
 };
 
-export {
-    Layout as default
-};
+export { Layout as default };

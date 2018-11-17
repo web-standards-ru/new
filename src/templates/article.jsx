@@ -1,15 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {graphql} from 'gatsby';
+import { graphql } from 'gatsby';
 
-const Article = (props) => {
+const Article = props => {
     const {
         data: {
-            markdownRemark: {
-                frontmatter,
-                html
-            }
-        }
+            markdownRemark: { frontmatter, html },
+        },
     } = props;
 
     return (
@@ -18,7 +15,7 @@ const Article = (props) => {
             <div className="article__date">{frontmatter.date}</div>
             <div
                 className="article__content"
-                dangerouslySetInnerHTML={{__html: html}}
+                dangerouslySetInnerHTML={{ __html: html }}
             />
         </div>
     );
@@ -28,10 +25,10 @@ Article.propTypes = {
         markdownRemark: PropTypes.shape({
             frontmatter: PropTypes.shape({
                 title: PropTypes.string,
-                date: PropTypes.string
-            })
-        })
-    })
+                date: PropTypes.string,
+            }),
+        }),
+    }),
 };
 
 // Needs own personal export
@@ -54,6 +51,4 @@ export const pageQuery = graphql`
     }
 `;
 
-export {
-    Article as default
-}
+export { Article as default };
