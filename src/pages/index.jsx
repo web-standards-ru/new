@@ -4,10 +4,13 @@ import {Layout} from '../components';
 
 const Index = () => (
     <Layout>
-        <h2>О прооекте</h2>
-        <p>
-            <Link to="/articles/">Статьи</Link>
-        </p>
+        <nav>
+            <ul>
+                <li><Link to="/articles/">Статьи</Link></li>
+                <li><Link to="/events/">События</Link></li>
+                <li><Link to="/conference/">Конференция</Link></li>
+            </ul>
+        </nav>
     </Layout>
 );
 
