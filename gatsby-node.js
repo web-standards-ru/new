@@ -6,20 +6,23 @@ exports.createPages = ({actions, graphql}) => {
 
     return graphql(`{
         allMarkdownRemark(
-          limit: 1000,
-          sort: { fields: [frontmatter___date], order: DESC }
-        ) {
-          edges {
-            node {
-              fields {
-                slug
-              }
-              frontmatter {
-                title
-                date
-              }
+            limit: 1000,
+            sort: {
+                fields: [frontmatter___date],
+                order: DESC
             }
-          }
+        ) {
+            edges {
+                node {
+                    fields {
+                        slug
+                    }
+                    frontmatter {
+                        title
+                        date
+                    }
+                }
+            }
         }
     }`).then(result => {
         if (result.errors) {

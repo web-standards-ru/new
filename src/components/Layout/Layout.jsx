@@ -1,11 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import {
-    StaticQuery,
-    graphql
-} from 'gatsby';
-
+import {StaticQuery, graphql} from 'gatsby';
 import {Header} from '../../components';
 
 const Layout = ({children}) => (
@@ -13,13 +9,13 @@ const Layout = ({children}) => (
         query={graphql`
             query SiteTitleQuery {
                 site {
-                  siteMetadata {
+                    siteMetadata {
                         title,
                         description,
                         keywords
                     }
                 }
-          }
+            }
         `}
         render={data => (
             <>

@@ -1,10 +1,6 @@
 import React from 'react';
-import {
-    StaticQuery,
-    graphql
-} from 'gatsby';
-import {Layout} from "../components/Layout";
-
+import {StaticQuery, graphql} from 'gatsby';
+import {Layout} from '../components';
 
 export default () => {
     const currentDate = new Date();
@@ -13,20 +9,29 @@ export default () => {
         <Layout>
             <StaticQuery
                 query={graphql`
-                query EventsQuery {
-                    allIcal(filter: {sourceInstanceName: {eq: "events"}} sort: {order: ASC fields: [start]}) {
-                        edges {
-                            node {
-                                start
-                                end
-                                summary
-                                description
-                                location
+                    query EventsQuery {
+                        allIcal(
+                            filter: {
+                                sourceInstanceName: {
+                                    eq: "events"
+                                }
+                            }
+                            sort: {
+                                order: ASC fields: [start]
+                            }
+                        ) {
+                            edges {
+                                node {
+                                    start
+                                    end
+                                    summary
+                                    description
+                                    location
+                                }
                             }
                         }
                     }
-                }
-            `}
+                `}
                 render={({allIcal: {edges: events}}) =>
                     <ul>
                         {events

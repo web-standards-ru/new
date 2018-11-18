@@ -1,7 +1,11 @@
 import React from 'react';
 
 export default (props) => {
-    const {pageContext: {nodes}} = props;
+    const {
+        pageContext: {
+            nodes
+        }
+    } = props;
 
     return (
         <ul className="article-list">
