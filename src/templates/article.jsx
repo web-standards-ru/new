@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
+import { Layout } from '../components';
 
 const Article = props => {
     const {
@@ -10,14 +11,11 @@ const Article = props => {
     } = props;
 
     return (
-        <div className="article">
-            <h1 className="article__title">{frontmatter.title}</h1>
-            <div className="article__date">{frontmatter.date}</div>
-            <div
-                className="article__content"
-                dangerouslySetInnerHTML={{ __html: html }}
-            />
-        </div>
+        <Layout>
+            <h1>{frontmatter.title}</h1>
+            <time>{frontmatter.date}</time>
+            <div dangerouslySetInnerHTML={{ __html: html }} />
+        </Layout>
     );
 };
 Article.propTypes = {

@@ -47,18 +47,18 @@ const Events = () => {
                                         event.summary
                                     } Date: ${event.start.toLocaleString()}`}
                                 >
-                                    <b>{event.summary}</b>
-                                    <br />
-                                    <p>
-                                        Описание: {event.description}
-                                        <br />
-                                        Место: {event.location}
-                                        <br />
-                                        Начало: {event.start.toLocaleString()}
-                                        <br />
-                                        Конец: {event.end.toLocaleString()}
-                                        <br />
-                                    </p>
+                                    <h2>{event.summary}</h2>
+                                    <ul>
+                                        <li>Описание: {event.description}</li>
+                                        <li>Место: {event.location}</li>
+                                        <li>
+                                            Начало:{' '}
+                                            {event.start.toLocaleString()}
+                                        </li>
+                                        <li>
+                                            Конец: {event.end.toLocaleString()}
+                                        </li>
+                                    </ul>
                                 </li>
                             ))}
                     </ul>

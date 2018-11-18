@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Layout } from '../components';
 
 const ArticleList = props => {
     const {
@@ -7,16 +8,21 @@ const ArticleList = props => {
     } = props;
 
     return (
-        <ul className="article-list">
-            {nodes.map(node => {
-                return (
-                    <li key={node.fields.slug} className="article-list__item">
-                        <a href={node.fields.slug}>{node.frontmatter.title}</a>{' '}
-                        |{node.frontmatter.date}
-                    </li>
-                );
-            })}
-        </ul>
+        <Layout>
+            <h1>Статьи</h1>
+            <ul>
+                {nodes.map(node => {
+                    return (
+                        <li key={node.fields.slug}>
+                            <a href={node.fields.slug}>
+                                {node.frontmatter.title}
+                            </a>
+                            , <time>{node.frontmatter.date}</time>
+                        </li>
+                    );
+                })}
+            </ul>
+        </Layout>
     );
 };
 
