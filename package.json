@@ -15,6 +15,17 @@
     "test": "npm run build",
     "start": "npm run develop"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/web-standards-ru/new.git"
@@ -47,6 +58,8 @@
     "eslint-plugin-prettier": "^3.0.0",
     "eslint-plugin-react": "^7.11.1",
     "gh-pages": "^2.0.1",
+    "husky": "^1.1.4",
+    "lint-staged": "^8.0.5",
     "prettier": "1.15.2",
     "prop-types": "^15.6.2"
   }
