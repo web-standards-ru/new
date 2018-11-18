@@ -7,7 +7,6 @@ import {
 } from 'gatsby';
 
 import {Header} from '../../components';
-import './Layout.css';
 
 const Layout = ({children}) => (
     <StaticQuery
