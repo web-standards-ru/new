@@ -1,5 +1,6 @@
 import React from 'react';
 import {graphql} from 'gatsby';
+import {Layout} from '../components';
 
 export default (props) => {
     const {
@@ -12,14 +13,11 @@ export default (props) => {
     } = props;
 
     return (
-        <div className="article">
-            <h1 className="article__title">{frontmatter.title}</h1>
-            <div className="article__date">{frontmatter.date}</div>
-            <div
-                className="article__content"
-                dangerouslySetInnerHTML={{__html: html}}
-            />
-        </div>
+        <Layout>
+            <h1>{frontmatter.title}</h1>
+            <time>{frontmatter.date}</time>
+            <div dangerouslySetInnerHTML={{__html: html}} />
+        </Layout>
     );
 };
 

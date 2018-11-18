@@ -1,4 +1,5 @@
 import React from 'react';
+import {Layout} from '../components';
 
 export default (props) => {
     const {
@@ -8,16 +9,17 @@ export default (props) => {
     } = props;
 
     return (
-        <ul className="article-list">
-            {nodes.map(node => {
+        <Layout>
+            <h1>Статьи</h1>
+            <ul>
+                {nodes.map(node => {
                     return (
-                        <li key={node.fields.slug} className="article-list__item">
-                            <a href={node.fields.slug}>{node.frontmatter.title}</a> |
-                            {node.frontmatter.date}
+                        <li key={node.fields.slug}>
+                            <a href={node.fields.slug}>{node.frontmatter.title}</a>, <time>{node.frontmatter.date}</time>
                         </li>
                     );
-                }
-            )}
-        </ul>
+                })}
+            </ul>
+        </Layout>
     );
 };

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import {StaticQuery, graphql} from 'gatsby';
 import {Header} from '../../components';
+import {Footer} from '../../components';
 
 const Layout = ({children}) => (
     <StaticQuery
@@ -38,6 +39,7 @@ const Layout = ({children}) => (
                 <main>
                     {children}
                 </main>
+                <Footer />
             </>
         )}
     />
