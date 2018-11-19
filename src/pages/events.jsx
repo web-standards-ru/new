@@ -1,8 +1,8 @@
 import React from 'react';
-import {StaticQuery, graphql} from 'gatsby';
-import {Layout} from '../components';
+import { StaticQuery, graphql } from 'gatsby';
+import { Layout } from '../components/Layout';
 
-export default () => {
+const Events = () => {
     const currentDate = new Date();
 
     return (
@@ -11,14 +11,8 @@ export default () => {
                 query={graphql`
                     query EventsQuery {
                         allIcal(
-                            filter: {
-                                sourceInstanceName: {
-                                    eq: "events"
-                                }
-                            }
-                            sort: {
-                                order: ASC fields: [start]
-                            }
+                            filter: { sourceInstanceName: { eq: "events" } }
+                            sort: { order: ASC, fields: [start] }
                         ) {
                             edges {
                                 node {
@@ -32,7 +26,7 @@ export default () => {
                         }
                     }
                 `}
-                render={({allIcal: {edges: events}}) =>
+                render={({ allIcal: { edges: events } }) => (
                     <ul>
                         {events
                             .reduce((events, event) => {
@@ -42,29 +36,36 @@ export default () => {
                                 event.end = new Date(event.end);
 
                                 if (event.end < currentDate) {
-                                    return events
+                                    return events;
                                 }
 
-                                return [
-                                    ...events,
-                                    event
-                                ]
+                                return [...events, event];
                             }, [])
                             .map(event => (
-                                <li>
+                                <li
+                                    key={`${
+                                        event.summary
+                                    } Date: ${event.start.toLocaleString()}`}
+                                >
                                     <h2>{event.summary}</h2>
                                     <ul>
                                         <li>Описание: {event.description}</li>
                                         <li>Место: {event.location}</li>
-                                        <li>Начало: {event.start.toLocaleString()}</li>
-                                        <li>Конец: {event.end.toLocaleString()}</li>
+                                        <li>
+                                            Начало:{' '}
+                                            {event.start.toLocaleString()}
+                                        </li>
+                                        <li>
+                                            Конец: {event.end.toLocaleString()}
+                                        </li>
                                     </ul>
                                 </li>
-                            ))
-                        }
+                            ))}
                     </ul>
-                }
+                )}
             />
         </Layout>
     );
 };
+
+export { Events as default };

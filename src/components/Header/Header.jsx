@@ -1,16 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Header = ({siteTitle}) => (
+const Header = ({ siteTitle }) => (
     <header className="header">
-        <h1>
-            {siteTitle}
-        </h1>
+        <h1>{siteTitle}</h1>
     </header>
 );
 
 Header.propTypes = {
-    siteTitle: PropTypes.string.isRequired
+    siteTitle: PropTypes.string.isRequired,
 };
 
-export default Header;
+export { Header as default };

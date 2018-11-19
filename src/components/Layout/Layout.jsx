@@ -1,18 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import {StaticQuery, graphql} from 'gatsby';
-import {Header} from '../../components';
-import {Footer} from '../../components';
+import { StaticQuery, graphql } from 'gatsby';
+import { Header } from '../../components';
+import { Footer } from '../../components';
 
-const Layout = ({children}) => (
+const Layout = ({ children }) => (
     <StaticQuery
         query={graphql`
             query SiteTitleQuery {
                 site {
                     siteMetadata {
-                        title,
-                        description,
+                        title
+                        description
                         keywords
                     }
                 }
@@ -25,20 +25,18 @@ const Layout = ({children}) => (
                     meta={[
                         {
                             name: 'description',
-                            content: data.site.siteMetadata.description
+                            content: data.site.siteMetadata.description,
                         },
                         {
                             name: 'keywords',
-                            content: data.site.siteMetadata.keywords
-                        }
+                            content: data.site.siteMetadata.keywords,
+                        },
                     ]}
                 >
-                    <html lang="en"/>
+                    <html lang="en" />
                 </Helmet>
-                <Header siteTitle={data.site.siteMetadata.title}/>
-                <main>
-                    {children}
-                </main>
+                <Header siteTitle={data.site.siteMetadata.title} />
+                <main>{children}</main>
                 <Footer />
             </>
         )}
@@ -46,7 +44,7 @@ const Layout = ({children}) => (
 );
 
 Layout.propTypes = {
-    children: PropTypes.node.isRequired
+    children: PropTypes.node.isRequired,
 };
 
-export default Layout;
+export { Layout as default };

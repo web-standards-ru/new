@@ -1,11 +1,10 @@
 import React from 'react';
-import {Layout} from '../components';
+import PropTypes from 'prop-types';
+import { Layout } from '../components';
 
-export default (props) => {
+const ArticleList = props => {
     const {
-        pageContext: {
-            nodes
-        }
+        pageContext: { nodes },
     } = props;
 
     return (
@@ -15,7 +14,10 @@ export default (props) => {
                 {nodes.map(node => {
                     return (
                         <li key={node.fields.slug}>
-                            <a href={node.fields.slug}>{node.frontmatter.title}</a>, <time>{node.frontmatter.date}</time>
+                            <a href={node.fields.slug}>
+                                {node.frontmatter.title}
+                            </a>
+                            , <time>{node.frontmatter.date}</time>
                         </li>
                     );
                 })}
@@ -23,3 +25,21 @@ export default (props) => {
         </Layout>
     );
 };
+
+ArticleList.propTypes = {
+    pageContext: PropTypes.shape({
+        nodes: PropTypes.arrayOf(
+            PropTypes.shape({
+                fields: PropTypes.shape({
+                    slug: PropTypes.string,
+                }),
+                frontmatter: PropTypes.shape({
+                    title: PropTypes.string,
+                    date: PropTypes.string,
+                }),
+            })
+        ),
+    }),
+};
+
+export { ArticleList as default };

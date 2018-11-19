@@ -7,9 +7,24 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "deploy": "npm run build && gh-pages -d public",
+    "lint": "eslint '**/*.js' '**/*.jsx'",
+    "lint:fix": "npm run lint -- --fix",
+    "prettier": "prettier '**/*.js' '**/*.jsx' --list-different",
+    "prettier:fix": "npm run prettier -- --write",
     "test:deploy": "npm run build && node prod-testing.js",
     "test": "npm run build",
     "start": "npm run develop"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "git add"
+    ]
   },
   "repository": {
     "type": "git",
@@ -32,12 +47,20 @@
     "gatsby-source-ical": "^1.0.1",
     "gatsby-transformer-remark": "^2.1.3",
     "node-static": "^0.7.11",
-    "prop-types": "^15.6.2",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-helmet": "^5.2.0"
   },
   "devDependencies": {
-    "gh-pages": "^2.0.1"
+    "babel-eslint": "^8.2.6",
+    "eslint": "^5.9.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-react": "^7.11.1",
+    "gh-pages": "^2.0.1",
+    "husky": "^1.1.4",
+    "lint-staged": "^8.0.5",
+    "prettier": "1.15.2",
+    "prop-types": "^15.6.2"
   }
 }

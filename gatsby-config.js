@@ -2,15 +2,15 @@ module.exports = {
     siteMetadata: {
         title: 'Веб-стандарты',
         description: 'Сообщество разработчиков «Веб-стандарты»',
-        keywords: 'web standards'
+        keywords: 'web standards',
     },
     plugins: [
         {
             resolve: 'gatsby-source-ical',
             options: {
-                url: "https://web-standards.ru/calendar.ics",
-                name: "events"
-            }
+                url: 'https://web-standards.ru/calendar.ics',
+                name: 'events',
+            },
         },
         'gatsby-plugin-react-helmet',
         'gatsby-plugin-sharp',
@@ -18,8 +18,8 @@ module.exports = {
             resolve: 'gatsby-source-filesystem',
             options: {
                 path: `${__dirname}/articles`,
-                name: 'articles'
-            }
+                name: 'articles',
+            },
         },
         {
             resolve: 'gatsby-transformer-remark',
@@ -31,11 +31,11 @@ module.exports = {
                         options: {
                             backgroundColor: 'transparent',
                             linkImagesToOriginal: false,
-                            showCaptions: true
-                        }
-                    }
-                ]
-            }
-        }
-    ]
+                            showCaptions: true,
+                        },
+                    },
+                ],
+            },
+        },
+    ],
 };
