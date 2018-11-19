@@ -40,7 +40,7 @@
     "gatsby": "^2.0.1",
     "gatsby-link": "^2.0.1",
     "gatsby-plugin-react-helmet": "^3.0.0",
-    "gatsby-plugin-sharp": "^2.0.6",
+    "gatsby-plugin-sharp": "^2.0.12",
     "gatsby-remark-copy-linked-files": "^2.0.5",
     "gatsby-remark-images": "^2.0.3",
     "gatsby-source-filesystem": "^2.0.1",
@@ -52,7 +52,7 @@
     "react-helmet": "^5.2.0"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.6",
+    "babel-eslint": "^10.0.1",
     "eslint": "^5.9.0",
     "eslint-config-prettier": "^3.3.0",
     "eslint-plugin-prettier": "^3.0.0",
