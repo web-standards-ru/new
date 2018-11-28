@@ -1,0 +1,8 @@
+#!/bin/bash
+set -e
+
+echo "generate static"
+NODE_ENV=production npm run build || exit 1
+
+echo "deploy"
+rsync -vzP ${TRAVIS_BUILD_DIR}/public/ web-standards.ru:/var/www/new.web-standards.ru/html
