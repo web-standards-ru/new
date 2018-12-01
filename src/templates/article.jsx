@@ -8,6 +8,7 @@ const Article = props => {
         data: {
             markdownRemark: { frontmatter, html },
         },
+        '*': path,
     } = props;
 
     return (
@@ -15,6 +16,11 @@ const Article = props => {
             <h1>{frontmatter.title}</h1>
             <time>{frontmatter.date}</time>
             <div dangerouslySetInnerHTML={{ __html: html }} />
+            <a
+                href={`https://github.com/web-standards-ru/new/blob/master/${path}/index.md`}
+            >
+                Отредактировать на гитхабе
+            </a>
         </Layout>
     );
 };
@@ -27,6 +33,7 @@ Article.propTypes = {
             }),
         }),
     }),
+    '*': PropTypes.string.isRequired,
 };
 
 // Needs own personal export
