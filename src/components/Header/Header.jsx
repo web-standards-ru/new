@@ -1,9 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import logo from '../../images/logo.svg';
+import './header.css';
 
 const Header = ({ siteTitle }) => (
     <header className="header">
-        <h1>{siteTitle}</h1>
+        <img src={logo} alt="logo" className="header__logo" />
+        <h1 className="header__head">{siteTitle}</h1>
     </header>
 );
 

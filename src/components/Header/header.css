@@ -1,0 +1,11 @@
+.header {
+    display: flex;
+}
+
+.header__logo {
+    height: 2em;
+}
+
+.header__head {
+    margin: 0;
+}
