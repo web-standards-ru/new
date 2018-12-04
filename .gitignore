@@ -5,4 +5,4 @@ node_modules
 # Build directory
 /public
 !/public/robots.txt
-.DS_Store
+!/public/favicon.ico
