@@ -1,9 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 import { Layout } from '../components';
 
-const Index = () => (
-    <Layout>
+const Index = ({ uri }) => (
+    <Layout path={uri}>
         <nav>
             <ul>
                 <li>
@@ -19,5 +20,9 @@ const Index = () => (
         </nav>
     </Layout>
 );
+
+Index.propTypes = {
+    uri: PropTypes.string.isRequired,
+};
 
 export { Index as default };

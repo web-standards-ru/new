@@ -5,7 +5,7 @@ import { StaticQuery, graphql } from 'gatsby';
 import { Header } from '../../components';
 import { Footer } from '../../components';
 
-const Layout = ({ children }) => (
+const Layout = ({ path, children }) => (
     <StaticQuery
         query={graphql`
             query SiteTitleQuery {
@@ -35,7 +35,7 @@ const Layout = ({ children }) => (
                 >
                     <html lang="en" />
                 </Helmet>
-                <Header siteTitle={data.site.siteMetadata.title} />
+                <Header siteTitle={data.site.siteMetadata.title} path={path} />
                 <main>{children}</main>
                 <Footer />
             </>
@@ -45,6 +45,7 @@ const Layout = ({ children }) => (
 
 Layout.propTypes = {
     children: PropTypes.node.isRequired,
+    path: PropTypes.string.isRequired,
 };
 
 export { Layout as default };
