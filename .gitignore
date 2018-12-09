@@ -4,5 +4,5 @@ node_modules
 
 # Build directory
 /public
-!/public/robots.txt
-!/public/favicon.ico
+!/assets/robots.txt
+!/assets/favicon.ico

@@ -1,4 +1,4 @@
 node_modules
 public
 .cache
-articles
+data/articles
