@@ -1,12 +1,13 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
 import { Layout } from '../components/Layout';
 
-const Events = () => {
+const Events = ({ uri }) => {
     const currentDate = new Date();
 
     return (
-        <Layout>
+        <Layout path={uri}>
             <StaticQuery
                 query={graphql`
                     query EventsQuery {
@@ -66,6 +67,10 @@ const Events = () => {
             />
         </Layout>
     );
+};
+
+Events.propTypes = {
+    uri: PropTypes.string.isRequired,
 };
 
 export { Events as default };

@@ -8,13 +8,19 @@ const Article = props => {
         data: {
             markdownRemark: { frontmatter, html },
         },
+        '*': path,
     } = props;
+
+    const github = `https://github.com/web-standards-ru/new/blob/master`;
 
     return (
         <Layout>
             <h1>{frontmatter.title}</h1>
             <time>{frontmatter.date}</time>
             <div dangerouslySetInnerHTML={{ __html: html }} />
+            <a href={`${github}/${path}/index.md`}>
+                Отредактировать на Гитхабе
+            </a>
         </Layout>
     );
 };
@@ -27,6 +33,7 @@ Article.propTypes = {
             }),
         }),
     }),
+    '*': PropTypes.string.isRequired,
 };
 
 // Needs own personal export
