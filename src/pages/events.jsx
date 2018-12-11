@@ -28,41 +28,48 @@ const Events = ({ uri }) => {
                     }
                 `}
                 render={({ allIcal: { edges: events } }) => (
-                    <ul>
-                        {events
-                            .reduce((events, event) => {
-                                event = event.node;
-                                event.dtstamp = new Date(event.dtstamp);
-                                event.start = new Date(event.start);
-                                event.end = new Date(event.end);
+                    <>
+                        <h1>События</h1>
+                        <ul>
+                            {events
+                                .reduce((events, event) => {
+                                    event = event.node;
+                                    event.dtstamp = new Date(event.dtstamp);
+                                    event.start = new Date(event.start);
+                                    event.end = new Date(event.end);
 
-                                if (event.end < currentDate) {
-                                    return events;
-                                }
+                                    if (event.end < currentDate) {
+                                        return events;
+                                    }
 
-                                return [...events, event];
-                            }, [])
-                            .map(event => (
-                                <li
-                                    key={`${
-                                        event.summary
-                                    } Date: ${event.start.toLocaleString()}`}
-                                >
-                                    <h2>{event.summary}</h2>
-                                    <ul>
-                                        <li>Описание: {event.description}</li>
-                                        <li>Место: {event.location}</li>
-                                        <li>
-                                            Начало:{' '}
-                                            {event.start.toLocaleString()}
-                                        </li>
-                                        <li>
-                                            Конец: {event.end.toLocaleString()}
-                                        </li>
-                                    </ul>
-                                </li>
-                            ))}
-                    </ul>
+                                    return [...events, event];
+                                }, [])
+                                .map(event => (
+                                    <li
+                                        key={`${
+                                            event.summary
+                                        } Date: ${event.start.toLocaleString()}`}
+                                    >
+                                        <h2>
+                                            <a href={event.description}>
+                                                {event.summary}
+                                            </a>
+                                        </h2>
+                                        <ul>
+                                            <li>Место: {event.location}</li>
+                                            <li>
+                                                Начало:{' '}
+                                                {event.start.toLocaleString()}
+                                            </li>
+                                            <li>
+                                                Конец:{' '}
+                                                {event.end.toLocaleString()}
+                                            </li>
+                                        </ul>
+                                    </li>
+                                ))}
+                        </ul>
+                    </>
                 )}
             />
         </Layout>
