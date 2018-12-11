@@ -19,7 +19,7 @@ const Article = props => {
             <a
                 href={`https://github.com/web-standards-ru/new/blob/master/${path}/index.md`}
             >
-                Отредактировать на гитхабе
+                Отредактировать на Гитхабе
             </a>
         </Layout>
     );
