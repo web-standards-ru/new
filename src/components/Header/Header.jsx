@@ -2,15 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 import logo from '../../images/logo.svg';
-import './header.css';
 
 const Header = ({ siteTitle, path }) => (
-    <header className="header">
-        <img src={logo} alt="logo" className="header__logo" />
+    <header>
+        <img src={logo} alt="Веб-стандарты" />
         {path === '/' ? (
-            <h1 className="header__head">{siteTitle}</h1>
+            <h1>{siteTitle}</h1>
         ) : (
-            <Link to={'/'} className="header__head">
+            <Link to={'/'}>
                 {siteTitle}
             </Link>
         )}
