@@ -9,9 +9,7 @@ const Header = ({ siteTitle, path }) => (
         {path === '/' ? (
             <h1>{siteTitle}</h1>
         ) : (
-            <Link to={'/'}>
-                {siteTitle}
-            </Link>
+            <Link to={'/'}>{siteTitle}</Link>
         )}
     </header>
 );

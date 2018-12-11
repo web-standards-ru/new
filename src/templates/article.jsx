@@ -11,12 +11,14 @@ const Article = props => {
         '*': path,
     } = props;
 
+    const github = `https://github.com/web-standards-ru/new/blob/master`;
+
     return (
         <Layout>
             <h1>{frontmatter.title}</h1>
             <time>{frontmatter.date}</time>
             <div dangerouslySetInnerHTML={{ __html: html }} />
-            <a href={`https://github.com/web-standards-ru/new/blob/master/${path}/index.md`}>
+            <a href={`${github}/${path}/index.md`}>
                 Отредактировать на Гитхабе
             </a>
         </Layout>
