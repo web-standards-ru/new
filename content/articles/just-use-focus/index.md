@@ -1,8 +1,13 @@
+---
+date: "2018-12-10"
+title: "Просто используйте стили для :focus, чёрт возьми"
+---
+
 # Просто используйте стили для :focus, чёрт возьми
 
 Перевод крика души «[Just use :focus styles, damnit](https://gomakethings.com/just-use-focus-styles-damnit/)» Криса Фердинанди.
 
-![If it’s interactive, it needs a focus style](1.png)
+![If it’s interactive, it needs a focus style](images/1.png)
 
 За последнее время появилось несколько статей и рекомендаций от разных людей о том, как использовать псевдокласс `:focus-visible`, чтобы показать стили для `:focus`, когда кто-то пользуется клавиатурой, и скрывать их, если пользователь использует мышь.
 
