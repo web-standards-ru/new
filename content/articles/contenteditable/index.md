@@ -1,6 +1,6 @@
 ---
-date: "9 марта 2012"
 title: "Атрибут contenteditable"
+date: "9 марта 2012"
 ---
 
 # Атрибут contenteditable
@@ -61,7 +61,7 @@ title: "Атрибут contenteditable"
             padding: 10px;
             outline: 3px dashed #cccccc;
         }
-        
+
         #example-one[contenteditable="true"]:hover {
             background: #e4f3f9;
             outline:3px dashed #2b8bad;
@@ -86,17 +86,17 @@ title: "Атрибут contenteditable"
             margin: 12px 0;
             font-family: Consolas, Monaco, monospace;
         }
-        
+
         #example-two style {
             display: block;
             white-space: pre;
         }
-        
+
         #example-two[contenteditable="true"] {
             padding: 10px;
             outline: 3px dashed #cccccc;
         }
-        
+
         #example-two[contenteditable="true"]:hover{
             background: #e4f3f9;
             outline: 3px dashed #2B8BAD;
@@ -132,11 +132,11 @@ title: "Атрибут contenteditable"
 Для написания этого раздела я обратился за помощью к доктору Реми, так как он гораздо более сведущ во всём, что касается хранения <del>данных</del> всего на свете.
 
 > В зависимости от сложности блока ваш код может отлавливать нажатие <kbd>Enter</kbd> (код 13) для сохранения изменения и <kbd>Esc</kbd> (код 27) для их отмены.
-> 
+>
 > Когда пользователь нажимает <kbd>Enter</kbd> (предполагаем, что редактируем однострочные данные), получаем `innerHTML` редактируемого блока и посылаем AJAX-запрос с изменениями на сервер.
-> 
+>
 > Простой пример можно увидеть тут: [Сохранение данных из элемента с `сontenteditable` при помощи AJAX](http://jsbin.com/owavu3).
-> 
+>
 > [Реми Шарп](http://remysharp.com/)
 
 ## Заключение
