@@ -5,4 +5,4 @@ echo "generate static"
 NODE_ENV=production npm run build || exit 1
 
 echo "deploy"
-rsync -vrzP ${TRAVIS_BUILD_DIR}/public/ web-standards.ru:/var/www/new.web-standards.ru/html
+rsync -vrzhP --del ${TRAVIS_BUILD_DIR}/public/ web-standards.ru:/var/www/new.web-standards.ru/html
