@@ -12,7 +12,7 @@
     "prettier": "prettier '**/*.js' '**/*.jsx' --list-different",
     "prettier:fix": "npm run prettier -- --write",
     "test:deploy": "npm run build && node prod-testing.js",
-    "test": "npm run lint && npm run test:deploy",
+    "test": "npm run lint && npm run build",
     "start": "npm run develop"
   },
   "husky": {
