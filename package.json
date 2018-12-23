@@ -4,7 +4,8 @@
   "version": "1.0.0",
   "description": "web-standards.ru web site",
   "scripts": {
-    "build": "gatsby build",
+    "build": "gatsby build && npm run copy:assets",
+    "copy:assets": "cp ./assets/* ./public/",
     "develop": "gatsby develop",
     "lint": "eslint '**/*.js' '**/*.jsx'",
     "lint:fix": "npm run lint -- --fix",
