@@ -6,12 +6,13 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "lint": "eslint '**/*.js' '**/*.jsx'",
-    "lint:fix": "npm run lint -- --fix",
+    "lint": "npm run lint:eslint && npm run prettier",
+    "lint:eslint": "eslint '**/*.js' '**/*.jsx'",
+    "lint:fix": "npm run lint:eslint -- --fix",
     "prettier": "prettier '**/*.js' '**/*.jsx' --list-different",
     "prettier:fix": "npm run prettier -- --write",
     "test:deploy": "npm run build && node prod-testing.js",
-    "test": "npm run lint && npm run prettier",
+    "test": "npm run lint && npm run build",
     "start": "npm run develop"
   },
   "husky": {
