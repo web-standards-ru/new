@@ -9,7 +9,7 @@ Fetch или Axios.js
 
 *Перевод «[Fetch vs. Axios.js for making http requests](https://medium.com/p/2b261cdd3af5)» Джейсона Арнольда.*
 
-![Какой хороший пёсик!](https://cdn-images-1.medium.com/max/4000/1*zCV86muS6E3yBu52J-Waew.jpeg)*Какой хороший пёсик!*
+![Какой хороший пёсик!](./images/1.jpeg)*Какой хороший пёсик!*
 
 В одном из заключительных разделов курса [*ES6 Javascript: The Complete Developer’s Guide](https://www.udemy.com/javascript-es6-tutorial/learn/v4/overview)* на *Udemy* Стефан Гридер рассказывает о методе fetch() и о некоторых его недостатках. Он отмечает, что реализация fetch() не идеальна и предлагает другие варианты для выполнения *HTTP*-запросов. Один из таких вариантов — [*Axios](https://www.npmjs.com/package/axios)*. Раньше я даже не слышал об *Axios* и подумал, что подвернулась отличная возможность, чтобы немного покопаться и изучить его. Поскольку это ссылка на материал из курса Стивена, я использую похожие примеры.
 
@@ -26,7 +26,7 @@ Fetch или Axios.js
     fetch(url)
       .then(data => console.log(data));
 
-![Ответ метода fetch() по умолчанию.](https://cdn-images-1.medium.com/max/2000/1*MBFkZoDs-MQb6ztpjmM_ig.png)*Ответ метода fetch() по умолчанию.*
+![Ответ метода fetch() по умолчанию.](./images/2.png)*Ответ метода fetch() по умолчанию.*
 
 Это конечно здорово, но это не те данные, которые мы бы хотели увидеть. Этот ответ сервера сообщил нам, что наш запрос прошел просто отлично. Круто, но мы больше не можем ничего с этим сделать.
 
@@ -36,7 +36,7 @@ Fetch или Axios.js
       .then(response => response.json())
       .then(data => console.log(data));
 
-![Результат после передачи в json().](https://cdn-images-1.medium.com/max/2000/1*9ubEzV7mNNDPs2ZLh1k3pQ.png)*Результат после передачи в json().*
+![Результат после передачи в json().](./images/3.png)*Результат после передачи в json().*
 
 Теперь это те данные, которые мы хотели получить. Попробуем реализовать это через *Axios*. Первый шаг — установка. Существует несколько вариантов установки:
 
@@ -56,7 +56,7 @@ Fetch или Axios.js
     axios.get(url)
       .then(response => console.log(response));
 
-![](https://cdn-images-1.medium.com/max/2000/1*r76qb_RUT18pcUmd-SLGBA.png)
+![](./images/4.png)
 
 Таким образом, с помощью *Axios* можно обойтись без передачи результатов *HTTP*-запроса в метод json(). *Axios* возвращает именно тот объект с данными, который мы ожидаем.
 
@@ -72,11 +72,11 @@ Fetch или Axios.js
 
 Для наглядности выведем в консоль BAD в случае, если ошибка обрабатывается в блоке catch(), в противном случае выведем GOOD.
 
-![](https://cdn-images-1.medium.com/max/2000/1*5ZmMcEBqOE1v_evfWYmc7w.png)
+![](./images/5.png)
 
 Получаем код ответа 400, но, как вы можете видеть по строке GOOD в консоли, выполнился then(). Как же *Axios* справляется с этим? Так, как мы и ожидали: выполняется блок сatch() и мы получаем необходимый нам вид ошибки.
 
-![](https://cdn-images-1.medium.com/max/2000/1*MP3q_dzXbSEsRDri40-UpQ.png)
+![](./images/6.png)
 
 Строка BAD и ошибка выводятся в консоль.
 
