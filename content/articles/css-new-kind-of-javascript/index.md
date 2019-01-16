@@ -1,6 +1,6 @@
 ---
-date: "TODO"
 title: "CSS: новый вид JavaScript"
+date: "2018.07.13"
 ---
 
 # CSS: новый вид JavaScript

@@ -1,6 +1,6 @@
 ---
-date: "29 августа 2011"
 title: "Элементы details и summary"
+date: "2011.08.29"
 ---
 
 # Элементы details и summary

@@ -1,6 +1,6 @@
 ---
-date: "9 марта 2012"
 title: "Разбираемся с vertical-align"
+date: "2012.03.09"
 ---
 
 # Разбираемся с vertical-align

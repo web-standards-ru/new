@@ -1,6 +1,6 @@
 ---
 title: "Атрибут contenteditable"
-date: "9 марта 2012"
+date: "2012.03.09"
 ---
 
 # Атрибут contenteditable
