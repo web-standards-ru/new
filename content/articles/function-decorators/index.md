@@ -7,7 +7,9 @@ date: "2018.06.13"
 
 Перевод «Here are a few function decorators you can write from scratch» Кристи Сальсезку.
 
-![Фото [Calum Lewis](https://unsplash.com/photos/rkT_TG5NKF8).](images/1.jpg)*Фото [Calum Lewis](https://unsplash.com/photos/rkT_TG5NKF8).*
+![Фото [Calum Lewis](https://unsplash.com/photos/rkT_TG5NKF8).](images/1.jpg)
+*Фото [Calum Lewis](https://unsplash.com/photos/rkT_TG5NKF8).*
+
 > # Декораторы — это функции высшего порядка, которые принимают в качестве аргумента одну функцию и возвращают другую. Возвращаемая функция является преобразованным вариантом функции-аргумента [*Javascript Allongé](https://leanpub.com/javascript-allonge/read#decorators)*
 
 Давайте самостоятельно напишем некоторые базовые дектораторы, представленные в таких библиотеках, как [*underscore.js](http://underscorejs.org/#functions)*, [*lodash.js](https://lodash.com/docs/4.17.5)*, [*ramda.js](http://ramdajs.com/docs/)*.

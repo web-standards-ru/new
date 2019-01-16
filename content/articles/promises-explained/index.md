@@ -9,7 +9,8 @@ date: "2017.12.05"
 
 *Перевод «[JavaScript: Promises explained with simple real life analogies](https://codeburst.io/javascript-promises-explained-with-simple-real-life-analogies-dd6908092138)» Шрути Капур.*
 
-![Ай промис, фото [Бена Уайта](https://unsplash.com/photos/tX4-tYibILg).](images/1.jpg)*Ай промис, фото [Бена Уайта](https://unsplash.com/photos/tX4-tYibILg).*
+![Ай промис, фото [Бена Уайта](https://unsplash.com/photos/tX4-tYibILg).](images/1.jpg)
+*Ай промис, фото [Бена Уайта](https://unsplash.com/photos/tX4-tYibILg).*
 
 ## Промисы простыми словами
 
@@ -72,7 +73,8 @@ date: "2017.12.05"
 
 1. Выход ошибкой: reject
 
-![Промис успешно выполнился, [фото Скотта Вебба](https://www.pexels.com/photo/man-couple-love-people-136402/).](images/2.jpg)*Промис успешно выполнился, [фото Скотта Вебба](https://www.pexels.com/photo/man-couple-love-people-136402/).*
+![Промис успешно выполнился, [фото Скотта Вебба](https://www.pexels.com/photo/man-couple-love-people-136402/).](images/2.jpg)
+*Промис успешно выполнился, [фото Скотта Вебба](https://www.pexels.com/photo/man-couple-love-people-136402/).*
 
 ## Пример
 
