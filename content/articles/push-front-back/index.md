@@ -11,7 +11,7 @@ date: "2017.03.13"
 
 *Если вы хотите углубиться в исходный код, то смотрите в [GitHub-репозиторий](https://github.com/justmarkup/demos/tree/gh-pages/push-notifications) и на [пример](https://push-notifications-vwursywdxa.now.sh), демонстрирующий его работу.*
 
-![](https://cdn-images-1.medium.com/max/2000/1*8KWLqCaGqDIe0KRNFOycsA.jpeg)
+![](images/1.jpeg)
 
 ## Фронтенд
 

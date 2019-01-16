@@ -7,7 +7,7 @@ date: "2018.06.13"
 
 Перевод «Here are a few function decorators you can write from scratch» Кристи Сальсезку.
 
-![Фото [Calum Lewis](https://unsplash.com/photos/rkT_TG5NKF8).](https://cdn-images-1.medium.com/max/10392/1*Qw0e4LC2Fri7dFkBY0N1cA.jpeg)*Фото [Calum Lewis](https://unsplash.com/photos/rkT_TG5NKF8).*
+![Фото [Calum Lewis](https://unsplash.com/photos/rkT_TG5NKF8).](images/1.jpeg)*Фото [Calum Lewis](https://unsplash.com/photos/rkT_TG5NKF8).*
 > # Декораторы — это функции высшего порядка, которые принимают в качестве аргумента одну функцию и возвращают другую. Возвращаемая функция является преобразованным вариантом функции-аргумента [*Javascript Allongé](https://leanpub.com/javascript-allonge/read#decorators)*
 
 Давайте самостоятельно напишем некоторые базовые дектораторы, представленные в таких библиотеках, как [*underscore.js](http://underscorejs.org/#functions)*, [*lodash.js](https://lodash.com/docs/4.17.5)*, [*ramda.js](http://ramdajs.com/docs/)*.
@@ -45,7 +45,7 @@ date: "2018.06.13"
        return function runAfter() {
           runCount = runCount + 1;
           if (runCount >= count) {
-             return fn.apply(this, arguments);        
+             return fn.apply(this, arguments);
           }
        }
     }
@@ -53,13 +53,13 @@ date: "2018.06.13"
     function logResult() { console.log("calls have finished"); }
     **let logResultAfter2Calls = after(2, logResult);**
 
-    setTimeout(function logFirstCall() { 
-          console.log("1st call has finished"); 
-          **logResultAfter2Calls();** 
+    setTimeout(function logFirstCall() {
+          console.log("1st call has finished");
+          **logResultAfter2Calls();**
     }, 3000);
 
-    setTimeout(function logSecondCall() { 
-          console.log("2nd call has finished"); 
+    setTimeout(function logSecondCall() {
+          console.log("2nd call has finished");
           **logResultAfter2Calls(); **
     }, 4000);
 

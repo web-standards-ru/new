@@ -9,7 +9,7 @@ date: "2018.02.21"
 
 ## Часть 1. HTML
 
-![[Картинка ](https://dribbble.com/shots/3831443-Tech-Interview-Handbook)[yangheng](https://dribbble.com/yangheng)](https://cdn-images-1.medium.com/max/2000/1*96ndS1Dh7zvkCKqv2avcWA.png)*[Картинка ](https://dribbble.com/shots/3831443-Tech-Interview-Handbook)[yangheng](https://dribbble.com/yangheng)*
+![[Картинка ](https://dribbble.com/shots/3831443-Tech-Interview-Handbook)[yangheng](https://dribbble.com/yangheng)](images/1.png)*[Картинка ](https://dribbble.com/shots/3831443-Tech-Interview-Handbook)[yangheng](https://dribbble.com/yangheng)*
 
 ## Что это такое?
 
