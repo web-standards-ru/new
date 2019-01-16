@@ -21,13 +21,13 @@ date: "2018.06.13"
     function once(fn){
       let returnValue;
       let canRun = true;
-      return **function runOnce(){
+      return function runOnce(){
           if(canRun) {
               returnValue = fn.apply(this, arguments);
               canRun = false;
           }
           return returnValue;
-      }**
+      }
     }
 
     var processonce = once(process);
@@ -53,16 +53,16 @@ date: "2018.06.13"
     }
 
     function logResult() { console.log("calls have finished"); }
-    **let logResultAfter2Calls = after(2, logResult);**
+    let logResultAfter2Calls = after(2, logResult);
 
     setTimeout(function logFirstCall() {
           console.log("1st call has finished");
-          **logResultAfter2Calls();**
+          logResultAfter2Calls();
     }, 3000);
 
     setTimeout(function logSecondCall() {
           console.log("2nd call has finished");
-          **logResultAfter2Calls(); **
+          logResultAfter2Calls();
     }, 4000);
 
 В примере выше при помощи after() я создаю функцию logResultAfter2Calls(). Она в свою очередь выполняет logResult() только после второго вызова.
@@ -128,8 +128,8 @@ date: "2018.06.13"
         console.log(level  + " : " + message);
     }
 
-    **let logInfo = log.partial("Info");
-    logInfo("here is a message");**
+    let logInfo = log.partial("Info");
+    logInfo("here is a message");
 
 Обратите внимание, созданная таким образом logInfo() использует лишь один аргумент message.
 
