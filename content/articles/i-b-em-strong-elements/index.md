@@ -1,6 +1,6 @@
 ---
-date: "13 июля 2010"
 title: "Элементы i, b, em и strong"
+date: "2010.07.13"
 ---
 
 # Элементы i, b, em и strong

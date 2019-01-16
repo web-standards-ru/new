@@ -1,6 +1,6 @@
 ---
 title: "Сite и blockquote: перезагрузка"
-date: "11 ноября 2013"
+date: "2013.11.11"
 ---
 
 # Сite и blockquote: перезагрузка

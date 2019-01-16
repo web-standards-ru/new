@@ -1,6 +1,6 @@
 ---
-date: "12 марта 2012"
 title: "Элементы figure и figcaption"
+date: "2012.03.12"
 ---
 
 # Элементы figure и figcaption
