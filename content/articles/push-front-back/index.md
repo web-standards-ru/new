@@ -11,7 +11,7 @@ date: "2017.03.13"
 
 *Если вы хотите углубиться в исходный код, то смотрите в [GitHub-репозиторий](https://github.com/justmarkup/demos/tree/gh-pages/push-notifications) и на [пример](https://push-notifications-vwursywdxa.now.sh), демонстрирующий его работу.*
 
-![](images/1.jpeg)
+![](images/1.jpg)
 
 ## Фронтенд
 
@@ -31,48 +31,48 @@ date: "2017.03.13"
 Посмотрим на *push.js*. Здесь мы регистрируем сервис-воркер и подписываемся на уведомления:
 
     'use strict';
-    
+
     const appServerKey = 'BHLCrsFGJQIVgg-XNp8F59C8UFF49GAVxvYMvyCURim3nMYI5TMdsOcrh-yJM7KbtZ3psi5FhfvaJbU_11jwtPY';
-    
+
     const pushWrapper = document.querySelector('.push-wrapper');
     const pushButton = document.querySelector('.push-button');
-    
+
     let hasSubscription = false;
     let serviceWorkerRegistration = null;
     let subscriptionData = false;
-    
+
     function urlB64ToUint8Array(base64String) {
       const padding = '='.repeat((4 - base64String.length % 4) % 4);
       const base64 = (base64String + padding)
         .replace(/\-/g, '+')
         .replace(/_/g, '/');
-    
+
       const rawData = window.atob(base64);
       const outputArray = new Uint8Array(rawData.length);
-    
+
       for (let i = 0; i < rawData.length; ++i) {
         outputArray[i] = rawData.charCodeAt(i);
       }
       return outputArray;
     }
-    
+
     function updatePushButton() {
       pushWrapper.classList.remove('hidden');
-      
+
       if (hasSubscription) {
         pushButton.textContent = `Disable Push Notifications`;
       } else {
         pushButton.textContent = `Enable Push Notifications`;
       }
     }
-    
+
     function subscribeUser() {
       serviceWorkerRegistration.pushManager.subscribe({
         userVisibleOnly: true,
         applicationServerKey: urlB64ToUint8Array(appServerKey)
       })
       .then(function(subscription) {
-    
+
         fetch('/push/subscribe',{
           method: 'POST',
           headers: {
@@ -86,20 +86,20 @@ date: "2017.03.13"
         .then(function(text) {
           console.log('User is subscribed.');
           hasSubscription = true;
-    
+
           updatePushButton();
         })
         .catch(function(error) {
           hasSubscription = false;
           console.error('error fetching subscribe', error);
         });
-        
+
       })
       .catch(function(err) {
         console.log('Failed to subscribe the user: ', err);
       });
     }
-    
+
     function unsubscribeUser() {
       serviceWorkerRegistration.pushManager.getSubscription()
       .then(function(subscription) {
@@ -107,7 +107,7 @@ date: "2017.03.13"
           subscriptionData = {
             endpoint: subscription.endpoint
           };
-          
+
           fetch('/push/unsubscribe',{
             method: 'POST',
             headers: {
@@ -120,24 +120,24 @@ date: "2017.03.13"
           })
           .then(function(text) {
             hasSubscription = false;
-    
+
             updatePushButton();
           })
           .catch(function(error) {
             hasSubscription = true;
             console.error('error fetching subscribe', error);
           });
-    
+
           hasSubscription = false;
-    
+
           updatePushButton();
           return subscription.unsubscribe();
         }
       });
     }
-    
+
     function initPush() {
-    
+
       pushButton.addEventListener('click', function() {
         if (hasSubscription) {
           unsubscribeUser();
@@ -145,16 +145,16 @@ date: "2017.03.13"
           subscribeUser();
         }
       });
-    
+
       // Set the initial subscription value
       serviceWorkerRegistration.pushManager.getSubscription()
       .then(function(subscription) {
         hasSubscription = !(subscription === null);
-    
+
         updatePushButton();
       });
     }
-    
+
     navigator.serviceWorker.register('sw.js')
     .then(function(sw) {
       serviceWorkerRegistration = sw;
@@ -206,7 +206,7 @@ date: "2017.03.13"
 
     self.addEventListener('push', function(event) {
       let notificationData = {};
-      
+
       try {
         notificationData = event.data.json();
       } catch (e) {
@@ -216,7 +216,7 @@ date: "2017.03.13"
           icon: '/default-icon.png'
         };
       }
-      
+
       event.waitUntil(
         self.registration.showNotification(notificationData.title, {
           body: notificationData.body,
@@ -238,11 +238,11 @@ date: "2017.03.13"
       // otherwise open new tab
       event.waitUntil(
         self.clients.matchAll().then(function(clientList) {
-          
+
           if (clientList.length > 0) {
             return clientList[0].focus();
           }
-          
+
           return self.clients.openWindow('/');
         })
       );
@@ -281,7 +281,7 @@ date: "2017.03.13"
           auth: req.body.keys.auth
         }
       };
-      
+
       const payload = JSON.stringify({
         title: 'Welcome',
         body: 'Thank you for enabling push notifications',
@@ -293,7 +293,7 @@ date: "2017.03.13"
       };
 
     webPush.sendNotification(
-        subscription, 
+        subscription,
         payload,
         options
         ).then(function() {
@@ -325,9 +325,9 @@ date: "2017.03.13"
     app.post('/push/unsubscribe', function (req, res) {
       // remove from database
       Push.findOneAndRemove({endpoint: endpoint}, function (err,data) {
-        if (err) { 
+        if (err) {
           console.error('error with unsubscribe', error);
-          res.status(500).send('unsubscription not possible'); 
+          res.status(500).send('unsubscription not possible');
         }
         console.log('unsubscribed');
         res.status(200).send('unsubscribe');
