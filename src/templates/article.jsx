@@ -58,7 +58,7 @@ const Article = props => {
     return (
         <Layout>
             <h1>{frontmatter.title}</h1>
-            <time>{beautyDatefrontmatter.date}</time>
+            <time>{beautyDate(frontmatter.date)}</time>
             <div dangerouslySetInnerHTML={{ __html: html }} />
             <a href={`${github}/${path}/index.md`}>
                 Отредактировать на Гитхабе
