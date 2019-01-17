@@ -36,9 +36,9 @@ date: "2018.02.21"
 
 * [Stack Overflow: What does `<!doctype html>` do?](https://stackoverflow.com/questions/7695044/what-does-doctype-html-do)
 
-* [W3C: Don’t forget to add a *doctype*.](https://www.w3.org/QA/Tips/Doctype)
+* [W3C: Don’t forget to add a doctype](https://www.w3.org/QA/Tips/Doctype)
 
-* [Quirks Mode: History.](https://quirks.spec.whatwg.org/#history)
+* [Quirks Mode: History](https://quirks.spec.whatwg.org/#history)
 
 ### Как поддерживать страницу на нескольких языках?
 
