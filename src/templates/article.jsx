@@ -46,11 +46,6 @@ const Article = props => {
             const stringMonth = months.ru[dateArray[1]];
             return `${dateArray[2]} ${stringMonth} ${dateArray[0]}`;
         } else {
-            console.error(
-                "style of date isn't valid. \ngot: " +
-                    stringDate +
-                    '\nvalid format is YYYY.MM.DD'
-            );
             return stringDate;
         }
     };
