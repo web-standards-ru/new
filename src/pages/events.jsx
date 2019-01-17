@@ -80,4 +80,4 @@ Events.propTypes = {
     uri: PropTypes.string.isRequired,
 };
 
-export { Events as default };
+export default Events;

@@ -16,4 +16,4 @@ NotFound.propTypes = {
     uri: PropTypes.string.isRequired,
 };
 
-export { NotFound as default };
+export default NotFound;

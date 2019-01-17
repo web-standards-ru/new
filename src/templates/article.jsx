@@ -93,4 +93,4 @@ export const pageQuery = graphql`
     }
 `;
 
-export { Article as default };
+export default Article;

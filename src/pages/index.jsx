@@ -25,4 +25,4 @@ Index.propTypes = {
     uri: PropTypes.string.isRequired,
 };
 
-export { Index as default };
+export default Index;

@@ -42,4 +42,4 @@ ArticleList.propTypes = {
     }),
 };
 
-export { ArticleList as default };
+export default ArticleList;
