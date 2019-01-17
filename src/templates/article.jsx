@@ -20,40 +20,40 @@ const Article = props => {
      * or
      * @returns {string} stringDate if date isn't in format YYYY.MM.DD
      */
-    // const beautyDate = function(stringDate) {
-    //     const isValidDateReg = /[\d]{4}.[10]{1}[\d]{1}.[0-3]{1}[\d]{1}/;
-    //     if (
-    //         stringDate.search(isValidDateReg) !== -1 &&
-    //         stringDate.length === 10 // 10 is valid length of format 3000.01.01
-    //     ) {
-    //         const dateArray = stringDate.split('.');
-    //         const months = {
-    //             ru: {
-    //                 '01': 'января',
-    //                 '02': 'февраля',
-    //                 '03': 'марта',
-    //                 '04': 'апреля',
-    //                 '05': 'мая',
-    //                 '06': 'июня',
-    //                 '07': 'июля',
-    //                 '08': 'августа',
-    //                 '09': 'сентября',
-    //                 '10': 'октября',
-    //                 '11': 'ноября',
-    //                 '12': 'декабря',
-    //             },
-    //         };
-    //         const stringMonth = months.ru[dateArray[1]];
-    //         return `${dateArray[2]} ${stringMonth} ${dateArray[0]}`;
-    //     } else {
-    //         console.error(
-    //             "style of date isn't valid. \ngot: " +
-    //                 stringDate +
-    //                 '\nvalid format is YYYY.MM.DD'
-    //         );
-    //         return stringDate;
-    //     }
-    // };
+    const beautyDate = function(stringDate) {
+        const isValidDateReg = /[\d]{4}.[10]{1}[\d]{1}.[0-3]{1}[\d]{1}/;
+        if (
+            stringDate.search(isValidDateReg) !== -1 &&
+            stringDate.length === 10 // 10 is valid length of format 3000.01.01
+        ) {
+            const dateArray = stringDate.split('.');
+            const months = {
+                ru: {
+                    '01': 'января',
+                    '02': 'февраля',
+                    '03': 'марта',
+                    '04': 'апреля',
+                    '05': 'мая',
+                    '06': 'июня',
+                    '07': 'июля',
+                    '08': 'августа',
+                    '09': 'сентября',
+                    '10': 'октября',
+                    '11': 'ноября',
+                    '12': 'декабря',
+                },
+            };
+            const stringMonth = months.ru[dateArray[1]];
+            return `${dateArray[2]} ${stringMonth} ${dateArray[0]}`;
+        } else {
+            console.error(
+                "style of date isn't valid. \ngot: " +
+                    stringDate +
+                    '\nvalid format is YYYY.MM.DD'
+            );
+            return stringDate;
+        }
+    };
 
     return (
         <Layout>
