@@ -3,8 +3,6 @@ title: "Сite и blockquote: перезагрузка"
 date: "2013.11.11"
 ---
 
-# Сite и blockquote: перезагрузка
-
 [Стив Фолкнер](http://blog.paciellogroup.com/author/admin/) 11 ноября 2013
 
 Недавно в [спецификации HTML](http://www.w3.org/html/wg/drafts/html/master/) было изменено определение элементов `<blockquote>` и `<cite>`. В статье рассказывается, что это значит для разработчиков.

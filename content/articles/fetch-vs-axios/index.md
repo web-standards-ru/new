@@ -3,8 +3,6 @@ title: "Генерация HTTP-запросов"
 date: "2017.11.15"
 ---
 
-# Генерация HTTP-запросов
-
 Fetch или Axios.js
 
 *Перевод «[Fetch vs. Axios.js for making http requests](https://medium.com/p/2b261cdd3af5)» Джейсона Арнольда.*

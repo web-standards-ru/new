@@ -3,8 +3,6 @@ title: "Промисы на примерах из жизни"
 date: "2017.12.05"
 ---
 
-# Промисы на примерах из жизни
-
 Поговорим о промисах простыми словами
 
 *Перевод «[JavaScript: Promises explained with simple real life analogies](https://codeburst.io/javascript-promises-explained-with-simple-real-life-analogies-dd6908092138)» Шрути Капур.*

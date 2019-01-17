@@ -2,7 +2,6 @@
 title: "JavaScript: топ тем и фреймворков для изучения в 2019 году"
 date: "2019.01.16"
 ---
-# JavaScript: топ тем и фреймворков для изучения в 2019 году
 
 Перевод «[Top JS Frameworks and Topics to Learn in 2019](https://medium.com/p/b4142f38df20)» Эрика Эллиота.
 

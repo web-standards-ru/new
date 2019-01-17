@@ -2,7 +2,6 @@
 title: "Та же история, только с CSS"
 date: "2019.01.16"
 ---
-# Та же история, только с CSS
 
 Перевод «[We’re seeing the same thing today…](https://twitter.com/tobie/status/1083316137826365442)» Тоби Лангела.
 
