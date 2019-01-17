@@ -27,24 +27,16 @@ const Article = props => {
             stringDate.length === 10 // 10 is valid length of format 3000.01.01
         ) {
             const dateArray = stringDate.split('.');
-            const months = {
-                ru: {
-                    '01': 'января',
-                    '02': 'февраля',
-                    '03': 'марта',
-                    '04': 'апреля',
-                    '05': 'мая',
-                    '06': 'июня',
-                    '07': 'июля',
-                    '08': 'августа',
-                    '09': 'сентября',
-                    '10': 'октября',
-                    '11': 'ноября',
-                    '12': 'декабря',
-                },
-            };
-            const stringMonth = months.ru[dateArray[1]];
-            return `${dateArray[2]} ${stringMonth} ${dateArray[0]}`;
+            const beautyDate = new Date(
+                dateArray[0],
+                dateArray[1],
+                dateArray[2]
+            );
+            return beautyDate.toLocaleDateString('ru-RU', {
+                day: 'numeric',
+                month: 'long',
+                year: 'numeric',
+            });
         } else {
             return stringDate;
         }
@@ -53,7 +45,7 @@ const Article = props => {
     return (
         <Layout>
             <h1>{frontmatter.title}</h1>
-            <time>{beautyDatefrontmatter.date}</time>
+            <time>{beautyDate(frontmatter.date)}</time>
             <div dangerouslySetInnerHTML={{ __html: html }} />
             <a href={`${github}/${path}/index.md`}>
                 Отредактировать на Гитхабе
