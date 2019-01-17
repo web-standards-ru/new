@@ -101,7 +101,7 @@ date: "2019.01.17"
         // Получим pathname
         let pagePathname = await page.evaluate(() => location.pathname);
         pagePathname = pagePathname.replace(/\//g, '-');
-        console.log('Нашёл URL-путь (pathname):', pagePathname);          
+        console.log('Нашёл pathname:', pagePathname);          
         
         // Получим заголовок статьи    
         const titleSelector = '.article h1';         
@@ -152,7 +152,7 @@ date: "2019.01.17"
         // Получим pathname
         let pagePathname = await page.evaluate(() => location.pathname);
         pagePathname = pagePathname.replace(/\//g, '-');
-        console.log('Нашёл URL-путь (pathname):', pagePathname);
+        console.log('Нашёл pathname:', pagePathname);
 
         // Получим заголовок статьи
         const titleSelector = '.article h1';
@@ -172,7 +172,7 @@ date: "2019.01.17"
 
     }
 
-Мы перебираем массив ссылок `postUrls` и используем `page.goto()` для перехода по каждому URL. Чтобы получить URL-путь (pathname) которое мы будем использовать позже, для того, чтобы сохранить файл, мы используем `page.evaluate()` чтобы получить `pathname` из `window.location`. Мы также заменяем слэши / на дефисы -, чтобы имена файлов были валидными.
+Мы перебираем массив ссылок `postUrls` и используем `page.goto()` для перехода по каждому URL. Чтобы получить `pathname` которое мы будем использовать позже, для того, чтобы сохранить файл, мы используем `page.evaluate()` чтобы получить `pathname` из `window.location`. Мы также заменяем слэши / на дефисы -, чтобы имена файлов были валидными.
 
 Следующий этап — заголовок статьи. Определяем селектор (в моём случае, это — `.article h`), и, снова используя `page.waitForSelector()`, ждём, чтобы всё загрузилось и получаем `outerHTML` заголовка с помощью `page.$eval()`. Позже мы сможем преобразовать этот HTML в markdown, с помощью HTML-to-Markdown API.
 
@@ -230,7 +230,7 @@ date: "2019.01.17"
         // Получим pathname
         let pagePathname = await page.evaluate(() => location.pathname);
         pagePathname = pagePathname.replace(/\//g, '-');
-        console.log('Нашёл URL-путь (pathname):', pagePathname);
+        console.log('Нашёл pathname:', pagePathname);
 
         // Получим заголовок статьи
         const titleSelector = '.article h1';
@@ -315,10 +315,10 @@ date: "2019.01.17"
             console.log('Не удалось открыть страницу: ', postUrl);
         }
 
-        // Получим путь URL (pathname)
+        // Получим pathname
         let pagePathname = await page.evaluate(() => location.pathname);
         pagePathname = pagePathname.replace(/\//g, '-');
-        console.log('Нашёл URL-путь (pathname):', pagePathname);
+        console.log('Нашёл pathname:', pagePathname);
 
         // Получим заголовок статьи
         const titleSelector = '.article h1';
@@ -387,7 +387,7 @@ date: "2019.01.17"
       console.log('Сохранил статью!'); 
     });
 
-Здесь мы используем `fs.writeFile()`. Мы хотим сохранить наши файлы в папке `/posts/`, используя пути URL из переменной `pagePathname` как имена файлов, и `.md` как расширение. Это будет первым аргументом в функции `writeFile()`. Вторым аргументом мы передадим `pageContentMarkdown`, в котором лежит полученный Markdown в формате `String`. Если всё пройдёт без ошибок, мы получими статьи в формате Markdown, сохранённые одна за другой. Да, мы сделали это!
+Здесь мы используем `fs.writeFile()`. Мы хотим сохранить наши файлы в папке `/posts/`, используя `pathname` из переменной `pagePathname` как имена файлов, и `.md` как расширение. Это будет первым аргументом в функции `writeFile()`. Вторым аргументом мы передадим `pageContentMarkdown`, в котором лежит полученный Markdown в формате `String`. Если всё пройдёт без ошибок, мы получими статьи в формате Markdown, сохранённые одна за другой. Да, мы сделали это!
 
 Я надеюсь, эта статья вас чему-то научила, и, возможно, вы в будущем тоже решите использовать Puppeteer для чего-нибудь интересного. Если вам любопытно, посмотрите финальный код на [Гитхабе](https://github.com/justmarkup/html-posts-to-markdown/blob/master/index.js).
 
