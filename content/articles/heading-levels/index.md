@@ -3,8 +3,6 @@ title: "Важность уровней заголовков для вспомо
 date: "2018.11.13"
 ---
 
-# Важность уровней заголовков для вспомогательных технологий
-
 Перевод «The Importance of Heading Levels for Assistive Technology» Эрика Бейли.
 
 ![](images/1.jpg)

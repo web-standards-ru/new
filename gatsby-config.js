@@ -9,7 +9,7 @@ module.exports = {
             resolve: 'gatsby-source-ical',
             options: {
                 url: 'https://web-standards.ru/calendar.ics',
-                name: 'events',
+                name: 'calendar',
             },
         },
         'gatsby-plugin-react-helmet',

@@ -3,16 +3,16 @@ import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
 import { Layout } from '../components/Layout';
 
-const Events = ({ uri }) => {
+const Calendar = ({ uri }) => {
     const currentDate = new Date();
 
     return (
         <Layout path={uri}>
             <StaticQuery
                 query={graphql`
-                    query EventsQuery {
+                    query CalendarQuery {
                         allIcal(
-                            filter: { sourceInstanceName: { eq: "events" } }
+                            filter: { sourceInstanceName: { eq: "calendar" } }
                             sort: { order: ASC, fields: [start] }
                         ) {
                             edges {
@@ -27,22 +27,22 @@ const Events = ({ uri }) => {
                         }
                     }
                 `}
-                render={({ allIcal: { edges: events } }) => (
+                render={({ allIcal: { edges: calendar } }) => (
                     <>
-                        <h1>События</h1>
+                        <h1>Календарь</h1>
                         <ul>
-                            {events
-                                .reduce((events, event) => {
+                            {calendar
+                                .reduce((calendar, event) => {
                                     event = event.node;
                                     event.dtstamp = new Date(event.dtstamp);
                                     event.start = new Date(event.start);
                                     event.end = new Date(event.end);
 
                                     if (event.end < currentDate) {
-                                        return events;
+                                        return calendar;
                                     }
 
-                                    return [...events, event];
+                                    return [...calendar, event];
                                 }, [])
                                 .map(event => (
                                     <li
@@ -76,8 +76,8 @@ const Events = ({ uri }) => {
     );
 };
 
-Events.propTypes = {
+Calendar.propTypes = {
     uri: PropTypes.string.isRequired,
 };
 
-export { Events as default };
+export { Calendar as default };

@@ -11,7 +11,7 @@ const Index = ({ uri }) => (
                     <Link to="/articles/">Статьи</Link>
                 </li>
                 <li>
-                    <Link to="/events/">События</Link>
+                    <Link to="/calendar/">Календарь</Link>
                 </li>
                 <li>
                     <Link to="/conference/">Конференция</Link>

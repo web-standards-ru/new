@@ -3,8 +3,6 @@ title: "Реализуем пуш-уведомления на фронтенде
 date: "2017.03.13"
 ---
 
-# Реализуем пуш-уведомления на фронтенде и бэкенде
-
 Перевод «Implementing push notifications on the front-end and back-end» Майкла Шарналя.
 
 В предыдущей [статье](https://justmarkup.com/log/2017/02/introducing-iss-observer-com/) об [*iss-observer.com](https://iss-observer.com/)* я обещал рассказать о технической стороне реализации пуш-уведомлений. Изначально я планировал сконцентрироваться на проблемах, с которыми пришлось иметь дело в процессе работы над [*iss-observer.com](https://iss-observer.com/)*. Теперь я думаю, будет полезнее посвятить материал базовым вопросам, и уточнять детали, где это необходимо. Обращаю ваше внимание, что фронтенд частично опирается на [этот урок](https://developers.google.com/web/fundamentals/getting-started/codelabs/push-notifications/?hl=en).

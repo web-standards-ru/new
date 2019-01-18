@@ -13,12 +13,37 @@ const Article = props => {
 
     const github = `https://github.com/web-standards-ru/new/blob/master`;
 
+    /**
+     *
+     * @param {string} stringDate, example = '3000.01.01'
+     * @returns {string} beautyDate
+     * or
+     * @returns {string} stringDate if date isn't in format YYYY.MM.DD
+     */
+    const beautyDate = function(stringDate) {
+        const isValidDateReg = /[\d]{4}.[10]{1}[\d]{1}.[0-3]{1}[\d]{1}/;
+        if (
+            stringDate.search(isValidDateReg) !== -1 &&
+            stringDate.length === 10 // 10 is valid length of format 3000.01.01
+        ) {
+            const dateArray = stringDate.split('.');
+            const d = new Date(dateArray[0], dateArray[1], dateArray[2]);
+            return d.toLocaleDateString('ru-RU', {
+                day: 'numeric',
+                month: 'long',
+                year: 'numeric',
+            });
+        } else {
+            return stringDate;
+        }
+    };
+
     return (
         <Layout>
             <h1>{frontmatter.title}</h1>
-            <time>{frontmatter.date}</time>
+            <time>{beautyDate(frontmatter.date)}</time>
             <div dangerouslySetInnerHTML={{ __html: html }} />
-            <a href={`${github}/${path}/index.md`}>
+            <a href={`${github}/content/${path}/index.md`}>
                 Отредактировать на Гитхабе
             </a>
         </Layout>
