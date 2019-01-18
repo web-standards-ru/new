@@ -13,30 +13,33 @@ const Article = props => {
 
     const github = `https://github.com/web-standards-ru/new/blob/master`;
 
-    /**
-     *
-     * @param {string} stringDate, example = '3000.01.01'
-     * @returns {string} beautyDate
-     * or
-     * @returns {string} stringDate if date isn't in format YYYY.MM.DD
-     */
-    const beautyDate = function(stringDate) {
-        const isValidDateReg = /[\d]{4}.[10]{1}[\d]{1}.[0-3]{1}[\d]{1}/;
-        if (
-            stringDate.search(isValidDateReg) !== -1 &&
-            stringDate.length === 10 // 10 is valid length of format 3000.01.01
-        ) {
-            const dateArray = stringDate.split('.');
-            const d = new Date(dateArray[0], dateArray[1], dateArray[2]);
-            return d.toLocaleDateString('ru-RU', {
+    function beautyDate(date, opts) {
+        let options;
+        if (!opts) {
+            options = {
                 day: 'numeric',
                 month: 'long',
                 year: 'numeric',
-            });
+            };
         } else {
-            return stringDate;
+            options = opts;
         }
-    };
+        if (typeof date === 'string') {
+            const isValidStringDateReg = /[\d]{4}.[10]{1}[\d]{1}.[0-3]{1}[\d]{1}/;
+            if (
+                date.search(isValidStringDateReg) !== -1 &&
+                date.length === 10 // 10 is valid length of format 3000.01.01
+            ) {
+                return new Date(date.replace(/\./g, '-')).toLocaleDateString(
+                    'ru-RU',
+                    options
+                );
+            }
+        } else if (typeof date === 'object' && date instanceof Date) {
+            return date.toLocaleDateString('ru-RU', options);
+        }
+        return date;
+    }
 
     return (
         <Layout>
