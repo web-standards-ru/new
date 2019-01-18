@@ -3,8 +3,6 @@ title: "Разбираемся с vertical-align"
 date: "2012.03.09"
 ---
 
-# Разбираемся с vertical-align
-
 [Луис Лазарис](http://www.impressivewebs.com/) 9 марта 2012
 
 «Опять `vertical-align` не работает!» — вздохнёт веб-разработчик.

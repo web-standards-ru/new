@@ -3,8 +3,6 @@ title: "Почему Sass?"
 date: "2013.12.10"
 ---
 
-# Почему Sass?
-
 [Ден Седерхольм](http://simplebits.com) 10 декабря 2013
 
 _Перед вами перевод первой главы книги «[Sass For Web Designers](http://www.abookapart.com/products/sass-for-web-designers)» Дэна Седерхольма, которая вышла в серии A Book Apart. В числе [других книг](/books/), мы рекомендуем эту для введения в CSS-препроцессоры. Редакция._
