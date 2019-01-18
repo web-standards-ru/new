@@ -18,7 +18,7 @@ const Article = props => {
             <h1>{frontmatter.title}</h1>
             <time>{frontmatter.date}</time>
             <div dangerouslySetInnerHTML={{ __html: html }} />
-            <a href={`${github}/${path}/index.md`}>
+            <a href={`${github}/content/${path}/index.md`}>
                 Отредактировать на Гитхабе
             </a>
         </Layout>
