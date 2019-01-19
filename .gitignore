@@ -4,3 +4,18 @@ node_modules
 
 # Build directory
 /public
+
+# Files by IDE
+.idea
+.vscode
+*.sublime-project
+*.sublime-workspace
+.brackets.json
+
+# Logs
+npm-debug.log*
+
+# Files of system
+.DS_Store
+._*
+Thumbs.db
