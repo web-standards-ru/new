@@ -13,30 +13,29 @@ const Article = props => {
 
     const github = `https://github.com/web-standards-ru/new/blob/master`;
 
-    function beautyDate(date, opts) {
-        let options;
-        if (!opts) {
-            options = {
-                day: 'numeric',
-                month: 'long',
-                year: 'numeric',
-            };
-        } else {
-            options = opts;
-        }
-        if (typeof date === 'string') {
-            const isValidStringDateReg = /[\d]{4}.[10]{1}[\d]{1}.[0-3]{1}[\d]{1}/;
-            if (
-                date.search(isValidStringDateReg) !== -1 &&
-                date.length === 10 // 10 is valid length of format 3000.01.01
-            ) {
-                return new Date(date.replace(/\./g, '-')).toLocaleDateString(
-                    'ru-RU',
-                    options
-                );
-            }
-        } else if (typeof date === 'object' && date instanceof Date) {
-            return date.toLocaleDateString('ru-RU', options);
+    function beautifyDate(date, optionsOfToLocaleDateString) {
+        const defaults = {
+            day: 'numeric',
+            month: 'long',
+            year: 'numeric',
+        };
+        const localOptions = Object.assign(
+            {},
+            defaults,
+            optionsOfToLocaleDateString
+        );
+        if (
+            typeof date === 'string' &&
+            date.length === 10 && // 10 is valid length of format 'YYYY.MM.DD'
+            new RegExp('[\\d]{4}.[10]{1}[\\d]{1}.[0-3]{1}[\\d]{1}').test(date)
+            // ^ check that "date" is in the format 'YYYY.MM.DD'
+        ) {
+            return new Date(date.replace(/\./g, '-')).toLocaleDateString(
+                'ru-RU',
+                localOptions
+            );
+        } else if (date instanceof Date) {
+            return date.toLocaleDateString('ru-RU', localOptions);
         }
         return date;
     }
@@ -44,7 +43,7 @@ const Article = props => {
     return (
         <Layout>
             <h1>{frontmatter.title}</h1>
-            <time>{beautyDate(frontmatter.date)}</time>
+            <time>{beautifyDate(frontmatter.date)}</time>
             <div dangerouslySetInnerHTML={{ __html: html }} />
             <a href={`${github}/content/${path}/index.md`}>
                 Отредактировать на Гитхабе
