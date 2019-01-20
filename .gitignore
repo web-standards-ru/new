@@ -4,7 +4,3 @@ node_modules
 
 # Build directory
 /public
-
-# NOTE: If you need ignore your specific system or IDE setting files,
-# please add them in your global git ignore file.
-# Here "How To" instruction: https://help.github.com/articles/ignoring-files/#create-a-global-gitignore
