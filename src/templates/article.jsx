@@ -24,17 +24,11 @@ const Article = props => {
             defaults,
             optionsOfToLocaleDateString
         );
-        if (
-            typeof date === 'string' &&
-            date.length === 10 && // 10 is valid length of format 'YYYY.MM.DD'
-            new RegExp('[\\d]{4}.[10]{1}[\\d]{1}.[0-3]{1}[\\d]{1}').test(date)
-            // ^ check that "date" is in the format 'YYYY.MM.DD'
-        ) {
-            return new Date(date.replace(/\./g, '-')).toLocaleDateString(
-                'ru-RU',
-                localOptions
-            );
-        } else if (date instanceof Date) {
+        if (/^[0-9]{4}\.[10][0-9]\.([0-2][0-9]|3[0-1])$/.test(date)) {
+            const dateObj = new Date(date.replace(/\./g, '-'));
+            return dateObj.toLocaleDateString('ru-RU', localOptions);
+        }
+        if (date instanceof Date) {
             return date.toLocaleDateString('ru-RU', localOptions);
         }
         return date;
