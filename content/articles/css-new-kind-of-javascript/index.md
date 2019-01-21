@@ -1,6 +1,6 @@
 ---
 title: "CSS: новый вид JavaScript"
-date: "2018.07.13"
+date: "2018-07-13"
 ---
 
 Перевод «CSS: A New Kind Of JavaScript» Хейдона Пикеринга.

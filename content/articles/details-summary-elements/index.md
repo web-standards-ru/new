@@ -1,6 +1,6 @@
 ---
 title: "Элементы details и summary"
-date: "2011.08.29"
+date: "2011-08-29"
 ---
 
 [Том Лидбеттер](http://tomleadbetter.co.uk/) 29 августа 2011

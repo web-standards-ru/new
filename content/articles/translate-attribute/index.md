@@ -1,6 +1,6 @@
 ---
 title: "В HTML5 добавлен новый атрибут translate"
-date: "2012.07.30"
+date: "2012-07-30"
 ---
 
 [Ричард Ишида](http://people.w3.org/rishida/) 30 июля 2012

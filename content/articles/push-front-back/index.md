@@ -1,6 +1,6 @@
 ---
 title: "Реализуем пуш-уведомления на фронтенде и бэкенде"
-date: "2017.03.13"
+date: "2017-03-13"
 ---
 
 Перевод «Implementing push notifications on the front-end and back-end» Майкла Шарналя.

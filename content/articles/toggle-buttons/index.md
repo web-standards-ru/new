@@ -1,6 +1,6 @@
 ---
 title: "Инклюзивные компоненты: переключатели"
-date: "2019.01.05"
+date: "2019-01-05"
 ---
 
 Перевод «[Toggle Buttons](https://inclusive-components.design/toggle-button/)» Хейдона Пикеринга.

@@ -1,6 +1,6 @@
 ---
 title: "Исследуем большие экраны"
-date: "2014.11.24"
+date: "2014-11-24"
 ---
 
 [Майк Пик](http://alistapart.com/author/mikepick) 24 ноября 2014

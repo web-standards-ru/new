@@ -1,6 +1,6 @@
 ---
 title: "Нюансы CSS"
-date: "2011.04.21"
+date: "2011-04-21"
 ---
 
 [Лев Солнцев](http://my.opera.com/GreLI/blog/) 21 апреля 2011

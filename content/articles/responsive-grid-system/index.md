@@ -1,6 +1,6 @@
 ---
 title: "Как создать адаптивную сетку"
-date: "2017.10.03"
+date: "2017-10-03"
 ---
 
 Перевод «[How to build a responsive grid system](https://zellwk.com/blog/responsive-grid-system/)» Зела Лью.
