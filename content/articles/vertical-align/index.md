@@ -1,6 +1,6 @@
 ---
 title: "Разбираемся с vertical-align"
-date: "2012.03.09"
+date: "2012-03-09"
 ---
 
 [Луис Лазарис](http://www.impressivewebs.com/) 9 марта 2012

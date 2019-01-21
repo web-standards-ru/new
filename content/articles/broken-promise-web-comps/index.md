@@ -1,6 +1,6 @@
 ---
 title: "Невыполненные обещания веб-компонентов"
-date: "2017.04.17"
+date: "2017-04-17"
 ---
 
 Перевод «[The broken promise of Web Components](https://dmitriid.com/blog/2017/03/the-broken-promise-of-web-components/)» Дмитрия Диманта.

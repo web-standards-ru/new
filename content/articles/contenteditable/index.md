@@ -1,6 +1,6 @@
 ---
 title: "Атрибут contenteditable"
-date: "2012.03.09"
+date: "2012-03-09"
 ---
 
 [Джек Осборн](http://jackosborne.co.uk/) 9 марта 2012

@@ -1,6 +1,6 @@
 ---
 title: "Функции-декораторы, которые можно написать с нуля"
-date: "2018.06.13"
+date: "2018-06-13"
 ---
 
 Перевод «Here are a few function decorators you can write from scratch» Кристи Сальсезку.

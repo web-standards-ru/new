@@ -1,6 +1,6 @@
 ---
 title: "Доступные SVG-иконки с инлайновыми спрайтами"
-date: "2018.12.17"
+date: "2018-12-17"
 ---
 
 Перевод [«Accessible SVG Icons with Inline Sprites»](https://www.24a11y.com/2018/accessible-svg-icons-with-inline-sprites/) Марко Хенгстенберга.
