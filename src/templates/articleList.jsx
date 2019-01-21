@@ -7,6 +7,10 @@ const ArticleList = props => {
         pageContext: { nodes },
     } = props;
 
+    function toIOS8601(strDate) {
+        return new Date(strDate.replace(/\./g, '-'));
+    }
+
     return (
         <Layout>
             <h1>Статьи</h1>
@@ -17,7 +21,16 @@ const ArticleList = props => {
                             <a href={node.fields.slug}>
                                 {node.frontmatter.title}
                             </a>
-                            , <time>{node.frontmatter.date}</time>
+                            ,{' '}
+                            <time>
+                                {toIOS8601(
+                                    node.frontmatter.date
+                                ).toLocaleDateString('ru-RU', {
+                                    day: 'numeric',
+                                    month: 'long',
+                                    year: 'numeric',
+                                })}
+                            </time>
                         </li>
                     );
                 })}
