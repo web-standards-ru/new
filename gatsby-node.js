@@ -17,7 +17,7 @@ exports.createPages = ({ actions, graphql }) => {
                         }
                         frontmatter {
                             title
-                            date
+                            date(formatString: "LL", locale: "ru")
                         }
                     }
                 }
