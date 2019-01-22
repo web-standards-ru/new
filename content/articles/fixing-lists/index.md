@@ -1,11 +1,9 @@
 ---
 title: "«Исправление» списков"
-date: "2019.01.21"
+date: "2019-01-21"
 ---
 
-# «Исправление» списков
-
-Перевод «„Fixing“ Lists» Скотта О’Хары.
+Перевод «[„Fixing“ Lists](https://www.scottohara.me/blog/2019/01/12/lists-and-safari.html)» Скотта О’Хары.
 
 ![](images/1.png)
 
@@ -18,6 +16,7 @@ date: "2019.01.21"
 ## Когда «баг — это фича» на самом деле баг?
 
 В марте 2017 [был обнаружен баг](https://bugs.webkit.org/show_bug.cgi?id=170179), связанный с влиянием `list-style: none` на семантику списка. В итоге был дан такой ответ:
+
 > Это было осознанное решение из-за повсеместного использования списков веб-разработчиками. […] По сути, если вы удаляете все видимые по умолчанию признаки списка, то у зрячего пользователя или пользователя скринридера не будет никаких оснований считать, что контент им является. Если вы хотите изменить эту эвристику для доступности, то нужно всегда задавать явную ARIA-роль `role="list"`.
 
 Я могу это понять. Семантика сложная, и люди часто неправильно используют HTML. Тем не менее, эта проблема может возникнуть при использовании распространённого метода, когда нужно удалить стиль списка по умолчанию, но сохранить при этом его семантику. Особенно если список оформляется так, что он всё ещё похож на список.
@@ -26,9 +25,11 @@ date: "2019.01.21"
 > Если вы можете использовать стандартные HTML-элементы или атрибуты с уже **встроенной в них** необходимой семантикой и поведением, **сделайте это** вместо того, чтобы повторно использовать элемент и добавлять роль ARIA, состояние или значение, чтобы сделать его доступным.
 
 Другая [цитата оттуда же](https://www.w3.org/TR/using-aria/#aria-does-nothing):
+
 > Ни один элемент в HTML4 не нуждается в добавлении ролей ARIA для того, чтобы раскрыть их семантику, уже встроенную по умолчанию. […] В большинстве случаев ARIA-роль и ARIA-атрибуты, семантика которых соответствует семантике стандартных элементов, не нужны. Их не рекомендуются использовать, так как эти свойства уже установлены браузером.
 
 В процессе обучения разработчиков, плохо знакомых с доступностью, это вечная проблема. Им часто говорят, что «не нужно использовать ARIA, если вы используете правильные HTML-элементы». После чего со вздохом объясняют:
+
 > Вам нужно использовать ARIA для того, чтобы вернуть семантику списку в случае именно этого сочетания браузера и скринридера.
 > Нет, вам не нужно это делать для других браузеров и скринридеров.
 > Нет, этого не происходит с Chrome (Blink) и VoiceOver.
@@ -91,7 +92,7 @@ date: "2019.01.21"
 
 Я обнаружил единственную проблему у этой техники, когда попытался использовать её для своей навигации по сайту (в данный момент не использую ни один из хаков; пусть браузерные эвристики делают с моей навигацией то, что делают).
 
-После добавления `list-style: url(...)` для существующего селектора списка навигации, в верхней части каждого пункта в Internet Explorer 11 и Edge 42 появился отступ:
+После добавления `list-style: url(…)` для существующего селектора списка навигации, в верхней части каждого пункта в Internet Explorer 11 и Edge 42 появился отступ:
 
 ![](images/2.jpeg)
 
@@ -122,14 +123,14 @@ date: "2019.01.21"
 
 Эрик Эггерт воскликнул:
 
->   We really need an open conversation on what CSS is allowed to overwrite semantics. Apart from display:none/visibility:hidden, I personally think no CSS should alter the semantics of the page.  
+> We really need an open conversation on what CSS is allowed to overwrite semantics. Apart from display:none/visibility:hidden, I personally think no CSS should alter the semantics of the page.  
 > [Eric Eggert @yatil](https://twitter.com/yatil/status/1083738608593448963)
 
 > Нам действительно необходимо открытое обсуждение того, что CSS позволяет переопределять семантику. Лично я считаю, что CSS не должен изменять семантику страницы, кроме `display: none` или `visibility: hidden`.
 
 А так отвечает Джеймс Крейг:
 
->   I realize this decision upsets some web authors, but remember the first rule of the Web: Consider the needs of: 
+> I realize this decision upsets some web authors, but remember the first rule of the Web: Consider the needs of: 
 > - Users before,
 > - Web Authors/Devs before,
 > - Browser Implementers before,
@@ -137,7 +138,7 @@ date: "2019.01.21"
 > [James Craig @cookiecrook](https://twitter.com/cookiecrook/status/1084141791580905472)
 
 
->   This decision was all about the users’ experience on the majority of pages where web developers are not paying attention to the screen reader experience. Definitely open to change suggestions (including updating the heuristic) that make it better for authors w/o penalizing users.  
+> This decision was all about the users’ experience on the majority of pages where web developers are not paying attention to the screen reader experience. Definitely open to change suggestions (including updating the heuristic) that make it better for authors w/o penalizing users.  
 > [James Craig @cookiecrook](https://twitter.com/cookiecrook/status/1084142936583892992)
 
 > Я понимаю, что это решение расстраивает некоторых авторов, но помните про первое правило интернета. Учитывайте потребности:
