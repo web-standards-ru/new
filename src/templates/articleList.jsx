@@ -5,10 +5,11 @@ import { Layout } from '../components';
 const ArticleList = props => {
     const {
         pageContext: { nodes },
+        location,
     } = props;
 
     return (
-        <Layout>
+        <Layout path={location.pathname}>
             <h1>Статьи</h1>
             <ul>
                 {nodes.map(node => {
@@ -39,6 +40,9 @@ ArticleList.propTypes = {
                 }),
             })
         ),
+    }),
+    location: PropTypes.shape({
+        pathname: PropTypes.string.isRequired,
     }),
 };
 
