@@ -8,13 +8,14 @@ const Article = props => {
         data: {
             markdownRemark: { frontmatter, html },
         },
+        location,
         '*': path,
     } = props;
 
     const github = `https://github.com/web-standards-ru/new/blob/master`;
 
     return (
-        <Layout>
+        <Layout path={location.pathname}>
             <h1>{frontmatter.title}</h1>
             <time>{frontmatter.date}</time>
             <div dangerouslySetInnerHTML={{ __html: html }} />
@@ -32,6 +33,9 @@ Article.propTypes = {
                 date: PropTypes.string,
             }),
         }),
+    }),
+    location: PropTypes.shape({
+        pathname: PropTypes.string.isRequired,
     }),
     '*': PropTypes.string.isRequired,
 };

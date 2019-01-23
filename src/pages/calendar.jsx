@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
 import { Layout } from '../components/Layout';
 
-const Calendar = ({ uri }) => {
+const Calendar = ({ location }) => {
     const currentDate = new Date();
 
     return (
-        <Layout path={uri}>
+        <Layout path={location.pathname}>
             <StaticQuery
                 query={graphql`
                     query CalendarQuery {
@@ -77,7 +77,9 @@ const Calendar = ({ uri }) => {
 };
 
 Calendar.propTypes = {
-    uri: PropTypes.string.isRequired,
+    location: PropTypes.shape({
+        pathname: PropTypes.string.isRequired,
+    }),
 };
 
 export { Calendar as default };
