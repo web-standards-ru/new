@@ -4,7 +4,7 @@
 
 Установите [Git](https://git-scm.com/downloads) и [Node.js с npm](https://nodejs.org/) на ваш компьютер.
 
-**Рекомендуем установить** плагин [EditorConfig](https://editorconfig.org/) в ваш любимый редактор. Мы используем специальные настройки для редактора, например пробелы вместо табов. Чтоб избежать ошибок при линтинге и долгой настройки вручную мы рекомендуем использовать именно его. Также мы используем [Prettier](https://prettier.io/docs/en/editors.html) и [ESLint](https://eslint.org/docs/user-guide/integrations) для наглядной подсветки и быстрого испраления ошибок прямо в редакторах.
+**Рекомендуем установить** плагин [EditorConfig](https://editorconfig.org/) в ваш редактор. При работе с этим проектом, он настроит ваш редактор по файлу [.editorconfig](.editorconfig) и позволит сохранить общий стиль кода. Также рекомендуем установить плагины [Prettier](https://prettier.io/docs/en/editors.html) и [ESLint](https://eslint.org/docs/user-guide/integrations) для наглядной подсветки и быстрого испраления ошибок прямо в редакторах.
 
 ## Клонирование и запуск
 
