@@ -3,7 +3,7 @@ title: "Руководство для прохождения интервью п
 date: "2018-02-21"
 ---
 
-Перевод «Front End Interview Handbook» Юн Хен Тая.
+_Перевод «[Front End Interview Handbook](https://github.com/yangshun/front-end-interview-handbook)» Юн Хен Тая._
 
 ## Часть 1. HTML
 
@@ -228,4 +228,4 @@ date: "2018-02-21"
 
 * [The Definitive “Front-End Developer Job Interview Questions” And My Answers](http://peterdoes.it/2015/12/03/a-personal-exercise-front-end-job-interview-questions-and-my-answers-all/).
 
-*Перевод [Алёны Батицкой](https://medium.com/@ABatickaya), редактура [Вадима Макеева](https://medium.com/@pepelsbey).*
+_Перевод [Алёны Батицкой](https://medium.com/@ABatickaya), редактура [Вадима Макеева](https://medium.com/@pepelsbey)._
