@@ -3,7 +3,7 @@ title: "Ценность осмысленности"
 date: "2012-08-09"
 ---
 
-[Кайл Вимс](http://cssquirrel.com) 9 августа 2012
+_Перевод «[The Value of Meaning](http://cssquirrel.com/blog/2011/11/11/the-value-of-meaning/)» Кайла Вимса._
 
 <img src="images/comic.png" alt="">
 
@@ -59,6 +59,4 @@ HTML5 все ещё устаканивается. Некоторые значе
 
 > инжбд, уцсацрйттуцчб — пргьйжед жйюб ирд чузу, ьчуёа футнсечб ихшз ихшзе. вчу цуынербтао путчхепч, пучухао ийоцчжшйч сйлиш теэнсн нийдсн. жа цсйэнжейчй уёхеёучпш н уцсацрйттуцчб. фйьербту.
 
-Перевод оригинальной записи «[The Value of Meaning](http://cssquirrel.com/blog/2011/11/11/the-value-of-meaning/)» Кайла Вимса (Kyle Weems). Переведено и опубликовано с разрешения автора.
-
-Перевод выполнил [Влад Андерсен](http://www.facebook.com/vlad.andersen).
+_Перевод [Влада Андерсена](http://www.facebook.com/vlad.andersen), редактура [Вадима Макеева](https://medium.com/@pepelsbey)._
