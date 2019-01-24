@@ -3,7 +3,7 @@ title: "Важность уровней заголовков для вспомо
 date: "2018-11-13"
 ---
 
-Перевод «The Importance of Heading Levels for Assistive Technology» Эрика Бейли.
+_Перевод «[The Importance of Heading Levels for Assistive Technology](https://webdesign.tutsplus.com/articles/the-importance-of-heading-levels-for-assistive-technology--cms-31753)» Эрика Бейли._
 
 ![](images/1.jpg)
 
@@ -176,4 +176,4 @@ date: "2018-11-13"
 
 Стоит обратить внимание и на то, что заголовки, подобно иерархическим форматам данных, таким как JSON, могут быть вложены в другие, если они логически связаны. Внутри заголовка второго уровня вы можете использовать заголовки третьего. Каждый из этих подзаголовков может, в свою очередь, иметь вложенные подзаголовки четвёртого уровня.
 
-*Перевод [Татьяны Фокиной](https://medium.com/@fokinatatiana), редактура [Вадима Макеева](https://medium.com/@pepelsbey).*
+_Перевод [Татьяны Фокиной](https://medium.com/@fokinatatiana), редактура [Вадима Макеева](https://medium.com/@pepelsbey)._
