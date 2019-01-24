@@ -3,7 +3,7 @@ title: "Размеры блоков, или Назад в будущее"
 date: "2013-01-23"
 ---
 
-[Дэвид Стори](http://generatedcontent.org/) 23 января 2013
+_Перевод «[Sizing Boxes (Back to the Future)](http://generatedcontent.org/post/25832131984/box-sizing)» и «[Box-sizing: border-box; the results are in](http://generatedcontent.org/post/26334712021/box-sizing-results)» Дэвида Стори._
 
 Технологии разработки сайтов меняются в корне. XHTML (Strict — мы так гордились своей работой) уступил место более свободному HTML5. Нарезанные картинки и div-обёртки заменяются гораздо более разумными (и, если повезет, семантичными) средствами HTML и CSS3, такими как `border-radius`, `box-shadow` и градиенты. Резиновая раскладка превращается в отзывчивый дизайн на медиа-выражениях. JavaScript — уже не просто игрушка, и занимает положенное место в триумвирате с HTML и CSS. Может быть, мы уже близки к получению реального инструмента разметки с помощью Flexbox. Может быть, даже почтенные единицы `em` будут забыты, и их заменят более предсказуемые [`rem`](http://generatedcontent.org/post/11933972962/css3values), а также [гибкие единицы `vw` и `vh`](http://generatedcontent.org/post/21279324555/viewportunits).
 
@@ -91,6 +91,4 @@ CSS-свойство `box-sizing` существует уже некоторое
 
 Вы все еще можете принять участие в опросе. К сожалению, результаты опроса сейчас скрыты. Но это только подогревает наше любопытство. Расскажите: а что вы думаете о возможности выбора блочной модели? Используете box-sizing:border-box; в текущих проектах? Планируете использовать?
 
-Перевод оригинальных записей «[Sizing Boxes (Back to the Future)](http://generatedcontent.org/post/25832131984/box-sizing)» и «[Box-sizing: border-box; the results are in](http://generatedcontent.org/post/26334712021/box-sizing-results)» Дэвида Стори (David Storey), опубликованных на сайте [Genetated Content](http://generatedcontent.org/). Переведено и опубликовано с разрешения автора.
-
-Перевод выполнил [Сергей Смольников](https://twitter.com/smolnikov).
+_Перевод [Сергей Смольников](https://twitter.com/smolnikov), редактура [Вадима Макеева](https://medium.com/@pepelsbey)._
