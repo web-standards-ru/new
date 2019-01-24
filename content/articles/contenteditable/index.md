@@ -3,7 +3,7 @@ title: "Атрибут contenteditable"
 date: "2012-03-09"
 ---
 
-[Джек Осборн](http://jackosborne.co.uk/) 9 марта 2012
+_Перевод «[The contenteditable attribute](http://html5doctor.com/the-contenteditable-attribute/)» Джека Осборна._
 
 Мы уже давно используем различные технологии для редактирования и хранения текста в браузере. С атрибутом `contenteditable` это становится намного проще. В этой статье я расскажу для чего этот атрибут, как он работает и куда нам двигаться дальше.
 
@@ -48,25 +48,25 @@ date: "2012-03-09"
 
 ### Пример №1
 
-<div id="example-one" contenteditable="true">
-    <style>
-        #example-one {
-            margin: 12px 0;
-            font-family: Consolas, Monaco, monospace;
-        }
+    <div id="example-one" contenteditable="true">
+        <style>
+            #example-one {
+                margin: 12px 0;
+                font-family: Consolas, Monaco, monospace;
+            }
 
-        #example-one[contenteditable="true"] {
-            padding: 10px;
-            outline: 3px dashed #cccccc;
-        }
+            #example-one[contenteditable="true"] {
+                padding: 10px;
+                outline: 3px dashed #cccccc;
+            }
 
-        #example-one[contenteditable="true"]:hover {
-            background: #e4f3f9;
-            outline:3px dashed #2b8bad;
-        }
-    </style>
-    Всё, что находится в этом блоке, доступно для редактирования в браузерах, поддерживающих HTML5. Давайте, попробуйте: кликните для начала редактирования.
-</div>
+            #example-one[contenteditable="true"]:hover {
+                background: #e4f3f9;
+                outline:3px dashed #2b8bad;
+            }
+        </style>
+        Всё, что находится в этом блоке, доступно для редактирования в браузерах, поддерживающих HTML5. Давайте, попробуйте: кликните для начала редактирования.
+    </div>
 
 Редактирование текста.
 
@@ -78,29 +78,29 @@ date: "2012-03-09"
 
 Попробуйте отредактировать CSS, приведенный ниже:
 
-<div id="example-two" contenteditable="true">
-    <style contenteditable="true">
-        #example-two {
-            margin: 12px 0;
-            font-family: Consolas, Monaco, monospace;
-        }
+    <div id="example-two" contenteditable="true">
+        <style contenteditable="true">
+            #example-two {
+                margin: 12px 0;
+                font-family: Consolas, Monaco, monospace;
+            }
 
-        #example-two style {
-            display: block;
-            white-space: pre;
-        }
+            #example-two style {
+                display: block;
+                white-space: pre;
+            }
 
-        #example-two[contenteditable="true"] {
-            padding: 10px;
-            outline: 3px dashed #cccccc;
-        }
+            #example-two[contenteditable="true"] {
+                padding: 10px;
+                outline: 3px dashed #cccccc;
+            }
 
-        #example-two[contenteditable="true"]:hover{
-            background: #e4f3f9;
-            outline: 3px dashed #2B8BAD;
-        }
-    </style>
-</div>
+            #example-two[contenteditable="true"]:hover{
+                background: #e4f3f9;
+                outline: 3px dashed #2B8BAD;
+            }
+        </style>
+    </div>
 
 Редактирование таблицы стилей.
 
@@ -152,6 +152,4 @@ date: "2012-03-09"
 - [Что такое contenteditable?](http://blog.whatwg.org/the-road-to-html-5-contenteditable#what)
 - [Разворачиваем изображения с помощью HTML5 contenteditable](http://css-tricks.com/expanding-images-html5/)
 
-Перевод оригинальной статьи «[The contenteditable attribute](http://html5doctor.com/the-contenteditable-attribute/)» [Джека Осборна](http://jackosborne.co.uk/) (Jack Osborne), опубликованной на сайте «[HTML5 Doctor](http://html5doctor.com/)».
-
-Перевод выполнил [Антон Немцев](http://twitter.com/silentimp) (SilentImp).
+_Перевод [Антона Немцева](http://twitter.com/silentimp), редактура [Вадима Макеева](https://medium.com/@pepelsbey)._
