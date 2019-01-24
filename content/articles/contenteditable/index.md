@@ -48,25 +48,25 @@ _Перевод «[The contenteditable attribute](http://html5doctor.com/the-co
 
 ### Пример №1
 
-    <div id="example-one" contenteditable="true">
-        <style>
-            #example-one {
-                margin: 12px 0;
-                font-family: Consolas, Monaco, monospace;
-            }
+<div id="example-one" contenteditable="true">
+    <style>
+        #example-one {
+            margin: 12px 0;
+            font-family: Consolas, Monaco, monospace;
+        }
 
-            #example-one[contenteditable="true"] {
-                padding: 10px;
-                outline: 3px dashed #cccccc;
-            }
+        #example-one[contenteditable="true"] {
+            padding: 10px;
+            outline: 3px dashed #cccccc;
+        }
 
-            #example-one[contenteditable="true"]:hover {
-                background: #e4f3f9;
-                outline:3px dashed #2b8bad;
-            }
-        </style>
-        Всё, что находится в этом блоке, доступно для редактирования в браузерах, поддерживающих HTML5. Давайте, попробуйте: кликните для начала редактирования.
-    </div>
+        #example-one[contenteditable="true"]:hover {
+            background: #e4f3f9;
+            outline:3px dashed #2b8bad;
+        }
+    </style>
+    Всё, что находится в этом блоке, доступно для редактирования в браузерах, поддерживающих HTML5. Давайте, попробуйте: кликните для начала редактирования.
+</div>
 
 Редактирование текста.
 
@@ -78,29 +78,29 @@ _Перевод «[The contenteditable attribute](http://html5doctor.com/the-co
 
 Попробуйте отредактировать CSS, приведенный ниже:
 
-    <div id="example-two" contenteditable="true">
-        <style contenteditable="true">
-            #example-two {
-                margin: 12px 0;
-                font-family: Consolas, Monaco, monospace;
-            }
+<div id="example-two" contenteditable="true">
+    <style contenteditable="true">
+        #example-two {
+            margin: 12px 0;
+            font-family: Consolas, Monaco, monospace;
+        }
 
-            #example-two style {
-                display: block;
-                white-space: pre;
-            }
+        #example-two style {
+            display: block;
+            white-space: pre;
+        }
 
-            #example-two[contenteditable="true"] {
-                padding: 10px;
-                outline: 3px dashed #cccccc;
-            }
+        #example-two[contenteditable="true"] {
+            padding: 10px;
+            outline: 3px dashed #cccccc;
+        }
 
-            #example-two[contenteditable="true"]:hover{
-                background: #e4f3f9;
-                outline: 3px dashed #2B8BAD;
-            }
-        </style>
-    </div>
+        #example-two[contenteditable="true"]:hover{
+            background: #e4f3f9;
+            outline: 3px dashed #2B8BAD;
+        }
+    </style>
+</div>
 
 Редактирование таблицы стилей.
 
