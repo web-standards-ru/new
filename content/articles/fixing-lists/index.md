@@ -3,7 +3,7 @@ title: "«Исправление» списков"
 date: "2019-01-21"
 ---
 
-Перевод «[„Fixing“ Lists](https://www.scottohara.me/blog/2019/01/12/lists-and-safari.html)» Скотта О’Хары.
+_Перевод «[„Fixing“ Lists](https://www.scottohara.me/blog/2019/01/12/lists-and-safari.html)» Скотта О’Хары._
 
 ![](images/1.png)
 
@@ -112,7 +112,7 @@ date: "2019-01-21"
 
 Просто посмотрите на количество ответов, ретвитов и лайков к твиту Сары Суайдан:
 
-> `#TIL` that removing list bullets with `list-style: none` removes `<ul/ol>` semantics in VoiceOver. Adding zero-width space fixes this; so this is yet another thing to add to our base `#CSS` files.  
+> `#TIL` that removing list bullets with `list-style: none` removes `<ul/ol>` semantics in VoiceOver. Adding zero-width space fixes this; so this is yet another thing to add to our base `#CSS` files.
 > [Sara Soueidan @SaraSoueidan](https://twitter.com/SaraSoueidan/status/1083734801952182272)
 
 > Сегодня я узнала, что, если убрать маркеры списка с помощью `list-style: none`, то это отменит семантику `<ul/ol>` в VoiceOver.
@@ -123,22 +123,22 @@ date: "2019-01-21"
 
 Эрик Эггерт воскликнул:
 
-> We really need an open conversation on what CSS is allowed to overwrite semantics. Apart from display:none/visibility:hidden, I personally think no CSS should alter the semantics of the page.  
+> We really need an open conversation on what CSS is allowed to overwrite semantics. Apart from display:none/visibility:hidden, I personally think no CSS should alter the semantics of the page.
 > [Eric Eggert @yatil](https://twitter.com/yatil/status/1083738608593448963)
 
 > Нам действительно необходимо открытое обсуждение того, что CSS позволяет переопределять семантику. Лично я считаю, что CSS не должен изменять семантику страницы, кроме `display: none` или `visibility: hidden`.
 
 А так отвечает Джеймс Крейг:
 
-> I realize this decision upsets some web authors, but remember the first rule of the Web: Consider the needs of: 
+> I realize this decision upsets some web authors, but remember the first rule of the Web: Consider the needs of:
 > - Users before,
 > - Web Authors/Devs before,
 > - Browser Implementers before,
-> - Spec authors.  
+> - Spec authors.
 > [James Craig @cookiecrook](https://twitter.com/cookiecrook/status/1084141791580905472)
 
 
-> This decision was all about the users’ experience on the majority of pages where web developers are not paying attention to the screen reader experience. Definitely open to change suggestions (including updating the heuristic) that make it better for authors w/o penalizing users.  
+> This decision was all about the users’ experience on the majority of pages where web developers are not paying attention to the screen reader experience. Definitely open to change suggestions (including updating the heuristic) that make it better for authors w/o penalizing users.
 > [James Craig @cookiecrook](https://twitter.com/cookiecrook/status/1084142936583892992)
 
 > Я понимаю, что это решение расстраивает некоторых авторов, но помните про первое правило интернета. Учитывайте потребности:
@@ -146,9 +146,9 @@ date: "2019-01-21"
 > - до авторов и разработчиков,
 > - до авторов и разработчиков,
 > - до разработчиков браузеров,
-> - до авторов спецификаций.  
+> - до авторов спецификаций.
 > Это всё нужно для удобства пользователей, ведь сегодня на большинстве сайтов разработчики не уделяют внимание удобству скринридеров. Разумеется, я открыт для предложений по внесению изменений (включая обновление эвристики), которые сделают жизнь авторов лучше без ухудшения положения пользователей.
 
 Так что замечания и комментарии приветствуются :)
 
-*Перевод [Татьяны Фокиной](https://medium.com/@fokinatatiana), редактура [Вадима Макеева](https://medium.com/@pepelsbey).*
+_Перевод [Татьяны Фокиной](https://medium.com/@fokinatatiana), редактура [Вадима Макеева](https://medium.com/@pepelsbey)._
