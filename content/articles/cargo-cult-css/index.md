@@ -3,7 +3,7 @@ title: "Культ карго CSS"
 date: "2014-02-19"
 ---
 
-[Бен Дарлоу](http://kapowaz.net) 19 февраля 2014
+_Перевод «[Cargo Cult CSS](http://www.kapowaz.net/articles/cargo-cult-css)» Бена Дарлоу._
 
 Все согласны с тем, что лучше иметь какую-то методологию для написания и поддержки CSS, чем не иметь никакой вовсе. Тем не менее, некоторые популярные среди разработчиков практики ухудшают как семантику кода, так и возможность его долгосрочной поддержки. Я хотел бы рассказать о проблемах с «методологиями фреймворков» CSS, и о том, как мы, веб-разработчики, можем разрешить эти проблемы.
 
@@ -215,6 +215,4 @@ date: "2014-02-19"
 - [CSS Lint — зло](http://2002-2012.mattwilcox.net/archive/entry/id/1054/)
 - [Wikipedia: форма следует за функцией](http://en.wikipedia.org/wiki/Form_follows_function)
 
-Перевод оригинальной записи «[Cargo Cult CSS](http://www.kapowaz.net/articles/cargo-cult-css)» Бена Дарлоу (Ben Darlow), опубликованной [в авторском блоге](http://kapowaz.net). Переведено и опубликовано с разрешения автора.
-
-Перевод [Влада Андерсена](http://www.facebook.com/vlad.andersen), редактура [Вадима Макеева](http://pepelsbey.net) и [Ольги Алексашенко](http://engel-t.moikrug.ru).
+_Перевод [Влада Андерсена](http://www.facebook.com/vlad.andersen), редактура [Вадима Макеева](http://pepelsbey.net) и [Ольги Алексашенко](http://engel-t.moikrug.ru)._
