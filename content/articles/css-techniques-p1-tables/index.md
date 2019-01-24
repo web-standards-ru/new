@@ -145,4 +145,4 @@ Cвойство `table-layout: fixed` предназначено для того
 
 О других приёмах и возможностях CSS 2.1 без использования таблиц читайте во второй части статьи «[Бестабличная вёрстка](/articles/css-techniques-p2-alternate/)».
 
-_Автор [Лев Солнцев](http://my.opera.com/GreLI/blog/), редактура [Вадима Макеева](https://medium.com/@pepelsbey)._
+_Автор [Лев Солнцев](https://twitter.com/ruGreLI), редактура [Вадима Макеева](https://medium.com/@pepelsbey)._
