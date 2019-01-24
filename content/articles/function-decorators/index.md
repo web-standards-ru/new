@@ -3,7 +3,7 @@ title: "Функции-декораторы, которые можно напи�
 date: "2018-06-13"
 ---
 
-Перевод «Here are a few function decorators you can write from scratch» Кристи Сальсезку.
+_Перевод «[Here are a few function decorators you can write from scratch](https://medium.freecodecamp.org/here-are-a-few-function-decorators-you-can-write-from-scratch-488549fe8f86)» Кристи Сальсезку._
 
 ![Фото [Calum Lewis](https://unsplash.com/photos/rkT_TG5NKF8).](images/1.jpg)
 *Фото [Calum Lewis](https://unsplash.com/photos/rkT_TG5NKF8).*
@@ -147,4 +147,4 @@ date: "2018-06-13"
 
 * [Make your code easier to read with Functional Programming](https://medium.com/p/94fb8cc69f9d)
 
-*Перевод [Влада Почепцова](https://medium.com/@vlad_poe), редактура [Вадима Макеева](https://medium.com/@pepelsbey).*
+_Перевод [Влада Почепцова](https://medium.com/@vlad_poe), редактура [Вадима Макеева](https://medium.com/@pepelsbey)._
