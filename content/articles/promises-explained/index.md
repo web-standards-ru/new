@@ -5,7 +5,7 @@ date: "2017-12-05"
 
 Поговорим о промисах простыми словами
 
-*Перевод «[JavaScript: Promises explained with simple real life analogies](https://codeburst.io/javascript-promises-explained-with-simple-real-life-analogies-dd6908092138)» Шрути Капур.*
+_Перевод «[JavaScript: Promises explained with simple real life analogies](https://codeburst.io/javascript-promises-explained-with-simple-real-life-analogies-dd6908092138)» Шрути Капур._
 
 ![Ай промис, фото [Бена Уайта](https://unsplash.com/photos/tX4-tYibILg).](images/1.jpg)
 *Ай промис, фото [Бена Уайта](https://unsplash.com/photos/tX4-tYibILg).*
@@ -131,3 +131,5 @@ date: "2017-12-05"
 1. [Введение на Google Developers](http://https//developers.google.com/web/fundamentals/primers/promises)
 
 1. [Про concurrency model на MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop#Run-to-completion)
+
+_Перевод [Артур Храбров](https://medium.com/@nzvtrkk), редактура [Вадима Макеева](https://medium.com/@pepelsbey)._
