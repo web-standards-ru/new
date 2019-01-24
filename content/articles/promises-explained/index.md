@@ -7,8 +7,8 @@ date: "2017-12-05"
 
 _Перевод «[JavaScript: Promises explained with simple real life analogies](https://codeburst.io/javascript-promises-explained-with-simple-real-life-analogies-dd6908092138)» Шрути Капур._
 
-![Ай промис, фото [Бена Уайта](https://unsplash.com/photos/tX4-tYibILg).](images/1.jpg)
-*Ай промис, фото [Бена Уайта](https://unsplash.com/photos/tX4-tYibILg).*
+![](images/1.jpg)
+_Ай промис, фото [Бена Уайта](https://unsplash.com/photos/tX4-tYibILg)._
 
 ## Промисы простыми словами
 
@@ -28,7 +28,7 @@ _Перевод «[JavaScript: Promises explained with simple real life analogie
 
 ## Промис в JS
 
-Давайте сначала поговорим о *JavaScript* и его параллелизме. *JavaScript* является однопоточным. Всё происходит в той последовательности, в которой написано, но асинхронные операции происходят в порядке их завершения.
+Давайте сначала поговорим о _JavaScript_ и его параллелизме. _JavaScript_ является однопоточным. Всё происходит в той последовательности, в которой написано, но асинхронные операции происходят в порядке их завершения.
 
 Что, по вашему мнению, выведется в консоль в следующем примере?
 
@@ -40,9 +40,9 @@ _Перевод «[JavaScript: Promises explained with simple real life analogie
 
 Результатом будет 1 3 4 2. Вы можете задаться вопросом, почему 4 встречается раньше чем 2. Причина в том, что, несмотря на то, что строка с 2 описана раньше, она начала выполняться только после 3000 мс, поэтому 4 выводится до 2.
 
-В типичном веб-приложении может выполняться множество асинхронных операций, таких как загрузка изображений, получение данных из *JSON*, обращение к *API* и других.
+В типичном веб-приложении может выполняться множество асинхронных операций, таких как загрузка изображений, получение данных из _JSON_, обращение к _API_ и других.
 
-Теперь рассмотрим, как создать промис в *JavaScript*:
+Теперь рассмотрим, как создать промис в _JavaScript_:
 
     var promise = new Promise(function(resolve, reject) {
       // Делаем, что-то, возможно асинхронное, тогда…
@@ -71,8 +71,8 @@ _Перевод «[JavaScript: Promises explained with simple real life analogie
 
 1. Выход ошибкой: reject
 
-![Промис успешно выполнился, [фото Скотта Вебба](https://www.pexels.com/photo/man-couple-love-people-136402/).](images/2.jpg)
-*Промис успешно выполнился, [фото Скотта Вебба](https://www.pexels.com/photo/man-couple-love-people-136402/).*
+![](images/2.jpg)
+_Промис успешно выполнился, [фото Скотта Вебба](https://www.pexels.com/photo/man-couple-love-people-136402/)._
 
 ## Пример
 
@@ -104,7 +104,7 @@ _Перевод «[JavaScript: Promises explained with simple real life analogie
       });
     };
 
-Теперь, когда изображение успешно загружено, promise вернет resolve с ответом от *XHR*. Давайте используем этот promise, вызвав функцию loadImage.
+Теперь, когда изображение успешно загружено, promise вернет resolve с ответом от XHR. Давайте используем этот promise, вызвав функцию loadImage.
 
     const embedImage = url => {
       loadImage(url).then(function(result) {

@@ -238,4 +238,4 @@ Ad infinitum.
 - Изображение: [Nobody Home Yet](https://www.flickr.com/photos/yoorock/29946893014/) Рика Херрмана, [CC BY-NC-ND 2.0](https://creativecommons.org/licenses/by-nc-nd/2.0/)
 - Ссылки на некоторые материалы были взяты из [статьи](http://2ality.com/2015/08/web-component-status.html) Акселя Раушмайера.
 
-_Перевод [Владислава Почепцова](https://medium.com/@vlad_poe), редактура [Вадима Макеева](https://medium.com/@pepelsbey)._
+_Перевод [Владислава Почепцова](https://medium.com/@vlad&#95;poe), редактура [Вадима Макеева](https://medium.com/@pepelsbey)._

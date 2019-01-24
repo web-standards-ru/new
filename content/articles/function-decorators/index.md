@@ -6,15 +6,15 @@ date: "2018-06-13"
 _Перевод «[Here are a few function decorators you can write from scratch](https://medium.freecodecamp.org/here-are-a-few-function-decorators-you-can-write-from-scratch-488549fe8f86)» Кристи Сальсезку._
 
 ![Фото [Calum Lewis](https://unsplash.com/photos/rkT_TG5NKF8).](images/1.jpg)
-*Фото [Calum Lewis](https://unsplash.com/photos/rkT_TG5NKF8).*
+_Фото [Calum Lewis](https://unsplash.com/photos/rkT_TG5NKF8)._
 
-> # Декораторы — это функции высшего порядка, которые принимают в качестве аргумента одну функцию и возвращают другую. Возвращаемая функция является преобразованным вариантом функции-аргумента [*Javascript Allongé](https://leanpub.com/javascript-allonge/read#decorators)*
+> Декораторы — это функции высшего порядка, которые принимают в качестве аргумента одну функцию и возвращают другую. Возвращаемая функция является преобразованным вариантом функции-аргумента [Javascript Allongé](https://leanpub.com/javascript-allonge/read#decorators)
 
-Давайте самостоятельно напишем некоторые базовые дектораторы, представленные в таких библиотеках, как [*underscore.js](http://underscorejs.org/#functions)*, [*lodash.js](https://lodash.com/docs/4.17.5)*, [*ramda.js](http://ramdajs.com/docs/)*.
+Давайте самостоятельно напишем некоторые базовые дектораторы, представленные в таких библиотеках, как [underscore.js](http://underscorejs.org/#functions), [lodash.js](https://lodash.com/docs/4.17.5), [ramda.js](http://ramdajs.com/docs/).
 
-## once()
+## `once()`
 
-* [once(fn)](https://jsfiddle.net/cristi_salcescu/zpLeLp0v/) создает экземпляр функции, которая должна быть выполнена только один раз. Паттерн может быть использован, например, для инициализации, когда нужно быть уверенным в единичном запуске функциональности, даже если сама функция вызвана в нескольких местах.
+- [once(fn)](https://jsfiddle.net/cristi_salcescu/zpLeLp0v/) создает экземпляр функции, которая должна быть выполнена только один раз. Паттерн может быть использован, например, для инициализации, когда нужно быть уверенным в единичном запуске функциональности, даже если сама функция вызвана в нескольких местах.
 
     function once(fn){
       let returnValue;
@@ -38,7 +38,7 @@ _Перевод «[Here are a few function decorators you can write from scratch
 
 ## after()
 
-* [after(count, fn)](https://jsfiddle.net/cristi_salcescu/4evuoxe6/) создает вариант функции, которая будет выполнена только после определенного количества вызовов. Функция полезна, например, если должна быть выполнена *только *по завершению асинхронных операций.
+- [after(count, fn)](https://jsfiddle.net/cristi_salcescu/4evuoxe6/) создает вариант функции, которая будет выполнена только после определенного количества вызовов. Функция полезна, например, если должна быть выполнена _только_ по завершению асинхронных операций.
 
     function after(count, fn) {
        let runCount = 0;
@@ -67,7 +67,7 @@ _Перевод «[Here are a few function decorators you can write from scratch
 
 ## throttle()
 
-* [throttle(fn, wait)](https://jsfiddle.net/cristi_salcescu/5tdv0eq6/) создает вариант функции, которая при повторяющихся вызовах выполняется через указанный временной интервал (аргумент wait). Декоратор эффективен для обработки быстро повторяющихся событий.
+- [throttle(fn, wait)](https://jsfiddle.net/cristi_salcescu/5tdv0eq6/) создает вариант функции, которая при повторяющихся вызовах выполняется через указанный временной интервал (аргумент wait). Декоратор эффективен для обработки быстро повторяющихся событий.
 
     function throttle(fn, interval) {
         let lastTime;
@@ -87,7 +87,7 @@ _Перевод «[Here are a few function decorators you can write from scratch
 
 ## debounce()
 
-* [debounce(fn, wait)](https://jsfiddle.net/cristi_salcescu/424unsa7/) создает вариант функции, которая выполняет *оригинальную *функцию спустя wait миллисекунд *после* предыдующего вызова *декорированной *функции. Паттерн также применяется в работе с повторяющимися событиями. Он полезен, если функциональность должна быть выполнена по завершению очереди событий.
+- [debounce(fn, wait)](https://jsfiddle.net/cristi_salcescu/424unsa7/) создает вариант функции, которая выполняет _оригинальную_ функцию спустя wait миллисекунд _после_ предыдующего вызова _декорированной_ функции. Паттерн также применяется в работе с повторяющимися событиями. Он полезен, если функциональность должна быть выполнена по завершению очереди событий.
 
     function debounce(fn, interval) {
         let timer;
@@ -112,7 +112,7 @@ _Перевод «[Here are a few function decorators you can write from scratch
 
 ## partial()
 
-На этот раз [создадим метод partial()](https://jsfiddle.net/cristi_salcescu/sbborekp/) и сделаем его доступным для всех функций. В данном примере я использую синтаксис *ECMAScript 6*, а именно оператор rest. С его помощью набор аргументов функции преобразуется в массив ...leftArguments. Это нужно для конкатенации массивов, тогда как специальный объект arguments массивом не является.
+На этот раз [создадим метод partial()](https://jsfiddle.net/cristi_salcescu/sbborekp/) и сделаем его доступным для всех функций. В данном примере я использую синтаксис ECMAScript 6, а именно оператор rest. С его помощью набор аргументов функции преобразуется в массив ...leftArguments. Это нужно для конкатенации массивов, тогда как специальный объект arguments массивом не является.
 
     Function.prototype.partial = function(...leftArguments){
         let fn = this;
@@ -137,14 +137,11 @@ _Перевод «[Here are a few function decorators you can write from scratch
 
 Декораторы — мощный инструмент расширения функциональности без изменения исходной функции. Это отличный путь переиспользовать код, и он соответствует функциональной парадигме программирования.
 
-### **Больше о ФП в JavaScript**
+### Больше о ФП в JavaScript
 
-* [How point-free composition will make you a better functional programmer](https://medium.com/p/33dcb910303a)
+- [How point-free composition will make you a better functional programmer](https://medium.com/p/33dcb910303a)
+- [You will finally understand what Closure is](https://medium.com/p/13ba11825319)
+- [Class vs Factory function: exploring the way forward](https://medium.com/p/73258b6a8d15) (см. [перевод](https://medium.com/@kanby/класс-vs-фабрика-объектов-перспективы-9b4c696823c8)).
+- [Make your code easier to read with Functional Programming](https://medium.com/p/94fb8cc69f9d)
 
-* [You will finally understand what Closure is](https://medium.com/p/13ba11825319)
-
-* [Class vs Factory function: exploring the way forward](https://medium.com/p/73258b6a8d15) (см. [перевод](https://medium.com/@kanby/класс-vs-фабрика-объектов-перспективы-9b4c696823c8)).
-
-* [Make your code easier to read with Functional Programming](https://medium.com/p/94fb8cc69f9d)
-
-_Перевод [Влада Почепцова](https://medium.com/@vlad_poe), редактура [Вадима Макеева](https://medium.com/@pepelsbey)._
+_Перевод [Влада Почепцова](https://medium.com/@vlad&#95;poe), редактура [Вадима Макеева](https://medium.com/@pepelsbey)._
