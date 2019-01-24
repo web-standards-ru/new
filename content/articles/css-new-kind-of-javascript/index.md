@@ -149,4 +149,4 @@ CSS решает проблемы JavaScript со стилизацией, при
 
 Больше информации про CSS и советы для быстрого старта [вы найдете здесь](https://en.wikipedia.org/wiki/Campus_SuperStar).
 
-_Перевод [Вадима Макеева](https://medium.com/@pepelsbey), редактура [Ольги Алексашенко](https://medium.com/@tachisis) и [Андрея Мелихова](https://medium.com/@amel_true)&_
+_Перевод [Вадима Макеева](https://medium.com/@pepelsbey), редактура [Ольги Алексашенко](https://medium.com/@tachisis) и [Андрея Мелихова](https://medium.com/@amel_true)._
