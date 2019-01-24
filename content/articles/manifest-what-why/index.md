@@ -3,7 +3,7 @@ title: "Манифест? А? Что? Зачем?"
 date: "2017-01-09"
 ---
 
-Перевод поясняющей заметки к спецификации Web App Manifest.
+_Перевод [поясняющей заметки](https://github.com/w3c/manifest/blob/gh-pages/explainer.md) к спецификации [Web App Manifest](https://www.w3.org/TR/appmanifest/) Альфреда Маерса._
 
 [Многие из нас](https://github.com/w3c/manifest/graphs/contributors), кто работает над вебом, активно стараются уменьшить разрыв между нативными и веб-приложениями.
 
@@ -228,4 +228,4 @@ date: "2017-01-09"
 
 Основная часть этого пояснения первоначально появилась в статье «[*The W3C App Manifest specification](http://html5doctor.com/web-manifest-specification/)*» на [*HTML5 Doctor](http://html5doctor.com/)*, и была написана [Маркусом Касересом](https://github.com/marcoscaceres) и [Брюсом Лоусоном](http://www.brucelawson.co.uk/). Данный материал публикуется на основе лицензии [для некоммерческое использования](http://creativecommons.org/licenses/by-nc/2.0/uk/). Вы можете спокойно изменять, повторно использовать, модифицировать и расширять это пояснение. Некоторые авторы сохраняют свои авторские права на отдельные статьи.
 
-*Перевод [поясняющей заметки](https://github.com/w3c/manifest/blob/gh-pages/explainer.md) к спецификации [Web App Manifest](https://www.w3.org/TR/appmanifest/). Перевод [Анны Кухаревой](https://medium.com/@annakukhareva) и [Вадима Макеева](https://medium.com/@pepelsbey), редактура Вадима Макеева.*
+_Перевод [Анны Кухаревой](https://medium.com/@annakukhareva) и [Вадима Макеева](https://medium.com/@pepelsbey), редактура Вадима Макеева._
