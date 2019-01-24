@@ -3,7 +3,7 @@ title: "Атрибут contenteditable"
 date: "2012-03-09"
 ---
 
-[Джек Осборн](http://jackosborne.co.uk/) 9 марта 2012
+_Перевод «[The contenteditable attribute](http://html5doctor.com/the-contenteditable-attribute/)» Джека Осборна._
 
 Мы уже давно используем различные технологии для редактирования и хранения текста в браузере. С атрибутом `contenteditable` это становится намного проще. В этой статье я расскажу для чего этот атрибут, как он работает и куда нам двигаться дальше.
 
@@ -152,6 +152,4 @@ date: "2012-03-09"
 - [Что такое contenteditable?](http://blog.whatwg.org/the-road-to-html-5-contenteditable#what)
 - [Разворачиваем изображения с помощью HTML5 contenteditable](http://css-tricks.com/expanding-images-html5/)
 
-Перевод оригинальной статьи «[The contenteditable attribute](http://html5doctor.com/the-contenteditable-attribute/)» [Джека Осборна](http://jackosborne.co.uk/) (Jack Osborne), опубликованной на сайте «[HTML5 Doctor](http://html5doctor.com/)».
-
-Перевод выполнил [Антон Немцев](http://twitter.com/silentimp) (SilentImp).
+_Перевод [Антона Немцева](http://twitter.com/silentimp), редактура [Вадима Макеева](https://medium.com/@pepelsbey)._
