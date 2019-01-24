@@ -5,7 +5,7 @@ date: "2017-11-15"
 
 Fetch или Axios.js
 
-*Перевод «[Fetch vs. Axios.js for making http requests](https://medium.com/p/2b261cdd3af5)» Джейсона Арнольда.*
+_Перевод «[Fetch vs. Axios.js for making http requests](https://medium.com/p/2b261cdd3af5)» Джейсона Арнольда._
 
 ![Какой хороший пёсик!](images/1.jpg)
 *Какой хороший пёсик!*
@@ -89,4 +89,4 @@ Fetch или Axios.js
 
     fetch('url', { credentials: 'same-origin' });
 
-*Перевод [Артура Храброва](https://medium.com/@nzvtrkk), редактура [Вадима Макеева](https://medium.com/@pepelsbey).*
+_Перевод [Артура Храброва](https://medium.com/@nzvtrkk), редактура [Вадима Макеева](https://medium.com/@pepelsbey)._
