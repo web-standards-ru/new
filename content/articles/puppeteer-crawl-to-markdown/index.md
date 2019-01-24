@@ -3,7 +3,7 @@ title: "Puppeteer для краулинга страниц сайта и сох�
 date: "2019-01-17"
 ---
 
-*Перевод «[Using Puppeteer to crawl pages and save them as Markdown files](https://justmarkup.com/log/2019/01/using-puppeteer-to-crawl-pages-and-save-them-as-markdown-files/)» Михаэля Шарналя.*
+_Перевод «[Using Puppeteer to crawl pages and save them as Markdown files](https://justmarkup.com/log/2019/01/using-puppeteer-to-crawl-pages-and-save-them-as-markdown-files/)» Михаэля Шарналя._
 
 ![Используем Puppeteer для краулинга страниц сайта и сохранения их в Markdown.](images/1.png)
 
@@ -36,7 +36,7 @@ date: "2019-01-17"
       // Откроем новую страницу
       const page = await browser.newPage();
       const pageURL = 'https://justmarkup.com';
-      
+
       try {
         // Попробуем перейти по URL
         await page.goto(pageURL);
@@ -48,7 +48,7 @@ date: "2019-01-17"
 
       // Всё сделано, закроем браузер
       await browser.close();
-      
+
       process.exit()
     })();
 
@@ -69,7 +69,7 @@ date: "2019-01-17"
       // Откроем новую страницу
       const page = await browser.newPage();
       const pageURL = 'https://justmarkup.com';
-      
+
       try {
         // Попробуем перейти по URL
         await page.goto(pageURL);
@@ -79,49 +79,49 @@ date: "2019-01-17"
           страницу: ${pageURL} из-за ошибки: ${error}`);
       }
 
-      // Найдём все ссылки на статьи   
-      const postsSelector = '.main .article h2 a';     
+      // Найдём все ссылки на статьи
+      const postsSelector = '.main .article h2 a';
       await page.waitForSelector(postsSelector, { timeout: 0 });
       const postUrls = await page.$$eval(
         postsSelector, postLinks => postLinks.map(link => link.href)
       );
-      
+
       // Перейдём по каждой из них
-      for (let postUrl of postUrls) {          
-        
-        // Откроем страницу         
+      for (let postUrl of postUrls) {
+
+        // Откроем страницу
         try {
-          await page.goto(postUrl);             
-          console.log('Открываю страницу: ', postUrl);         
-        } catch (error) {             
-          console.log(error);             
-          console.log('Не удалось открыть страницу: ', postUrl);         
-        }          
-      
+          await page.goto(postUrl);
+          console.log('Открываю страницу: ', postUrl);
+        } catch (error) {
+          console.log(error);
+          console.log('Не удалось открыть страницу: ', postUrl);
+        }
+
         // Получим pathname
         let pagePathname = await page.evaluate(() => location.pathname);
         pagePathname = pagePathname.replace(/\//g, '-');
-        console.log('Нашёл pathname:', pagePathname);          
-        
-        // Получим заголовок статьи    
-        const titleSelector = '.article h1';         
-        await page.waitForSelector(titleSelector);         
+        console.log('Нашёл pathname:', pagePathname);
+
+        // Получим заголовок статьи
+        const titleSelector = '.article h1';
+        await page.waitForSelector(titleSelector);
         const pageTitle = await page.$eval(
           titleSelector, titleSelector => titleSelector.outerHTML
         );
-        console.log('Нашёл заголовок статьи: ', pageTitle);          
-     
+        console.log('Нашёл заголовок статьи: ', pageTitle);
+
         // Получим контент статьи
-        const contentSelector = '.article .entry-content';         
+        const contentSelector = '.article .entry-content';
         await page.waitForSelector(contentSelector, { timeout: 0 });
-        const pageContent = await page.$eval(contentSelector, 
-        contentSelector => contentSelector.innerHTML);         
-        console.log('Нашёл контент: ', pageContent);      
+        const pageContent = await page.$eval(contentSelector,
+        contentSelector => contentSelector.innerHTML);
+        console.log('Нашёл контент: ', pageContent);
       }
-     
+
       // Всё сделано, закроем браузер
       await browser.close();
-      
+
       process.exit()
     })();
 
@@ -139,7 +139,7 @@ date: "2019-01-17"
 Теперь, самое время для того, чтобы открыть все ссылки, одну за другой, и получить данные (заголовок, контент, `pathname`), которые нам нужны.
 
     for (let postUrl of postUrls) {
-    	
+
         // Откроем страницу
         try {
             await page.goto(postUrl);
@@ -185,7 +185,7 @@ date: "2019-01-17"
 Что же, у нас есть все необходимые данные. На следующем шаге, мы будем использовать [Turndown](https://github.com/domchristie/turndown) для конвертации HTML в Markdown.
 
     const puppeteer = require('puppeteer');
-    const TurndownService = require('turndown'); 
+    const TurndownService = require('turndown');
 
     const turndownService = new TurndownService();
 
@@ -198,7 +198,7 @@ date: "2019-01-17"
       // Откроем новую страницу
       const page = await browser.newPage();
       const pageURL = 'https://justmarkup.com';
-      
+
       try {
         // Попробуем перейти по URL
         await page.goto(pageURL);
@@ -208,8 +208,8 @@ date: "2019-01-17"
           страницу: ${pageURL} из-за ошибки: ${error}`);
       }
 
-      // Найдём все ссылки на статьи   
-      const postsSelector = '.main .article h2 a';     
+      // Найдём все ссылки на статьи
+      const postsSelector = '.main .article h2 a';
       await page.waitForSelector(postsSelector, { timeout: 0 });
       const postUrls = await page.$$eval(
         postsSelector, postLinks => postLinks.map(link => link.href)
@@ -260,7 +260,7 @@ date: "2019-01-17"
 
       // Всё сделано, закроем браузер
       await browser.close();
-      
+
       process.exit()
     })();
 
@@ -272,7 +272,7 @@ date: "2019-01-17"
 Итак, нам осталось сохранить сконвертированный Markdown в файлы — по одному для каждой статьи.
 
     const puppeteer = require('puppeteer');
-    const TurndownService = require('turndown'); 
+    const TurndownService = require('turndown');
     const fs = require('fs');
 
     const turndownService = new TurndownService();
@@ -286,7 +286,7 @@ date: "2019-01-17"
       // Откроем новую страницу
       const page = await browser.newPage();
       const pageURL = 'https://justmarkup.com';
-      
+
       try {
         // Попробуем перейти по URL
         await page.goto(pageURL);
@@ -296,8 +296,8 @@ date: "2019-01-17"
           страницу: ${pageURL} из-за ошибки: ${error}`);
       }
 
-      // Найдём все ссылки на статьи   
-      const postsSelector = '.main .article h2 a';     
+      // Найдём все ссылки на статьи
+      const postsSelector = '.main .article h2 a';
       await page.waitForSelector(postsSelector, { timeout: 0 });
       const postUrls = await page.$$eval(
         postsSelector, postLinks => postLinks.map(link => link.href)
@@ -363,7 +363,7 @@ date: "2019-01-17"
 
       // Всё сделано, закроем браузер
       await browser.close();
-      
+
       process.exit()
     })();
 
@@ -384,11 +384,11 @@ date: "2019-01-17"
       }
 
       // Если ошибки нет - значит статья сохранена
-      console.log('Сохранил статью!'); 
+      console.log('Сохранил статью!');
     });
 
 Здесь мы используем `fs.writeFile()`. Мы хотим сохранить наши файлы в папке `/posts/`, используя `pathname` из переменной `pagePathname` как имена файлов, и `.md` как расширение. Это будет первым аргументом в функции `writeFile()`. Вторым аргументом мы передадим `pageContentMarkdown`, в котором лежит полученный Markdown в формате `String`. Если всё пройдёт без ошибок, мы получими статьи в формате Markdown, сохранённые одна за другой. Да, мы сделали это!
 
 Я надеюсь, эта статья вас чему-то научила, и, возможно, вы в будущем тоже решите использовать Puppeteer для чего-нибудь интересного. Если вам любопытно, посмотрите финальный код на [Гитхабе](https://github.com/justmarkup/html-posts-to-markdown/blob/master/index.js).
 
-*Перевод [Владислава Ермолина](https://medium.com/@electrovladyslav), редактура [Вадима Макеева](https://medium.com/@pepelsbey).*
+_Перевод [Владислава Ермолина](https://medium.com/@electrovladyslav), редактура [Вадима Макеева](https://medium.com/@pepelsbey)._
