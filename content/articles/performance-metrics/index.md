@@ -280,4 +280,4 @@ observer.observe({
   buffered: true
 });
 
-*Автор [Артём Денисов](https://medium.com/@denar90), редактура [Вадима Макеева](https://medium.com/@pepelsbey).*
+_Автор [Артём Денисов](https://medium.com/@denar90), редактура [Вадима Макеева](https://medium.com/@pepelsbey)._
