@@ -1,73 +1,73 @@
 {
-    "name": "@web-standards-ru/new",
-    "private": true,
-    "version": "1.0.0",
-    "description": "web-standards.ru web site",
-    "scripts": {
-        "build": "gatsby build && npm run copy:assets",
-        "copy:assets": "cp ./assets/* ./public/",
-        "develop": "gatsby develop",
-        "lint": "npm run lint:eslint && npm run prettier",
-        "lint:eslint": "eslint --ext .js,jsx .",
-        "lint:fix": "npm run lint:eslint -- --fix",
-        "lint-md": "remark . ",
-        "lint-md:fix": "npm run lint-md -- --o",
-        "prettier": "prettier \"**/*.{js,jsx}\" --list-different",
-        "prettier:fix": "npm run prettier -- --write",
-        "test:deploy": "npm run build && node prod-testing.js",
-        "test": "npm run lint && npm run lint-md && npm run build",
-        "start": "npm run develop"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged"
-        }
-    },
-    "lint-staged": {
-        "*.{js,jsx}": [
-            "eslint --fix",
-            "git add"
-        ]
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/web-standards-ru/new.git"
-    },
-    "author": "wst@web-standards.ru",
-    "license": "CC BY-SA 4.0",
-    "bugs": {
-        "url": "https://github.com/web-standards-ru/new/issues"
-    },
-    "homepage": "https://github.com/web-standards-ru/new#readme",
-    "dependencies": {
-        "gatsby": "^2.0.1",
-        "gatsby-link": "^2.0.1",
-        "gatsby-plugin-react-helmet": "^3.0.0",
-        "gatsby-plugin-sharp": "^2.0.17",
-        "gatsby-remark-copy-linked-files": "^2.0.5",
-        "gatsby-remark-images": "^3.0.1",
-        "gatsby-source-filesystem": "^2.0.1",
-        "gatsby-source-ical": "^1.0.1",
-        "gatsby-transformer-remark": "^2.1.3",
-        "node-static": "^0.7.11",
-        "react": "^16.5.1",
-        "react-dom": "^16.5.1",
-        "react-helmet": "^5.2.0"
-    },
-    "devDependencies": {
-        "babel-eslint": "^10.0.1",
-        "eslint": "^5.9.0",
-        "eslint-config-prettier": "^3.3.0",
-        "eslint-plugin-prettier": "^3.0.0",
-        "eslint-plugin-react": "^7.11.1",
-        "gh-pages": "^2.0.1",
-        "husky": "^1.1.4",
-        "lint-staged": "^8.0.5",
-        "prettier": "^1.15.3",
-        "prop-types": "^15.6.2",
-        "remark-cli": "^6.0.1",
-        "remark-lint": "^6.0.4",
-        "remark-preset-lint-markdown-style-guide": "^2.1.2",
-        "remark-preset-lint-recommended": "^3.0.2"
+  "name": "@web-standards-ru/new",
+  "private": true,
+  "version": "1.0.0",
+  "description": "web-standards.ru web site",
+  "scripts": {
+    "build": "gatsby build && npm run copy:assets",
+    "copy:assets": "cp ./assets/* ./public/",
+    "develop": "gatsby develop",
+    "lint": "npm run lint:eslint && npm run prettier",
+    "lint:eslint": "eslint --ext .js,jsx .",
+    "lint:fix": "npm run lint:eslint -- --fix",
+    "lint-md": "remark . ",
+    "lint-md:fix": "npm run lint-md -- --o",
+    "prettier": "prettier \"**/*.{js,jsx}\" --list-different",
+    "prettier:fix": "npm run prettier -- --write",
+    "test:deploy": "npm run build && node prod-testing.js",
+    "test": "npm run lint && npm run lint-md && npm run build",
+    "start": "npm run develop"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/web-standards-ru/new.git"
+  },
+  "author": "wst@web-standards.ru",
+  "license": "CC BY-SA 4.0",
+  "bugs": {
+    "url": "https://github.com/web-standards-ru/new/issues"
+  },
+  "homepage": "https://github.com/web-standards-ru/new#readme",
+  "dependencies": {
+    "gatsby": "^2.0.1",
+    "gatsby-link": "^2.0.1",
+    "gatsby-plugin-react-helmet": "^3.0.0",
+    "gatsby-plugin-sharp": "^2.0.17",
+    "gatsby-remark-copy-linked-files": "^2.0.5",
+    "gatsby-remark-images": "^3.0.1",
+    "gatsby-source-filesystem": "^2.0.1",
+    "gatsby-source-ical": "^1.0.1",
+    "gatsby-transformer-remark": "^2.1.3",
+    "node-static": "^0.7.11",
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1",
+    "react-helmet": "^5.2.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.9.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-react": "^7.11.1",
+    "gh-pages": "^2.0.1",
+    "husky": "^1.1.4",
+    "lint-staged": "^8.0.5",
+    "prettier": "^1.15.3",
+    "prop-types": "^15.6.2",
+    "remark-cli": "^6.0.1",
+    "remark-lint": "^6.0.4",
+    "remark-preset-lint-markdown-style-guide": "^2.1.2",
+    "remark-preset-lint-recommended": "^3.0.2"
+  }
 }
