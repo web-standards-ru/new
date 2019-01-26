@@ -2,7 +2,7 @@
   "name": "@web-standards-ru/new",
   "private": true,
   "version": "1.0.0",
-  "description": "web-standards.ru web site",
+  "description": "Сайт «Веб-стандартов»",
   "scripts": {
     "build": "gatsby build && npm run copy:assets",
     "copy:assets": "cp ./assets/* ./public/",
