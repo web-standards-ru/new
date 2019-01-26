@@ -1,11 +1,9 @@
 ---
 title: "CSS: новый вид JavaScript"
-date: "2018.07.13"
+date: "2018-07-13"
 ---
 
-# CSS: новый вид JavaScript
-
-Перевод «CSS: A New Kind Of JavaScript» Хейдона Пикеринга.
+_Перевод «[CSS: A New Kind Of JavaScript](https://medium.com/@Heydon/css-a-new-kind-of-javascript-fcf730d33ce7)» Хейдона Пикеринга._
 
 Те из вас, кто знаком с веб-платформой, наверняка наслышаны и о двух дополнительных технологиях: **HTML** для структуризации документов и **JavaScript** для интерактивности и стилизации.
 
@@ -151,4 +149,4 @@ CSS решает проблемы JavaScript со стилизацией, при
 
 Больше информации про CSS и советы для быстрого старта [вы найдете здесь](https://en.wikipedia.org/wiki/Campus_SuperStar).
 
-_Перевод [Вадима Макеева](https://medium.com/@pepelsbey), редактура [Ольги Алексашенко](https://medium.com/@tachisis) и [Андрея Мелихова](https://medium.com/@amel_true). Переведено с разрешения автора._
+_Перевод [Вадима Макеева](https://medium.com/@pepelsbey), редактура [Ольги Алексашенко](https://medium.com/@tachisis) и [Андрея Мелихова](https://medium.com/@amel_true)._

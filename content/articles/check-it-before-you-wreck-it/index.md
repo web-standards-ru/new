@@ -1,11 +1,9 @@
 ---
 title: "Не проверив HTML5-кода, не суйся в воду — с Майком™ Смитом"
-date: "2014.12.26"
+date: "2014-12-26"
 ---
 
-# Не проверив HTML5-кода, не суйся в воду — с Майком™ Смитом
-
-[Стив Фолкнер](https://twitter.com/stevefaulkner) 26 декабря 2014
+_Перевод «[HTML5 — Check it Before you Wreck it with Mike™ Smith](http://html5doctor.com/html5-check-it-before-you-wreck-it-with-miketm-smith/)» Стива Фолкнера._
 
 [Майк™ Смит](http://people.w3.org/mike/) (известный как [@sideshowbarker](https://twitter.com/sideshowbarker)) из W3C — человек, с головой увязший в исходном коде инструмента W3C для _проверки <del>валидности</del> разметки_; эта _магия_ работает именно благодаря ему. Вопросы были заданы на радость и в назидание читателю сайта.
 
@@ -173,6 +171,4 @@ _Проверка соответствия документа_ — хороши
 	<figcaption>Полезный совет — всегда <a href="http://validator.w3.org/nu">проверяй свой HTML</a> под <a href="http://youtu.be/FVbVCZw5BPQ">рок-н-ролл</a>, играющий… ГРОМКО!</figcaption>
 </figure>
 
-Перевод оригинального интервью «[HTML5 — Check it Before you Wreck it with Mike™ Smith](http://html5doctor.com/html5-check-it-before-you-wreck-it-with-miketm-smith/)» Стива Фолкнера, опубликованного на сайте [HTML5 Doctor](http://html5doctor.com/). Переведено и опубликовано с разрешения автора.
-
-Перевод выполнили: [Максим Усачёв](https://twitter.com/psyw) и [Илья Стрельцын](https://twitter.com/SelenIT2) из команды [CSS Live](http://css-live.ru/), редактура [Вадима Макеева](http://pepelsbey.net) и [Ольги Алексашенко](http://engel-t.moikrug.ru).
+_Перевод [Максима Усачёва](https://twitter.com/psyw) и [Ильи Стрельцына](https://twitter.com/SelenIT2), редактура [Вадима Макеева](http://pepelsbey.net) и [Ольги Алексашенко](http://engel-t.moikrug.ru)._

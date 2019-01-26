@@ -3,15 +3,15 @@ import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 import { Layout } from '../components';
 
-const Index = ({ uri }) => (
-    <Layout path={uri}>
+const Index = ({ location }) => (
+    <Layout path={location.pathname}>
         <nav>
             <ul>
                 <li>
                     <Link to="/articles/">Статьи</Link>
                 </li>
                 <li>
-                    <Link to="/events/">События</Link>
+                    <Link to="/calendar/">Календарь</Link>
                 </li>
                 <li>
                     <Link to="/conference/">Конференция</Link>
@@ -22,7 +22,9 @@ const Index = ({ uri }) => (
 );
 
 Index.propTypes = {
-    uri: PropTypes.string.isRequired,
+    location: PropTypes.shape({
+        pathname: PropTypes.string.isRequired,
+    }),
 };
 
 export { Index as default };

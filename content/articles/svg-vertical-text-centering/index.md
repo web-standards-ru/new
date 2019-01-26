@@ -1,11 +1,9 @@
 ---
 title: "Простое вертикальное центрирование текста с помощью SVG"
-date: "2013.03.26"
+date: "2013-03-26"
 ---
 
-# Простое вертикальное центрирование текста с помощью SVG
-
-[Лия Веру](http://lea.verou.me) 26 марта 2013
+_Перевод «[Easily center text vertically, with SVG!](http://lea.verou.me/2013/03/easily-center-text-vertically-with-svg/)» Лии Веру._
 
 Существует множество способов вертикального выравнивания текста в контейнере произвольных размеров:
 
@@ -43,6 +41,4 @@ date: "2013.03.26"
 
 Проверено в последних Chrome, Firefox, IE9+. Несмотря на то, что этот способ не подойдёт для всех случаев, надеюсь, он вам пригодится.
 
-Перевод оригинальной записи «[Easily center text vertically, with SVG!](http://lea.verou.me/2013/03/easily-center-text-vertically-with-svg/)» Лии Веру (Lea Verou). Переведено и опубликовано с разрешения автора.
-
-Перевод выполнил [Антон Немцев](http://twitter.com/silentimp) (SilentImp).
+_Перевод [Антона Немцева](http://twitter.com/silentimp), редактура [Вадима Макеева](https://medium.com/@pepelsbey)._

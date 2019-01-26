@@ -1,18 +1,16 @@
 ---
 title: "Элементы details и summary"
-date: "2011.08.29"
+date: "2011-08-29"
 ---
 
-# Элементы details и summary
-
-[Том Лидбеттер](http://tomleadbetter.co.uk/) 29 августа 2011
+_Перевод «[The details and summary elements](http://html5doctor.com/the-details-and-summary-elements/)» Тома Лидбеттера._
 
 Вам часто приходилось использовать JavaScript для создания виджета, показывающего и скрывающего какое-то содержимое? Возможно, для этого вы даже скачивали целую JavaScript-библиотеку? Что ж, можете радоваться: HTML5 позволяет создавать подобное всего лишь парой строчек кода, без применения JavaScript. Зависит от браузера, конечно, но мы вернёмся к этому позже. Представляем вам элемент `<details>`.
 
 Вот что о нём написано [в спецификации](http://www.whatwg.org/specs/web-apps/current-work/multipage/interactive-elements.html#the-details-element):
 
 > Элемент `details` представляет собой раскрывающийся виджет, показывающий пользователю дополнительную информацию или элементы управления.
-> 
+>
 > [Спецификация WHATWG HTML5](http://www.whatwg.org/specs/web-apps/current-work/multipage/interactive-elements.html#the-details-element)
 
 Мы можем использовать `<details>` для создания «виджетов-аккордеонов», которые пользователь может разворачивать и сворачивать. Внутри этого элемента можно разместить любое содержимое.
@@ -162,5 +160,3 @@ date: "2011.08.29"
 В этой статье мы продемонстрировали, как использовать элементы `<details>` и `<summary>`. Элемент `<details>` при помощи `<summary>` создаёт естественный для браузера интерактивный раскрывающийся виджет.
 
 На текущий момент `<details>` работает только в Chrome, но, надеюсь, эта ситуация в скором времени изменится. Пока что мы можем использовать в CSS только `::-webkit-details-marker`, но есть и множество других CSS-техник. Если у вас есть какой-либо опыт или идеи для использования элемента `<details>`, расскажите об этом в комментариях.
-
-Перевод оригинальной статьи «[The details and summary elements](http://html5doctor.com/the-details-and-summary-elements/)» [Тома Лидбеттера](http://html5doctor.com/author/toml/) (Tom Leadbetter), опубликованной на сайте [HTML5Doctor.com](http://html5doctor.com/).

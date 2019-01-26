@@ -1,11 +1,9 @@
 ---
 title: "Просто используйте стили для :focus, чёрт возьми"
-date: "2018.12.10"
+date: "2018-12-10"
 ---
 
-# Просто используйте стили для :focus, чёрт возьми
-
-Перевод крика души «[Just use :focus styles, damnit](https://gomakethings.com/just-use-focus-styles-damnit/)» Криса Фердинанди.
+_Перевод «[Just use :focus styles, damnit](https://gomakethings.com/just-use-focus-styles-damnit/)» Криса Фердинанди._
 
 ![If it’s interactive, it needs a focus style](images/1.png)
 

@@ -1,11 +1,9 @@
 ---
 title: "Сite и blockquote: перезагрузка"
-date: "2013.11.11"
+date: "2013-11-11"
 ---
 
-# Сite и blockquote: перезагрузка
-
-[Стив Фолкнер](http://blog.paciellogroup.com/author/admin/) 11 ноября 2013
+_Перевод «[Cite and blockquote — reloaded](http://html5doctor.com/cite-and-blockquote-reloaded/)» Стива Фолкнера._
 
 Недавно в [спецификации HTML](http://www.w3.org/html/wg/drafts/html/master/) было изменено определение элементов `<blockquote>` и `<cite>`. В статье рассказывается, что это значит для разработчиков.
 
@@ -86,6 +84,4 @@ _(Добавлено 6.11.13, прим. редактора.)_ В ответ н
 
 Огромное спасибо «доктору» Оли, чье [исследование](http://oli.jp/2011/blockquote/) помогло подготовить изменения, произошедшие с элементами `<cite>` и `<blockquote>`. И «доктору» Брюсу за то, что [настаивал](http://www.brucelawson.co.uk/2013/on-citing-quotations-again/) на своем праве цитировать свою маму.
 
-Перевод оригинальной статьи «[Cite and blockquote — reloaded](http://html5doctor.com/cite-and-blockquote-reloaded/)» Стива Фолкнера (Steve Faulkner), опубликованной на сайте [HTML5Doctor.com](http://html5doctor.com/).
-
-Перевод выполнили: [Наташа Арефьева](http://twitter.com/n_snork) и [Юлия Бухвалова](https://twitter.com/yoksel), редактура [Вадима Макеева](http://pepelsbey.net) и [Ольги Алексашенко](http://engel-t.moikrug.ru).
+_Перевод: [Натальи Арефьевой](http://twitter.com/n_snork) и [Юлии Бухваловой](https://twitter.com/yoksel), редактура [Вадима Макеева](http://pepelsbey.net) и [Ольги Алексашенко](http://engel-t.moikrug.ru)._

@@ -1,11 +1,9 @@
 ---
 title: "Я знаю jQuery. И что?"
-date: "2013.12.16"
+date: "2013-12-16"
 ---
 
-# Я знаю jQuery. И что?
-
-[Реми Шарп](http://remysharp.com) 16 декабря 2013
+_Перевод «[I know jQuery. Now what?](http://remysharp.com/2013/04/19/i-know-jquery-now-what/)» Реми Шарпа._
 
 На конференции jQuery UK 2013 я делал доклад под названием «[Я знаю jQuery. И что?](https://speakerdeck.com/rem/i-know-jquery-now-what)». Обычно я готовлюсь, устраивая взрыв из стикеров на своём столе, но в этот раз я сперва написал пост, а потом уже сделал слайды. Итак, вот мой практически не отредактированный и немного путаный рассказ о том, как я работал с jQuery, и как я смотрю на использование встроенных браузерных технологий.
 
@@ -437,6 +435,4 @@ Google (по моим последним данным) поддерживает
 - [Секция вопросов и ответов с конференции Mobilism](http://vimeo.com/68910118#t=2380)
 - [Библиотека min.js](https://github.com/remy/min.js)
 
-Перевод оригинальной записи «[I know jQuery. Now what?](http://remysharp.com/2013/04/19/i-know-jquery-now-what/)» Реми Шарпа (Remy Sharp), опубликованной на сайте [remy sharp’s b:log](http://remysharp.com). Переведено и опубликовано с разрешения автора.
-
-Перевод [Влада Андерсена](http://www.facebook.com/vlad.andersen), редактура [Вадима Макеева](http://pepelsbey.net) и [Ольги Алексашенко](http://engel-t.moikrug.ru).
+_Перевод [Влада Андерсена](http://www.facebook.com/vlad.andersen), редактура [Вадима Макеева](http://pepelsbey.net) и [Ольги Алексашенко](http://engel-t.moikrug.ru)._

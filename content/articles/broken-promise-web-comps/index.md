@@ -1,11 +1,9 @@
 ---
 title: "Невыполненные обещания веб-компонентов"
-date: "2017.04.17"
+date: "2017-04-17"
 ---
 
-# Невыполненные обещания веб-компонентов
-
-Перевод «[The broken promise of Web Components](https://dmitriid.com/blog/2017/03/the-broken-promise-of-web-components/)» Дмитрия Диманта.
+_Перевод «[The broken promise of Web Components](https://dmitriid.com/blog/2017/03/the-broken-promise-of-web-components/)» Дмитрия Диманта._
 
 <figure>
     <img src="images/cover.jpg" alt="">
@@ -240,4 +238,4 @@ Ad infinitum.
 - Изображение: [Nobody Home Yet](https://www.flickr.com/photos/yoorock/29946893014/) Рика Херрмана, [CC BY-NC-ND 2.0](https://creativecommons.org/licenses/by-nc-nd/2.0/)
 - Ссылки на некоторые материалы были взяты из [статьи](http://2ality.com/2015/08/web-component-status.html) Акселя Раушмайера.
 
-Перевод «[The broken promise of Web Components](https://dmitriid.com/blog/2017/03/the-broken-promise-of-web-components/)» Дмитрия Диманта. Перевод [Владислава Почепцова](https://medium.com/@vlad_poe), редактура [Вадима Макеева](https://medium.com/@pepelsbey).
+_Перевод [Владислава Почепцова](https://medium.com/@vlad&#95;poe), редактура [Вадима Макеева](https://medium.com/@pepelsbey)._

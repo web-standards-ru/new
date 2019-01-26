@@ -1,11 +1,9 @@
 ---
 title: "Здравствуй, Blink"
-date: "2013.04.06"
+date: "2013-04-06"
 ---
 
-# Здравствуй, Blink
-
-[Брюс Лоусон](http://www.brucelawson.co.uk) 6 апреля 2013
+_Перевод «[Hello Blink](https://www.brucelawson.co.uk/2013/hello-blink/)» Брюса Лоусона._
 
 Как же хорошо открыто говорить о [Blink](http://blog.chromium.org/2013/04/blink-rendering-engine-for-chromium.html) — новом движке для браузеров Opera _(примечание: это мой работодатель, но запись личная)_ и Сhrome. Я знаю множество людей, которые переживали, что с уходом Opera Presto веб потеряет былое многообразие, но форк WebKit в Blink восстановит баланс сил. Opera будет развивать Blink.
 
@@ -21,4 +19,4 @@ _(Добавлено позднее)_ Мой начальник, Ларш Эри
 
 Перевод оригинальной записи «[Hello Blink](http://www.brucelawson.co.uk/2013/hello-blink/)» Брюса Лоусона (Bruce Lawson). Переведено и опубликовано с разрешения автора.
 
-Перевод выполнил [Антон Немцев](http://twitter.com/silentimp) (SilentImp).
+_Перевод [Антона Немцева](http://twitter.com/silentimp), редактура [Вадима Макеева](https://medium.com/@pepelsbey)._
