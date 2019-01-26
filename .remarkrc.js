@@ -8,7 +8,7 @@ module.exports = {
         ruleRepetition: 3,
         ruleSpaces: false,
         strong: '*',
-        emphasis: '_'
+        emphasis: '_',
     },
     plugins: {
         'remark-lint-blockquote-indentation': ['error', 2],
@@ -33,6 +33,6 @@ module.exports = {
         'remark-lint-ordered-list-marker-value': ['error', 'ordered'],
         'remark-lint-rule-style': ['error', '---'],
         'remark-lint-strong-marker': ['error', '*'],
-        'remark-lint-unordered-list-marker-style': ['error', '-']
-    }
+        'remark-lint-unordered-list-marker-style': ['error', '-'],
+    },
 };
