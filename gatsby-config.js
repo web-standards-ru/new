@@ -24,17 +24,7 @@ module.exports = {
         {
             resolve: 'gatsby-transformer-remark',
             options: {
-                plugins: [
-                    'gatsby-remark-copy-linked-files',
-                    {
-                        resolve: 'gatsby-remark-images',
-                        options: {
-                            backgroundColor: 'transparent',
-                            linkImagesToOriginal: false,
-                            showCaptions: true,
-                        },
-                    },
-                ],
+                plugins: ['gatsby-remark-static-images'],
             },
         },
     ],
