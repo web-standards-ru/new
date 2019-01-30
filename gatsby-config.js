@@ -12,6 +12,21 @@ module.exports = {
                 name: 'calendar',
             },
         },
+        {
+            resolve: `gatsby-source-rss-feed`,
+            options: {
+                url: `https://web-standards.ru/podcast/feed/`,
+                name: `Podcast`,
+                parserOption: {
+                    customFields: {
+                        item: [
+                            ['itunes:summary', 'summary'],
+                            ['title', 'link'],
+                        ],
+                    },
+                },
+            },
+        },
         'gatsby-plugin-react-helmet',
         'gatsby-plugin-sharp',
         {
