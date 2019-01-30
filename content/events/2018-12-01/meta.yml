@@ -1,0 +1,20 @@
+city:
+  Минск # city
+start:
+  10:00
+venue:
+  Event Space # name
+  Октябрьская, 16А # address
+  http://eventspace.by/ # link
+map:
+  yandex # type
+  27.5706,53.8896 # center
+  27.5706,53.8896 # marker
+  16 # zoom
+partners:
+  emerline
+  adform
+  epam-systems
+  html-academy
+video:
+  https://youtu.be/bjxjAESwejE
