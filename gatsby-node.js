@@ -66,7 +66,7 @@ exports.createPages = ({ actions, graphql }) => {
         `)
             .then(result => {
                 if (result.errors) {
-                    return Promise.reject(result.errors);
+                    return reject(result.errors);
                 }
 
                 createPodcastListPage({
