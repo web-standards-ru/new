@@ -6,7 +6,7 @@ import { Layout } from '../components';
 const PodcastEpisode = props => {
     const {
         data: {
-            feedPodcast: { title, content, guid },
+            atomEntry: { title, description, link },
         },
         location,
     } = props;
@@ -14,17 +14,17 @@ const PodcastEpisode = props => {
     return (
         <Layout path={location.pathname}>
             <h1>{title}</h1>
-            <audio controls src={guid} />
-            <div dangerouslySetInnerHTML={{ __html: content }} />
+            <audio controls src={link} />
+            <div dangerouslySetInnerHTML={{ __html: description }} />
         </Layout>
     );
 };
 PodcastEpisode.propTypes = {
     data: PropTypes.shape({
-        feedPodcast: PropTypes.shape({
+        atomEntry: PropTypes.shape({
             title: PropTypes.string,
-            content: PropTypes.string,
-            guid: PropTypes.string,
+            link: PropTypes.string,
+            description: PropTypes.string,
         }),
     }),
     location: PropTypes.shape({
@@ -35,10 +35,10 @@ PodcastEpisode.propTypes = {
 
 export const pageQuery = graphql`
     query EposodeBySlug($slug: String!) {
-        feedPodcast(fields: { slug: { eq: $slug } }) {
+        atomEntry(fields: { slug: { eq: $slug } }) {
             title
-            content
-            guid
+            link
+            description
         }
     }
 `;

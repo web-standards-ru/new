@@ -49,15 +49,16 @@ exports.createPages = ({ actions, graphql }) => {
 
     const podcast = graphql(`
         {
-            allFeedPodcast(sort: { fields: [isoDate], order: DESC }) {
+            allAtomEntry(sort: { fields: date, order: DESC }) {
                 edges {
                     node {
+                        title
+                        itunes_summary {
+                            _
+                        }
                         fields {
                             slug
                         }
-                        title
-                        content
-                        summary
                     }
                 }
             }
@@ -70,10 +71,10 @@ exports.createPages = ({ actions, graphql }) => {
 
             createPodcastListPage({
                 createPage,
-                nodes: result.data.allFeedPodcast.edges.map(({ node }) => node),
+                nodes: result.data.allAtomEntry.edges.map(({ node }) => node),
             });
 
-            result.data.allFeedPodcast.edges.forEach(({ node }) =>
+            result.data.allAtomEntry.edges.forEach(({ node }) =>
                 createPodcastPage({ node, createPage })
             );
         })
@@ -93,12 +94,12 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
         });
     }
 
-    if (node.internal.type === `FeedPodcast`) {
-        const { url } = node.enclosure;
-        const slug = pathRegex.exec(url);
+    if (node.internal.type === `AtomEntry`) {
+        const { link } = node;
+        const slug = pathRegex.exec(link);
 
         if (slug === null) {
-            throw new Error(`Can't create slug for url: ${url}`);
+            throw new Error(`Can't create slug for url: ${link}`);
         }
 
         createNodeField({

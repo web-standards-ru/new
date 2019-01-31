@@ -16,7 +16,7 @@ const PodcastList = props => {
                     return (
                         <li key={node.fields.slug}>
                             <a href={node.fields.slug}>{node.title}</a>
-                            <div>{node.summary}</div>
+                            <div>{node.itunes_summary._}</div>
                         </li>
                     );
                 })}
@@ -33,7 +33,9 @@ PodcastList.propTypes = {
                     slug: PropTypes.string,
                 }),
                 title: PropTypes.string,
-                summary: PropTypes.string,
+                itunes_summary: PropTypes.shape({
+                    _: PropTypes.string,
+                }),
             })
         ),
     }),

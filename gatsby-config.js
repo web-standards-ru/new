@@ -13,18 +13,10 @@ module.exports = {
             },
         },
         {
-            resolve: `gatsby-source-rss-feed`,
+            resolve: `gatsby-source-atom`,
             options: {
-                url: `https://web-standards.ru/podcast/feed/`,
-                name: `Podcast`,
-                parserOption: {
-                    customFields: {
-                        item: [
-                            ['itunes:summary', 'summary'],
-                            ['title', 'link'],
-                        ],
-                    },
-                },
+                source: `https://web-standards.ru/podcast/feed/`,
+                additionalEntryFields: ['itunes:summary'],
             },
         },
         'gatsby-plugin-react-helmet',
