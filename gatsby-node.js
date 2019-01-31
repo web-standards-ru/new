@@ -1,89 +1,83 @@
 const path = require('path');
 const { createFilePath } = require('gatsby-source-filesystem');
 
+const pathRegex = new RegExp(
+    'https://web-standards.ru/podcast/episodes/(\\d+).mp3'
+);
+
 exports.createPages = ({ actions, graphql }) => {
     const { createPage } = actions;
 
-    const articles = new Promise((resolve, reject) => {
-        graphql(`
-            {
-                allMarkdownRemark(
-                    limit: 1000
-                    sort: { fields: [frontmatter___date], order: DESC }
-                ) {
-                    edges {
-                        node {
-                            fields {
-                                slug
-                            }
-                            frontmatter {
-                                title
-                                date(formatString: "LL", locale: "ru")
-                            }
+    const articles = graphql(`
+        {
+            allMarkdownRemark(
+                limit: 1000
+                sort: { fields: [frontmatter___date], order: DESC }
+            ) {
+                edges {
+                    node {
+                        fields {
+                            slug
                         }
-                    }
-                }
-            }
-        `)
-            .then(result => {
-                if (result.errors) {
-                    return reject(result.errors);
-                }
-
-                createArticleListPage({
-                    createPage,
-                    nodes: result.data.allMarkdownRemark.edges.map(
-                        ({ node }) => node
-                    ),
-                });
-
-                // Create pages for each markdown file.
-                result.data.allMarkdownRemark.edges.forEach(({ node }) =>
-                    createArticlePage({ node, createPage })
-                );
-
-                resolve();
-            })
-            .catch(error => reject(error));
-    });
-
-    const podcast = new Promise((resolve, reject) => {
-        graphql(`
-            {
-                allFeedPodcast(sort: { fields: [isoDate], order: DESC }) {
-                    edges {
-                        node {
-                            fields {
-                                slug
-                            }
+                        frontmatter {
                             title
-                            content
-                            summary
+                            date(formatString: "LL", locale: "ru")
                         }
                     }
                 }
             }
-        `)
-            .then(result => {
-                if (result.errors) {
-                    return reject(result.errors);
+        }
+    `)
+        .then(result => {
+            if (result.errors) {
+                return Promise.reject(result.errors);
+            }
+
+            createArticleListPage({
+                createPage,
+                nodes: result.data.allMarkdownRemark.edges.map(
+                    ({ node }) => node
+                ),
+            });
+
+            // Create pages for each markdown file.
+            result.data.allMarkdownRemark.edges.forEach(({ node }) =>
+                createArticlePage({ node, createPage })
+            );
+        })
+        .catch(error => Promise.reject(error));
+
+    const podcast = graphql(`
+        {
+            allFeedPodcast(sort: { fields: [isoDate], order: DESC }) {
+                edges {
+                    node {
+                        fields {
+                            slug
+                        }
+                        title
+                        content
+                        summary
+                    }
                 }
+            }
+        }
+    `)
+        .then(result => {
+            if (result.errors) {
+                return Promise.reject(result.errors);
+            }
 
-                createPodcastListPage({
-                    createPage,
-                    nodes: result.data.allFeedPodcast.edges.map(
-                        ({ node }) => node
-                    ),
-                });
+            createPodcastListPage({
+                createPage,
+                nodes: result.data.allFeedPodcast.edges.map(({ node }) => node),
+            });
 
-                result.data.allFeedPodcast.edges.forEach(({ node }) =>
-                    createPodcastPage({ node, createPage })
-                );
-
-                resolve();
-            })
-            .catch(error => reject(error));
-    });
+            result.data.allFeedPodcast.edges.forEach(({ node }) =>
+                createPodcastPage({ node, createPage })
+            );
+        })
+        .catch(error => Promise.reject(error));
 
     return Promise.all([articles, podcast]);
 };
@@ -101,14 +95,16 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
     if (node.internal.type === `FeedPodcast`) {
         const { url } = node.enclosure;
-        const regex = new RegExp(
-            'https://web-standards.ru/podcast/episodes/(\\d+).mp3'
-        );
-        const slug = regex.exec(url)[1];
+        const slug = pathRegex.exec(url);
+
+        if (slug === null) {
+            throw new Error(`Can't create slug for url: ${url}`);
+        }
+
         createNodeField({
             node,
             name: `slug`,
-            value: `/podcast/${slug}`,
+            value: `/podcast/${slug[1]}`,
         });
     }
 };
