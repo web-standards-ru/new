@@ -3,7 +3,7 @@ title: "HTML, CSS и исчезающие точки входа в индуст�
 date: "2019-02-01"
 ---
 
-_Перевод «[TML, CSS and our vanishing industry entry points](https://rachelandrew.co.uk/archives/2019/01/30/html-css-and-our-vanishing-industry-entry-points/)» Рейчел Эндрю._
+_Перевод «[HTML, CSS and our vanishing industry entry points](https://rachelandrew.co.uk/archives/2019/01/30/html-css-and-our-vanishing-industry-entry-points/)» Рейчел Эндрю._
 
 ![Monday Start Animation by Laurentiu Lunic](images/1.gif)
 _[Monday Start Animation by Laurentiu Lunic](https://dribbble.com/shots/3944123-Monday-Start-Animation)_
