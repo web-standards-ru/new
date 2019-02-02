@@ -85,7 +85,7 @@ _Перевод «[CSS Position Sticky — How It Really Works!](https://medium.
 
 [Пример на CodePen:](https://codepen.io/elad2412/pen/QYLEdK)
 
-<iframe src="https://medium.com/media/5150873d6632f97b982534af26637bc5" frameborder=0></iframe>
+<iframe src="https://codepen.io/elad2412/embed/preview/MZZVjw"></iframe>
 
 ### Понимание «липкого» поведения
 
@@ -115,19 +115,19 @@ HTML
     <main class="main-container">
       <header class="main-header">HEADER</header>
       <div class="main-content">MAIN CONTENT</div>
-      <footer class="**main-footer**">FOOTER</footer>
+      <footer class="main-footer">FOOTER</footer>
     </main>
 
 CSS
 
-    .**main-footer **{
+    .main-footer {
       position: sticky;
       bottom: 0;
     }
 
 [Живой пример на CodePen:](https://codepen.io/elad2412/pen/MZZVjw)
 
-<iframe src="https://medium.com/media/22bd1157bf45a8864a215c188e3734ac" frameborder=0></iframe>
+<iframe src="https://codepen.io/elad2412/embed/preview/MZZVjw"></iframe>
 
 В реальной жизни я использую такое поведение для сводных таблиц. И, я думаю, с помощью этого приёма можно реализовать «липкую» навигацию в футере.
 
@@ -146,7 +146,7 @@ CSS
 
 Вот и всё. Я надеюсь, что вам понравилась эта статья и мне удалось поделиться своим опытом. Я буду признателен, если вы поделитесь этим постом и поаплодируйте.
 
-### **Другие мои посты о CSS**
+### Другие мои посты о CSS
 
 - [New CSS Logical Properties!](https://medium.com/@elad/new-css-logical-properties-bc6945311ce7)
 
@@ -158,7 +158,7 @@ CSS
 
 - [CSS Architecture for Multiple Websites With SASS](https://medium.com/@elad/css-architecture-for-multiple-websites-with-sass-7e923fc53f7a)
 
-### **Кто я?**
+### Кто я?
 
 Меня зовут Элад Шехтер, я веб-разработчик, специализирующийся на дизайне и архитектуре CSS и HTML. Я работаю на [Investing.com](https://www.investing.com/).
 
