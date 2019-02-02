@@ -16,13 +16,9 @@ _Перевод «[What’s New in JavaScript for 2019](https://developer.okta.c
 Если коротко, то спецификация языка, которая управляет JavaScript, называется [ECMAScript](https://www.ecma-international.org/publications/standards/Ecma-262.htm). Группа Ecma International, которая рассматривает и принимает изменения в спецификацию языка, называется Технический комитет 39 или [TC39](https://www.ecma-international.org/memento/tc39.htm). Изменения в спецификацию ECMAScript проходят через [стандартизированный процесс](https://tc39.github.io/process-document/), включая стадии становления.
 
 - Этап 0: идеи
-
 - Этап 1: официальное предложение
-
 - Этап 2: черновики
-
 - Этап 3: кандидаты
-
 - Этап 4: одобренные
 
 До тех пор, пока нововведение не достигнет 4 этапа, нет никаких гарантий, что оно станет частью спецификации ECMAScript. Тем не менее, некоторые JavaScript-движки, такие, как [V8](https://v8.dev/) (используется в Сhrome and Node.js) и [SpiderMonkey](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey) от Firefox, могут добавить поддержку предложенных возможностей _до того_, как они перешли на этап 4. Так разработчики могут протестировать их и дать фидбэк.
@@ -43,7 +39,7 @@ _**Дисклеймер:** поскольку есть несколько кан
       #isCrewCab = true;
       static #name = "Грузовик"; // Статическое приватное поле
 
-        // Статичный метод
+      // Статичный метод
       static formattedName() {
         // Обратите внимание, что имя класса Truck используется
         // вместо this чтобы получить доступ к статическому полю
@@ -76,7 +72,7 @@ _**Дисклеймер:** поскольку есть несколько кан
 
 Лично мне не очень нравится синтаксис `#` для приватных полей и методов. Я бы предпочёл чтобы в спецификации JavaScript использовалось ключевое слово `private` для этих целей по аналогии с другими языками.
 
-## Строковые методы trimStart() и trimEnd()
+## Строковые методы `trimStart()` и `trimEnd()`
 
 У типа данных `String` существует метод `trim()`, с помощью которого можно удалить пробелы с обоих концов строки. [Предложено](https://github.com/tc39/proposal-string-left-right-trim) ввести методы `trimStart()` и `trimEnd()`, которые дадут больше контроля над удалением пробелов.
 
@@ -87,7 +83,7 @@ _**Дисклеймер:** поскольку есть несколько кан
 
 Интересный факт: эта возможность языка [уже реализована](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trimEnd#Browser_compatibility) во многих JavaScript-движках. Один из случаев когда браузеры помогают развивать язык.
 
-## Большие числа с BigInt
+## Большие числа с `BigInt`
 
 Мы видим примитив [BigInt](https://github.com/tc39/proposal-bigint) для целых чисел, превышающих текущее максимальное значение 253. `BigInt` может быть объявлен несколькими различными способами.
 
@@ -108,7 +104,7 @@ _**Дисклеймер:** поскольку есть несколько кан
 
 [Узнайте больше](https://developers.google.com/web/updates/2018/05/bigint) о вариантах использования и фишках `BigInt`.
 
-## Одномерные массивы с flat() и flatMap()
+## Одномерные массивы с `flat()` и `flatMap()`
 
 Если вы изучали функциональное программирование, то [вы точно узнаете](https://github.com/tc39/proposal-flatMap) `flat()` и `flatMap()`. `flat()` принимает массив значений, который может состоять в том числе из других массивов, и возвращает новый одномерный массив.
 
@@ -137,19 +133,12 @@ _**Дисклеймер:** поскольку есть несколько кан
 Ниже представлен список дополнительных кандидатов, которые находятся на 3 этапе в момент написания статьи.
 
 - Стандартизированный объект [`globalThis`](https://github.com/tc39/proposal-global)
-
 - Динамический [`import()`](https://github.com/tc39/proposal-dynamic-import)
-
 - Нововведения в [устаревший RegExp](https://github.com/tc39/proposal-regexp-legacy-features)
-
 - [`import.meta`](https://github.com/tc39/proposal-import-meta)
-
 - Строковый метод [`matchAll()`](https://github.com/tc39/proposal-string-matchall)
-
 - [`Object.fromEntries()`](https://github.com/tc39/proposal-object-from-entries)
-
 - Правильный [`JSON.stringify`](https://github.com/tc39/proposal-well-formed-stringify)
-
 - Стандартизированный [Hashbang](https://github.com/tc39/proposal-hashbang) для приложений с интерфейсом командной строки (CLI)
 
 ## Когда ожидать ES2019
@@ -190,9 +179,7 @@ Babel поддерживает экспериментальные возможн
 
 - [Learn JavaScript in 2019!](https://developer.okta.com/blog/2018/12/19/learn-javascript-in-2019)-
 - [The History (and Future) of Asynchronous JavaScript](https://developer.okta.com/blog/2019/01/16/history-and-future-of-async-javascript)
-
 - [Build a Secure Node.js Application with JavaScript Async Await Using Hapi](https://scotch.io/tutorials/build-a-secure-nodejs-application-with-javascript-async-await-using-hapi)
-
 - [Use TypeScript to Build a Node API with Express](https://developer.okta.com/blog/2018/11/15/node-express-typescript)
 
 Если вам будет интересно, то вы можете почитать [предыдущие версии](https://www.ecma-international.org/publications/standards/Ecma-262-arch.htm) ECMAScript, например, ES2015, ES2016 и ES2017.
