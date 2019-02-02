@@ -12,6 +12,13 @@ module.exports = {
                 name: 'calendar',
             },
         },
+        {
+            resolve: `gatsby-source-atom`,
+            options: {
+                source: `https://web-standards.ru/podcast/feed/`,
+                additionalEntryFields: ['itunes:summary'],
+            },
+        },
         'gatsby-plugin-react-helmet',
         'gatsby-plugin-sharp',
         {

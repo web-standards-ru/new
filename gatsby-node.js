@@ -1,10 +1,14 @@
 const path = require('path');
 const { createFilePath } = require('gatsby-source-filesystem');
 
+const pathRegex = new RegExp(
+    'https://web-standards.ru/podcast/episodes/(\\d+).mp3'
+);
+
 exports.createPages = ({ actions, graphql }) => {
     const { createPage } = actions;
 
-    return graphql(`
+    const articles = graphql(`
         {
             allMarkdownRemark(
                 limit: 1000
@@ -42,6 +46,41 @@ exports.createPages = ({ actions, graphql }) => {
             );
         })
         .catch(error => Promise.reject(error));
+
+    const podcast = graphql(`
+        {
+            allAtomEntry(sort: { fields: date, order: DESC }) {
+                edges {
+                    node {
+                        title
+                        itunes_summary {
+                            _
+                        }
+                        fields {
+                            slug
+                        }
+                    }
+                }
+            }
+        }
+    `)
+        .then(result => {
+            if (result.errors) {
+                return Promise.reject(result.errors);
+            }
+
+            createPodcastListPage({
+                createPage,
+                nodes: result.data.allAtomEntry.edges.map(({ node }) => node),
+            });
+
+            result.data.allAtomEntry.edges.forEach(({ node }) =>
+                createPodcastPage({ node, createPage })
+            );
+        })
+        .catch(error => Promise.reject(error));
+
+    return Promise.all([articles, podcast]);
 };
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
@@ -52,6 +91,21 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
             name: `slug`,
             node,
             value: `/articles${createFilePath({ node, getNode })}`,
+        });
+    }
+
+    if (node.internal.type === `AtomEntry`) {
+        const { link } = node;
+        const slug = pathRegex.exec(link);
+
+        if (slug === null) {
+            throw new Error(`Can't create slug for url: ${link}`);
+        }
+
+        createNodeField({
+            node,
+            name: `slug`,
+            value: `/podcast/${slug[1]}`,
         });
     }
 };
@@ -71,6 +125,16 @@ function createArticlePage({ createPage, node }) {
     });
 }
 
+function createPodcastPage({ createPage, node }) {
+    createPage({
+        path: node.fields.slug,
+        component: path.resolve('./src/templates/podcastEpisode.jsx'),
+        context: {
+            slug: node.fields.slug,
+        },
+    });
+}
+
 /**
  * @param {Object} data
  * @param {Function} data.createPage
@@ -80,6 +144,16 @@ function createArticleListPage({ createPage, nodes }) {
     createPage({
         path: '/articles',
         component: path.resolve('./src/templates/articleList.jsx'),
+        context: {
+            nodes,
+        },
+    });
+}
+
+function createPodcastListPage({ createPage, nodes }) {
+    createPage({
+        path: '/podcast',
+        component: path.resolve('./src/templates/podcastList.jsx'),
         context: {
             nodes,
         },
