@@ -42,7 +42,7 @@
     "gatsby-link": "^2.0.1",
     "gatsby-plugin-react-helmet": "^3.0.0",
     "gatsby-plugin-sharp": "^2.0.17",
-    "gatsby-remark-static-images": "^1.0.0",
+    "gatsby-remark-static-images": "^1.1.0",
     "gatsby-source-atom": "^0.2.0",
     "gatsby-source-filesystem": "^2.0.1",
     "gatsby-source-ical": "^1.0.1",
