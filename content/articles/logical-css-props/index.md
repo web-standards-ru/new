@@ -5,7 +5,7 @@ date: "2019-02-06"
 
 Следующий шаг в эволюции CSS
 
-_Перевод [«New CSS Logical Properties!»](https://medium.com/@elad/new-css-logical-properties-bc6945311ce7?fbclid=IwAR3Ekw5MA2zN5SK8QuVc6zQk9pyEMW9O6-CNWjFQM-2XxYknPycs5JHqyUk) Элада Шехтера._
+_Перевод [«New CSS Logical Properties!»](https://medium.com/p/bc6945311ce7) Элада Шехтера._
 
 ## Интро
 
@@ -31,19 +31,17 @@ _Перевод [«New CSS Logical Properties!»](https://medium.com/@elad/new-c
 
 ![](images/3.png)
 
-### **Строчная ось**
+### Строчная ось
 
 Давайте для примера возьмём английский язык. Направление чтения начинается слева и идёт направо. Это строчный аспект свойств. Это можно легко запомнить, рассмотрев ряд элементов с `display: inline`. Каждый элемент отображается в строку.
 
 Например, `padding-inline-start` задаст отступ с той стороны, где начинается контент на текущем языке:
 
 - Английский: `padding-inline-start` = `padding-left`
-
 - Арабский: `padding-inline-start` = `padding-right`
-
 - Японский: `padding-inline-start` = `padding-top`
 
-### **Блочная ось**
+### Блочная ось
 
 При замене верхних и нижних связанных свойств легко вспоминать, что верх находится в начале нашего сайта, а низ — в конце. Просто представьте несколько элементов с `display: block`, которые расположены друг над другом.
 
@@ -56,7 +54,6 @@ _Перевод [«New CSS Logical Properties!»](https://medium.com/@elad/new-c
 Пример блочных свойства:
 
 - Английский и арабский: `padding-block-start` = `padding-top`
-
 - Японский: `padding-block-start` = `padding-right`
 
 ![](images/4.png)
@@ -72,31 +69,22 @@ _Перевод [«New CSS Logical Properties!»](https://medium.com/@elad/new-c
 ### margin
 
 - `margin-block-start` = `margin-top`
-
 - `margin-block-end` = `margin-bottom`
-
 - `margin-inline-start` = `margin-left`
-
 - `margin-inline-end` = `margin-right`
 
 ### padding
 
 - `padding-block-start` = `padding-top`
-
 - `padding-block-end` = `padding-bottom`
-
 - `padding-inline-start` = `padding-left`
-
 - `padding-inline-end` = `padding-right`
 
 ### border
 
 - `border-block-start` = `border-top`
-
 - `border-block-end` = `border-bottom`
-
 - `border-inline-start` = `border-left`
-
 - `border-inline-end` = `border-right`
 
 ## Логическая величина
@@ -109,19 +97,16 @@ _Перевод [«New CSS Logical Properties!»](https://medium.com/@elad/new-c
 Для английского и арабского (LTR и RTL)
 
 - `width` = `inline-size`
-
 - `height` = `block-size`
 
 В языках, идущих сверху вниз, например, японском, мы столкнёмся с противоположным:
 
 - `inline-size` = `height`
-
 - `block-size` = `width`
 
 Для минимальных и максимальных свойств просто добавьте `min` или `max` в начале. К примеру:
 
 - `min-inline-size: 300px`
-
 - `max-block-size: 100px`
 
 ![](images/5.png)
@@ -133,11 +118,8 @@ _Перевод [«New CSS Logical Properties!»](https://medium.com/@elad/new-c
 Для английского (LTR):
 
 - `top` = `inset-block-start`
-
 - `bottom` = `inset-block-end`
-
 - `left` = `inset-inline-start`
-
 - `right` = `inset-inline-end`
 
     /* Старая техника */
@@ -178,7 +160,6 @@ _Перевод [«New CSS Logical Properties!»](https://medium.com/@elad/new-c
 Для английского (LTR):
 
 - `float: left` = `float: inline-start`
-
 - `float: right` = `float: inline-end`
 
 ### Text-align
@@ -188,7 +169,6 @@ _Перевод [«New CSS Logical Properties!»](https://medium.com/@elad/new-c
 Для английского (LTR):
 
 - `text-align: left` = `text-align: start`
-
 - `text-align: right` = `text-align: end`
 
 ### Ещё
@@ -198,10 +178,9 @@ _Перевод [«New CSS Logical Properties!»](https://medium.com/@elad/new-c
 Для английского (LTR):
 
 - `resize: horizontal` = `resize: inline`
-
 - `resize: vertical` = `resize: block`
 
-У свойства `background-position` пока нет реализации ни в одном из браузеров, но если копнуть поглубже, то можно найти отсылки к `background-position-inline` и `background-position-block` на [MDN](https://developer.mozilla.org/en-US/). Ещё нет нормальной документации, но они работают над этим! :-)
+У свойства `background-position` пока нет реализации ни в одном из браузеров, но если копнуть поглубже, то можно найти отсылки к `background-position-inline` и `background-position-block` на [MDN](https://developer.mozilla.org/en-US/). Ещё нет нормальной документации, но они работают над этим! :)
 
 Прочее: уже сейчас можно предположить, что свойства типа `transform-origin` тоже будут обновлены, как и любые другие свойства, имеющие отношение к направлению.
 
@@ -230,12 +209,10 @@ _Перевод [«New CSS Logical Properties!»](https://medium.com/@elad/new-c
 Значения:
 
 - `writing-mode: horizontal-tb;` — сверху вниз, как для английского (значение по умолчанию).
-
 - `writing-mode: vertical-rl;` = справа налево, для японского.
-
 - `writing-mode: vertical-lr;` = слева направо, для монгольского.
 
-Моё личное мнение — в значениях нужно оставить только **`tb`**, **`rl`**, **`lr`** (часть для блочной оси), чтобы устранить потенциальную путаницу.
+Моё личное мнение — в значениях нужно оставить только `tb`, `rl`, `lr` (часть для блочной оси), чтобы устранить потенциальную путаницу.
 
 Пример для японского:
 
@@ -245,7 +222,7 @@ _Перевод [«New CSS Logical Properties!»](https://medium.com/@elad/new-c
 
 ![](images/8.png)
 
-### Свойство **`direction`** (строчная ось)
+### Свойство `direction` (строчная ось)
 
 Определяет, откуда должен начинаться текст: слева направо или справа налево, но только в случае, если задано значение по умолчанию для свойства `writing-mode`. Если мы поменяем значение `writing-mode` на один из вертикальных режимов, то фактическое направление написания изменится с положения слева направо и будет идти сверху вниз. Или наоборот, при значении с `rtl` (справа налево), оно изменится на сверху вниз.
 
@@ -266,9 +243,7 @@ _Перевод [«New CSS Logical Properties!»](https://medium.com/@elad/new-c
 ## Браузерная поддержка
 
 - Все свойства блочной модели `margin`, `padding`, `border` и новые свойства ширины и высоты (`inline-size`, `block-size`) уже работают во всех основных браузерах, кроме Edge.
-
 - Новые значения для `text-align` также работают везде, кроме Edge.
-
 - Свойства и значения для `float`, `position`, `resize` работают пока только в Firefox.
 
 ## Проблемы с логическими свойствами
@@ -297,7 +272,7 @@ _Перевод [«New CSS Logical Properties!»](https://medium.com/@elad/new-c
 
 ### Проблемы с адаптивным дизайном
 
-Пока пытался создать рабочее демо, я попробовал использовать новое свойство максимальной ширины `max-inline-size` внутри медиавыражения, предполагая, что для языков «справа налево» / «слева направо» оно будет вести себя как `max-width`, а для языков вроде японского — как `max-height`. К сожалению, браузеры пока отказываются понимать это свойство внутри медиавыражений.
+Пока пытался создать рабочее демо, я попробовал использовать новое свойство максимальной ширины `max-inline-size` внутри медиавыражения, предполагая, что для языков «справа налево» и «слева направо» оно будет вести себя как `max-width`, а для языков вроде японского — как `max-height`. К сожалению, браузеры пока отказываются понимать это свойство внутри медиавыражений.
 
     /* Не работает */
     @media (max-inline-size: 1000px) {
@@ -312,7 +287,6 @@ _Перевод [«New CSS Logical Properties!»](https://medium.com/@elad/new-c
 Во время написания этого поста, уже после глубокого изучения и понимания концепции логических свойств, я заметил несколько упущенных моментов, которые следует поправить в будущем:
 
 - `line-height` заменить на `line-size`
-
 - `border-width` заменить на `border-size`
 
 Но, похоже, пока не стоит этого ждать, по крайней мере в отношении `border-width`. Это свойство обновили буквально только что и в его названии по прежнему присутствует `width`. Пример: `border-block-start-width`.
@@ -326,19 +300,14 @@ _Перевод [«New CSS Logical Properties!»](https://medium.com/@elad/new-c
 ### Больше постов по типографике
 
 - [CSS Writing Modes](https://24ways.org/2016/css-writing-modes/) — крайне рекомендую!
-
 - [Text Orientations](https://tympanus.net/codrops/css_reference/text-orientation/)
 
 ### Другие мои посты о CSS
 
 - [The Best Way to RTL Websites with Sass!](https://medium.com/@elad/the-best-way-to-rtl-your-website-with-sass-105e34a4298a)
-
 - [CSS Architecture for Multiple Websites With Sass](https://medium.com/@elad/css-architecture-for-multiple-websites-with-sass-7e923fc53f7a)
-
 - [Becoming a CSS Grid Ninja!](https://medium.com/@elad/becoming-a-css-grid-ninja-f4c6db018cc1)
-
 - [The New Responsive Design Evolution](https://medium.com/@elad/the-new-responsive-design-evolution-2bfb9b504a4e)
-
 - [Как на самом деле работает position: sticky в CSS](https://medium.com/web-standards/sticky-bc7ff7088693)
 
 ### Кто я?
@@ -352,7 +321,6 @@ _Перевод [«New CSS Logical Properties!»](https://medium.com/@elad/new-c
 Вы можете найти меня в группах на Facebook:
 
 - [CSS Masters](https://www.facebook.com/groups/css.master/)
-
 - [CSS Masters Israel](https://www.facebook.com/groups/css.masters.israel/)
 
 _Перевод [Алёны Батицкой](https://medium.com/@ABatickaya), редактура [Вадима Макеева](https://medium.com/@pepelsbey)._
