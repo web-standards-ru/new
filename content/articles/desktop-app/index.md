@@ -2,14 +2,19 @@
 title: "Как быстро создать десктопное приложение на HTML, CSS и JavaScript"
 date: "2019-02-06"
 ---
-_Перевод «[How to Easily Build Desktop Apps with HTML, CSS and JS](https://medium.freecodecamp.org/how-to-easily-build-desktop-apps-with-html-css-and-javascript-d3e3f03f95a5)» Адитьи Шридхары._
 
-![](images/img1.jpg)
-_Фотография [Робина Пьерра](https://unsplash.com/@robinpierre)_
+_Перевод «[How to Easily Build Desktop Apps with HTML, CSS and JS](https://medium.com/p/d3e3f03f95a5)» Адитьи Шридхары._
+
+<figure>
+    <img src="images/img1.jpg" alt="">
+    <figcaption>
+        Фотография <a href="https://unsplash.com/@robinpierre">Робина Пьерра</a>
+    </figcaption>
+</figure>
 
 Можно ли использовать HTML, CSS и JavaScript для создания десктопных приложений?
 
-Ответ — да :smile:
+Ответ — да :)
 
 В этой статье мы сосредоточимся в основном на том, как Electron можно использовать для создания десктопных приложений с использованием веб-технологий.
 
