@@ -3,7 +3,7 @@ title: "Как быстро создать десктопное приложен
 date: "2019-02-06"
 ---
 
-Перевод «[How to Easily Build Desktop Apps with HTML, CSS and JS](https://medium.com/p/d3e3f03f95a5)» Адитьи Шридхары.
+_Перевод «[How to Easily Build Desktop Apps with HTML, CSS and JS](https://medium.com/p/d3e3f03f95a5)» Адитьи Шридхары._
 
 <figure>
     <img src="images/1.jpg" alt="">
@@ -215,7 +215,7 @@ _При создании приложения на macOS, папка внутр�
 
 Например, чтобы упаковать приложение для Linux, вы можете использовать следующую команду:
 
-    npm run package -- --platform**=**linux --arch**=**x64
+    npm run package -- --platform=linux --arch=x64
 
 Это создаст папку с именем `simple-desktop-app-electronicjs-linux-x64` внутри папки `out`.
 
