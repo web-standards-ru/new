@@ -14,9 +14,6 @@ const Index = ({ location }) => (
                     <Link to="/calendar/">Календарь</Link>
                 </li>
                 <li>
-                    <Link to="/conference/">Конференция</Link>
-                </li>
-                <li>
                     <Link to="/podcast/">Подкаст</Link>
                 </li>
             </ul>
