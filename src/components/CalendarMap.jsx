@@ -65,7 +65,7 @@ class CalendarMap extends Component {
         return this.state.locations.length > 0 ? (
             <MapWithMarkers locations={this.state.locations} />
         ) : (
-            <div style={{ widht: '100%', height: '400px', background: '#ccc' }}>
+            <div style={{ width: '100%', height: '400px', background: '#ccc' }}>
                 Static map .....
             </div>
         );
