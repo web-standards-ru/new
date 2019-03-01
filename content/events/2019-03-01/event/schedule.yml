@@ -1,0 +1,58 @@
+- break: Начало регистрации
+  duration: 60
+# -------------------------------------
+- break: Открытие
+  duration: 10
+# -------------------------------------
+- talk: animation-perf
+  speaker: nikolai-shabalin
+  duration: 40
+# -------------------------------------
+- talk: meet-babushka
+  speaker: vitaly-harisov
+  duration: 40
+# -------------------------------------
+- break: Перерыв
+  duration: 10
+# -------------------------------------
+- talk: animation-perf
+  speaker: nikolai-shabalin
+  duration: 40
+# -------------------------------------
+- talk: css-debug
+  speaker: nikita-dubko
+  duration: 40
+# -------------------------------------
+- break: Обед
+  duration: 90
+# -------------------------------------
+- talk: sw-again
+  speaker: kirill-chugainov
+  duration: 40
+# -------------------------------------
+- talk: organize-code
+  speaker: alexander-baltsevich
+  duration: 40
+# -------------------------------------
+- talk: ts-good-parts
+  speaker: michael-bashurov
+  duration: 40
+# -------------------------------------
+- break: Перерыв
+  duration: 10
+# -------------------------------------
+- talk: semantics
+  speaker: vadim-makeev
+  duration: 40
+# -------------------------------------
+- talk: code-editors
+  speaker: alexandra-shinkevich
+  duration: 40
+# -------------------------------------
+- break: Закрытие
+  duration: 10
+# -------------------------------------
+- break: Перерыв
+  duration: 20
+# -------------------------------------
+- break: Афтепати 🎉
