@@ -7,10 +7,10 @@ venue:
   - Октябрьская, 16А # address
   - http://eventspace.by/ # link
 map:
-  - yandex # type
-  - 27.5706,53.8896 # center
-  - 27.5706,53.8896 # marker
-  - 16 # zoom
+  type: yandex
+  center: '29.5706,53.8896'
+  marker: '72.5706,53.8896'
+  zoom: '16'
 partners:
   - emerline
   - adform
