@@ -21,11 +21,19 @@ module.exports = {
         },
         'gatsby-plugin-react-helmet',
         'gatsby-plugin-sharp',
+        'gatsby-transformer-yaml',
         {
             resolve: 'gatsby-source-filesystem',
             options: {
                 path: `${__dirname}/content/articles`,
                 name: 'articles',
+            },
+        },
+        {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+                path: `${__dirname}/content/events`,
+                name: 'events',
             },
         },
         {
