@@ -52,7 +52,7 @@ _Перевод «[Using Puppeteer to crawl pages and save them as Markdown file
       process.exit()
     })();
 
-На первой строке мы подключаем библиотеку Puppeteer. Потом открываем браузер — `puppeteer.launch()`, создаём новую страницу — `browser.newPage()`, и переходими по нужному адресу — `page.goto(URL)`.
+На первой строке мы подключаем библиотеку Puppeteer. Потом открываем браузер — `puppeteer.launch()`, создаём новую страницу — `browser.newPage()`, и переходим по нужному адресу — `page.goto(URL)`.
 
 Если мы запустим наш файл — `node index.js`, и всё сработает без ошибок, то в консоли должно появится сообщение `Открываю страницу https://justmarkup.com`. Либо что-то может пойти не так: неправильный URL, ошибка SSL, превышено время ожидания, ресурс недоступен… Поэтому мы обернули переход по URL в блок `try/catch` для обработки возможных [ошибок](https://github.com/GoogleChrome/puppeteer/blob/v1.11.0/docs/api.md#pagegotourl-options).
 
